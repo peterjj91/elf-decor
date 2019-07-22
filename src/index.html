@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Главная</title>
+  @@include('_include/page_head.html')
+</head>
+<body class="home full-bleed-header pll-en-gb">
+  <div id="app" class="site">
+    @@include('blocks/cookie-message/cookie-message.html')
+
+    <div class="main-body full-bleed-header pll-en-gb">
+      <main class="l-main">
+        <header class="[ l-header l-header--home ] headroom">
+          @@include('blocks/page-header/page-header.html')
+        </header>
+
+        <div class="[ top-section ] [ cover ] [ fill-viewport ]">
+          <span class="reveal-slider__slide-overlay page-home__reveal-slider__slide-overlay overlay overlay--light">
+            <h2 class="[ padding--left padding--right ] page-home__reveal-slider__slide-title ">
+              <span class="animate-onload">Make is a different kind <br>of architecture practice.</span>
+            </h2>
+            <a href="projects.html" class="[ padding--left ] page-home__reveal-slider__slide-link">
+              <span class="animate-onload">Projects</span>
+            </a>
+          </span>
+
+          <div class="lazy-container lazy-container--crop [ js-pseudo lazyloadunveil ]" style="padding-bottom: 0;">
+            <img data-srcset="img/TempleHouse-Make-cover.jpg" 
+                 data-src-ie="img/TempleHouse-Make-cover.jpg" 
+                 alt="#" 
+                 class="lazyload" 
+                 sizes="100vw">
+          </div>
+
+          <video id="ie-video" autoplay loop muted width="1920" height="1080" poster="img/home-reel-2-screenshot-1200x700.jpg" class="[ reveal-slider__slide-video ]" data-src="img/1045957918.mp4">
+            <source src="" type="video/mp4">
+          </video>
+        </div>
+
+        <div id="reveal-home" class="reveal-slider page-home__reveal-slider">
+          <div class="reveal-slider__slide" style="z-index: 0;">
+            <div class="[ reveal-slider__scale ] [ overlay overlay--light ]">
+              <div class="reveal-slider__slide-video-container">
+                <video id="video-top" autoplay loop muted width="1920" height="1080" poster="img/home-reel-2-screenshot-1200x700.jpg" class="[ reveal-slider__slide-video ]" data-src="img/1045957918.mp4">
+                  <source src="" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+          <span id="slide-1" class="reveal-slider__slide-text">&nbsp;</span>
+          <div class="reveal-slide-wrap">
+            <div class="reveal-slider__slide" style="z-index: 2">
+              <div class="reveal-slider__scale">
+                <div class="lazy-container  [ js-pseudo lazyloadunveil ]" style="padding-bottom: 66.6684026874%;">
+                  <img data-srcset="img/TempleHouse-Make-cover.jpg" data-src-ie="img/TempleHouse-Make-cover.jpg" alt="#" class="lazyload" sizes="100vw">
+                </div>
+              </div>
+            </div>
+            <span id="slide-2" class="[ reveal-slider__slide-text reveal-slider__slide-overlay ] page-home__reveal-slider__slide-overlay">
+              <h2 class="[ padding--left ] page-home__reveal-slider__slide-title page-home__reveal-slider__slide-title--large">Make is a different kind <br>of architecture practice.</h2>
+              <a href="projects.html" class="[ padding--left ] page-home__reveal-slider__slide-link">Projects</a>
+            </span>
+          </div>
+          <div class="reveal-slide-wrap">
+            <div class="reveal-slider__slide" style="z-index: 3">
+              <div class="reveal-slider__scale">
+                <div class="lazy-container  [ js-pseudo lazyloadunveil ]" style="padding-bottom: 66.6684026874%;">
+                  <img data-srcset="img/LondonStudio-Make-22.jpg" data-src-ie="img/LondonStudio-Make-22.jpg" alt="#" class="lazyload" sizes="100vw">
+                </div>
+              </div>
+            </div>
+            <span id="slide-3" class="[ reveal-slider__slide-text reveal-slider__slide-overlay ] page-home__reveal-slider__slide-overlay">
+              <h2 class="[ padding--left ] page-home__reveal-slider__slide-title ">
+                We’re employee-owned. <br />
+                We have no house style. <br />
+                We design and deliver.
+              </h2>
+              <a href="who-we-are.html" class="[ padding--left ] page-home__reveal-slider__slide-link">Кто мы</a>
+            </span>
+          </div>
+          <div class="reveal-slide-wrap">
+            <div class="reveal-slider__slide" style="z-index: 4">
+              <div class="reveal-slider__scale">
+                <div class="lazy-container  [ js-pseudo lazyloadunveil ]" style="padding-bottom: 66.6684026874%;">
+                  <img data-srcset="img/LondonStudio-Make-19.jpg" data-src-ie="img/LondonStudio-Make-19.jpg" alt="#" class="lazyload" sizes="100vw">
+                </div>
+              </div>
+            </div>
+            <span id="slide-4" class="[ reveal-slider__slide-text reveal-slider__slide-overlay ] page-home__reveal-slider__slide-overlay">
+              <h2 class="[ padding--left ] page-home__reveal-slider__slide-title ">Founded in 2004 by Ken Shuttleworth, today we have over 150 people in London, Hong Kong and Sydney providing architecture, interior and urban design services from concept to completion.</h2>
+              <a href="what-we-do.html" class="[ padding--left ] page-home__reveal-slider__slide-link">
+                Чем мы занимаемся
+              </a>
+            </span>
+          </div>
+          <div id="slider-dots" class="reveal-slider__dots-wrap">
+            <ul class="[ reveal-slider__dots ] [ list--bare ]">
+              <li><a data-target="#slide-1" data-scroll-to class="dot">0_dump5</a></li>
+              <li><a data-target="#slide-2" data-scroll-to class="dot">2</a></li>
+              <li><a data-target="#slide-3" data-scroll-to class="dot">3</a></li>
+              <li><a data-target="#slide-4" data-scroll-to class="dot">4</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <a href="#featured-projects" aria-label="Skip" class="[ reveal-slider__skip ] [ ui-btn__elem ui-btn__elem--bottom-right ]">
+          <span class="[ ui-btn ui-btn--semi ] ">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 9" width="14" height="9">
+              <path d="M7 9l7-9H0z" fill="#fff" />
+            </svg>
+          </span>
+        </a>
+
+        <!-- featured projects start -->
+        <div id="featured-projects" data-featured-container class="[ l-row l-row--flush ] page-home__featured-projects" style="position: relative; z-index: -1;">
+          <div class="[ l-row ]">
+            <div class="container">
+              <h2 class="page-home__section-title">Featured </h2>
+            </div>
+          </div>
+
+          <span data-title-span class="[ featured-project-title ] page-home__featured-projects__project-title">
+            1 Centenary Square
+          </span>
+
+          <div aria-label="1 Centenary Square" class="[ featured-project featured-project--1 ] [ cf ] page-home__featured-projects__project">
+            <div class="l-row">
+              <div class="container">
+                <a href="https://www.makearchitects.com/projects/1-centenary-square/" class="[ col col--grid-12 ] [ block ] [ overlay overlay overlay--light ]">
+                  <span class="featured-title-single page-home__featured-projects__project-title">1 Centenary Square</span>
+                  <div class="lazy-container" style="padding-bottom: 60.0020832248%;">
+                    <img data-srcset="img/CemtenarySquare_Make_hero.jpg" data-src-ie="img/CemtenarySquare_Make_hero.jpg" alt="#" class="lazyload" sizes="100vw">
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div aria-label="Portsoken Pavilion" class="[ featured-project featured-project--2 ] [ cf ] page-home__featured-projects__project">
+            <div class="l-row">
+              <div class="container">
+                <a href="https://www.makearchitects.com/projects/portsoken-pavilion/" class="[ col col--grid-12 ] [ block ] [ overlay overlay overlay--light ]">
+                  <span class="featured-title-single page-home__featured-projects__project-title">Portsoken Pavilion</span>
+                  <div class="lazy-container  " style="padding-bottom: 66.6684026874%;">
+                    <img data-srcset="img/PortsokenPavilion-Make-5.jpg" data-src-ie="img/PortsokenPavilion-Make-5.jpg" alt="#" class="lazyload" sizes="100vw">
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div aria-label="London Wall Place" class="[ featured-project featured-project--3 ] [ cf ] page-home__featured-projects__project">
+            <div class="l-row">
+              <div class="container">
+                <a href="https://www.makearchitects.com/projects/london-wall-place/" class="[ col col--grid-12 ] [ block ] [ overlay overlay overlay--light ]">
+                  <span class="featured-title-single page-home__featured-projects__project-title">London Wall Place</span>
+                  <div class="lazy-container  " style="padding-bottom: 66.6684026874%;">
+                    <img data-srcset="img/LondonWallPlace-Make-4-1.jpg" data-src-ie="img/LondonWallPlace-Make-4-1.jpg" alt="#" class="lazyload" sizes="100vw">
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- featured projects end -->
+
+        <br><br><br><br>
+
+        <section class="slider-boxes slider-boxes--slides-aligned-to-top slider-boxes--three-columns">
+          <div class="grid__container">
+            @@include('blocks/slider-interesting/slider-interesting.html')
+          </div>
+        </section>
+
+        <!-- instagram start -->
+        <div class="preloader">
+          <div class="l-row">
+            <div class="container container--flex">
+              <span class="preloader__logo">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 33" fill="red">
+                  <path d="M13.597 10.126c1.342 0 2.5.288 3.471.862.972.575 1.705 1.412 2.198 2.508.877-1.123 1.842-1.966 2.897-2.529 1.054-.56 2.293-.841 3.717-.841 2.136 0 3.785.644 4.95 1.932 1.164 1.287 1.746 3.218 1.746 5.79V32.35h-7.434V18.67c0-.957-.181-1.601-.536-1.93-.356-.328-.863-.493-1.52-.493-.438 0-.821.054-1.15.165-.328.11-.642.315-.944.616a2.933 2.933 0 0 0-.595.862c-.152.33-.227.795-.227 1.396v13.063h-7.435V18.67c0-.957-.18-1.601-.534-1.93-.356-.328-.863-.493-1.521-.493-.438 0-.82.054-1.15.165-.328.11-.642.315-.944.616a2.948 2.948 0 0 0-.596.862c-.15.33-.224.795-.224 1.396v13.063H.329V10.784h7.23v2.712c.711-1.014 2.176-3.37 6.038-3.37zM54.442 15.323c-.327-1.081-.862-2.006-1.6-2.773-.74-.766-1.72-1.362-2.938-1.787-1.22-.424-2.732-.637-4.54-.637-2.903 0-5.191.562-6.86 1.684-1.67 1.124-2.697 2.835-3.081 5.134l6.696.535c.247-1.424 1.22-2.135 2.915-2.135.795 0 1.453.205 1.973.614.521.412.78 1.152.78 2.22v.862l-3.245.164a27.667 27.667 0 0 0-4.067.515c-1.26.26-2.355.67-3.285 1.231a6.31 6.31 0 0 0-2.198 2.177c-.534.891-.801 1.994-.801 3.307 0 1.15.198 2.13.596 2.938.397.807.93 1.479 1.601 2.013a6.52 6.52 0 0 0 2.321 1.17c.877.247 1.793.37 2.752.37 1.424 0 2.65-.254 3.677-.76 1.028-.507 1.98-1.225 2.855-2.158v2.342h6.943V18.958c0-1.341-.164-2.552-.494-3.635zm-6.696 8.647c0 1.288-.375 2.253-1.128 2.895-.754.645-1.705.966-2.856.966-.766 0-1.363-.15-1.788-.452-.423-.301-.635-.807-.635-1.52 0-.711.28-1.286.842-1.725.561-.439 1.622-.698 3.184-.78l2.381-.125v.74zM66.892 22.609l-2.53 2.398v7.342H57.09V-.008h7.27v17.363l6.778-6.571h8.65l-7.791 7.476 8.098 14.09H72.25z" />
+                  <path d="M99.671 20.97c0-1.643-.22-3.134-.657-4.476-.437-1.342-1.095-2.487-1.971-3.432-.878-.944-1.96-1.668-3.246-2.175-1.288-.507-2.78-.761-4.477-.761-1.7 0-3.226.262-4.582.781-1.354.521-2.505 1.282-3.448 2.28-.947.999-1.678 2.232-2.198 3.696-.522 1.466-.782 3.143-.782 5.032 0 3.561.916 6.3 2.752 8.216 1.835 1.917 4.561 2.877 8.175 2.877 2.903 0 5.232-.632 6.98-1.891 1.756-1.26 2.852-3.163 3.29-5.71h-6.943c-.41 1.507-1.546 2.26-3.409 2.26-1.206 0-2.087-.335-2.65-1.006-.56-.67-.91-1.789-1.048-3.348h14.214v-2.342zm-14.214-1.888c.11-1.15.466-2.054 1.07-2.712.602-.657 1.533-.986 2.793-.986 1.15 0 2.007.288 2.566.863.562.576.87 1.52.924 2.835h-7.353z" />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- instagram end -->
+
+        <br><br>
+      </main>
+
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+  </div>
+
+  <!-- @@include('blocks/video-player/video-player.html') -->
+
+  @@include('blocks/modal-search/modal-search.html')
+
+  @@include('blocks/modal-map/modal-map.html')
+
+  <!-- @@include('blocks/modal-photoswipe/modal-photoswipe.html') -->
+
+  @@include('_include/page_bottom.html')
+</body>
+</html>

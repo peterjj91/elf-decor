@@ -1,0 +1,46 @@
+{
+  "blocks": {
+    "page-header": [],
+    "page-footer": [],
+    "video-player": [],
+    "modal": [],
+    "modal-map": [],
+    "modal-photoswipe": [],
+    "modal-search": [],
+    "cookie-message": [],
+    "alphabet": [],
+    "modal-profile": [],
+    "slider-navigation": [],
+    "slider-interesting": [],
+    "next-page": []
+  },
+  "addCssBefore": [
+    "./src/scss/variables.scss"
+  ],
+  "addCssAfter": [],
+  "singleCompiled": [],
+  "addJsBefore": [
+    "./node_modules/object-fit-images/dist/ofi.js",
+    "./node_modules/svg4everybody/dist/svg4everybody.js"
+  ],
+  "addJsAfter": [],
+  "addImages": [
+    "./src/img/*.{jpg,jpeg,gif,png,svg,ico}"
+  ],
+  "copiedJs": [
+    "./src/js/jquery.js",
+    "./src/js/jquery-migrate.min.js",
+    "./src/js/modernizr.js",
+    "./src/js/disablescroll.min.js",
+    "./src/js/libs.min.js",
+    "./src/js/global.js"
+  ],
+  "copiedCss": [
+    "./src/css/main.css"
+  ],
+  "dirs": {
+    "srcPath": "./src/",
+    "buildPath": "./build/",
+    "blocksDirName": "blocks"
+  }
+}

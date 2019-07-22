@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Новости</title>
+  @@include('_include/page_head.html')
+</head>
+<body class="blog no-full-bleed pll-en-gb">
+  <div id="app" class="site">
+    @@include('blocks/cookie-message/cookie-message.html')
+
+    <div class="main-body blog no-full-bleed pll-en-gb">
+      <main class="l-main">
+        <header class="[ l-header l-header--int ] headroom">
+          @@include('blocks/page-header/page-header.html')
+        </header>
+
+        <section class="filters-desktop filters-desktop--light" >
+          <div class="filters-desktop__borders">
+            <div class="grid__container">
+              <div class="page-thinking__filter-by ">
+                Показать <span class="category">Все</span>
+
+                <div class="page-thinking__filter-clear " data-default="All">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                    <title>close</title>
+                    <g data-name="Layer 2">
+                      <g data-name="Layer 1">
+                        <circle cx="20" cy="20" r="20" opacity=".25" style="isolation:isolate"/>
+                        <path fill="#fff" d="M25.66 24.24L21.41 20l4.25-4.24-1.42-1.42L20 18.59l-4.24-4.25-1.42 1.42L18.59 20l-4.25 4.24 1.42 1.42L20 21.41l4.24 4.25 1.42-1.42z"/>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="page-thinking__filter-categories">
+          <div class="page-thinking__filter-categories-wrapper">
+            <div class="grid__container ">
+              <div class="grid__row">
+                <div class="page-thinking__filter-categories__container">
+                  <div class="page-thinking__filter-categories__close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                      <title>close</title>
+                      <g data-name="Layer 2">
+                        <g data-name="Layer 1">
+                          <circle cx="20" cy="20" r="20" opacity=".25" style="isolation:isolate"/>
+                          <path fill="#fff" d="M25.66 24.24L21.41 20l4.25-4.24-1.42-1.42L20 18.59l-4.24-4.25-1.42 1.42L18.59 20l-4.25 4.24 1.42 1.42L20 21.41l4.24 4.25 1.42-1.42z"/>
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+
+                  <div class="item">
+                    <a href="https://www.makearchitects.com/thinking/" title="All">
+                      Все
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="https://www.makearchitects.com/thinking/?category=architecture" title="Architecture">
+                      Архитектура
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="https://www.makearchitects.com/thinking/?category=architecture-drawing-prize" title="Architecture Drawing Prize">
+                      Architecture Drawing Prize
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="https://www.makearchitects.com/thinking/?category=asia" title="Asia">
+                      Asia
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="https://www.makearchitects.com/thinking/?category=community" title="Community">
+                      Community
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="https://www.makearchitects.com/thinking/?category=exchange" title="Exchange">
+                      Exchange
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="https://www.makearchitects.com/thinking/?category=future" title="Future">
+                      Future
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="https://www.makearchitects.com/thinking/?category=hospitality" title="Hospitality">
+                      Hospitality
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="https://www.makearchitects.com/thinking/?category=interior-design" title="Interior design">
+                      Interior design
+                    </a>
+                  </div>
+                </div>
+
+                <div class="page-thinking__filter-categories__container">
+                  <div class="item">
+                    <a href="https://www.makearchitects.com/thinking/?category=make">
+                      Make
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="https://www.makearchitects.com/thinking/?category=models">
+                      Models
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="https://www.makearchitects.com/thinking/?category=sport-and-leisure">
+                      Sport and leisure
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="https://www.makearchitects.com/thinking/?category=sustainability">
+                      Sustainability
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="https://www.makearchitects.com/thinking/?category=technology">
+                      Technology
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="https://www.makearchitects.com/thinking/?category=urban-design">
+                      Urban design
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="https://www.makearchitects.com/thinking/?category=vital-cities">
+                      Vital cities
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="https://www.makearchitects.com/thinking/?category=workplace">
+                      Workplace
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="c-drawer js-drawer" id="project-alphabet">
+          <div class="c-drawer__background"></div>
+          <div class=" c-drawer__wrapper js-drawer-content t-black">
+            <div class="c-projects-list-side-panel js-az-panel" data-mode="mode_first_image">
+              <div class="c-projects-list-side-panel__left c-projects-list-side-panel__left--half">
+                <div class="c-projects-list-side-panel__centered c-projects-list-side-panel__centered--photo js-az-panel-left js-az-panel-left-default"
+                  data-panel-id="project-7446">
+                  <div class="c-projects-list-side-panel__centered--photo-wrapper">
+                    <div class="lazy-container  [ image ]" style="padding-bottom: 66.6684026874%;">
+                      <img
+                        data-srcset="img/Sydney-Opera-House-©-Larry-Koester.jpg"
+                        data-src-ie="img/Sydney-Opera-House-©-Larry-Koester.jpg"
+                        alt="#"
+                        sizes="(min-width: 992px) 33vw, 1px">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="c-projects-list-side-panel__centered c-projects-list-side-panel__centered--photo js-az-panel-left "
+                  data-panel-id="project-7277">
+                  <div class="c-projects-list-side-panel__centered--photo-wrapper">
+                    <div class="lazy-container  [ image ]" style="padding-bottom: 133.331597313%;">
+                      <img
+                        data-srcset="img/Wynyard-resized.jpg"
+                        data-src-ie="img/Wynyard-resized.jpg"
+                        alt="#"
+                        sizes="(min-width: 992px) 33vw, 1px">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="c-projects-list-side-panel__centered c-projects-list-side-panel__centered--photo js-az-panel-left "
+                  data-panel-id="project-7382">
+                  <div class="c-projects-list-side-panel__centered--photo-wrapper">
+                    <div class="lazy-container  [ image ]" style="padding-bottom: 100%;">
+                      <img
+                        data-srcset="https://ratio.imgix.net/https%3A%2F%2Fmakearchitects.wpengine.com%2Fwp-content%2Fuploads%2F2019%2F07%2FKens-sketch_Make.jpg?auto=format&crop=center&fit=crop&h=210&ixlib=php-1.2.1&w=210&s=b4a4dc8b66923668d894250ef31c536b 210w,https://ratio.imgix.net/https%3A%2F%2Fmakearchitects.wpengine.com%2Fwp-content%2Fuploads%2F2019%2F07%2FKens-sketch_Make.jpg?auto=format&crop=center&fit=crop&h=420&ixlib=php-1.2.1&w=420&s=af5ded9fe56865fa24200ded0a8a3afe 420w,https://ratio.imgix.net/https%3A%2F%2Fmakearchitects.wpengine.com%2Fwp-content%2Fuploads%2F2019%2F07%2FKens-sketch_Make.jpg?auto=format&crop=center&fit=crop&h=768&ixlib=php-1.2.1&w=768&s=56381ac7987d470081721df06a71cce8 768w,https://ratio.imgix.net/https%3A%2F%2Fmakearchitects.wpengine.com%2Fwp-content%2Fuploads%2F2019%2F07%2FKens-sketch_Make.jpg?auto=format&crop=center&fit=crop&h=1024&ixlib=php-1.2.1&w=1024&s=66dacca63f758e83d2e8c222105eaeb4 1024w,https://ratio.imgix.net/https%3A%2F%2Fmakearchitects.wpengine.com%2Fwp-content%2Fuploads%2F2019%2F07%2FKens-sketch_Make.jpg?auto=format&crop=center&fit=crop&h=1400&ixlib=php-1.2.1&w=1400&s=8b9bd43c6099c8a943f3169b10f4fe2a 1400w,https://ratio.imgix.net/https%3A%2F%2Fmakearchitects.wpengine.com%2Fwp-content%2Fuploads%2F2019%2F07%2FKens-sketch_Make.jpg?auto=format&crop=center&fit=crop&h=1600&ixlib=php-1.2.1&w=1600&s=4adac02df4923da30e88691de08f335b 1600w,https://ratio.imgix.net/https%3A%2F%2Fmakearchitects.wpengine.com%2Fwp-content%2Fuploads%2F2019%2F07%2FKens-sketch_Make.jpg?auto=format&crop=center&fit=crop&h=1920&ixlib=php-1.2.1&w=1920&s=97914f29882834c70b502061b05fbdc7 1920w"
+                        data-src-ie="https://ratio.imgix.net/https%3A%2F%2Fmakearchitects.wpengine.com%2Fwp-content%2Fuploads%2F2019%2F07%2FKens-sketch_Make.jpg?auto=format&crop=center&fit=crop&h=1400&ixlib=php-1.2.1&w=1400&s=8b9bd43c6099c8a943f3169b10f4fe2a"
+                        alt="#"
+                        sizes="(min-width: 992px) 33vw, 1px">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="c-projects-list-side-panel__centered c-projects-list-side-panel__centered--photo js-az-panel-left "
+                  data-panel-id="project-7280">
+                  <div class="c-projects-list-side-panel__centered--photo-wrapper">
+                    <div 
+                      class="lazy-container  [ image ]" style="padding-bottom: 100%;">
+                      <img
+                        data-srcset="https://ratio.imgix.net/https%3A%2F%2Fmakearchitects.wpengine.com%2Fwp-content%2Fuploads%2F2019%2F05%2FJacob-Loftus-resized.jpg?auto=format&crop=center&fit=crop&h=210&ixlib=php-1.2.1&w=210&s=682915a39172d40781390f61d2fc58f1 210w,https://ratio.imgix.net/https%3A%2F%2Fmakearchitects.wpengine.com%2Fwp-content%2Fuploads%2F2019%2F05%2FJacob-Loftus-resized.jpg?auto=format&crop=center&fit=crop&h=420&ixlib=php-1.2.1&w=420&s=0e5622649f324fca938a119b7019fb64 420w,https://ratio.imgix.net/https%3A%2F%2Fmakearchitects.wpengine.com%2Fwp-content%2Fuploads%2F2019%2F05%2FJacob-Loftus-resized.jpg?auto=format&crop=center&fit=crop&h=768&ixlib=php-1.2.1&w=768&s=3e5498ae3b04a4a1ca7d8cad3caabc86 768w,https://ratio.imgix.net/https%3A%2F%2Fmakearchitects.wpengine.com%2Fwp-content%2Fuploads%2F2019%2F05%2FJacob-Loftus-resized.jpg?auto=format&crop=center&fit=crop&h=1024&ixlib=php-1.2.1&w=1024&s=e9f29cf1c40f61e6fe86706ffb14232f 1024w,https://ratio.imgix.net/https%3A%2F%2Fmakearchitects.wpengine.com%2Fwp-content%2Fuploads%2F2019%2F05%2FJacob-Loftus-resized.jpg?auto=format&crop=center&fit=crop&h=1400&ixlib=php-1.2.1&w=1400&s=a3630e633abf173ef64cb82ca8ca1847 1400w,https://ratio.imgix.net/https%3A%2F%2Fmakearchitects.wpengine.com%2Fwp-content%2Fuploads%2F2019%2F05%2FJacob-Loftus-resized.jpg?auto=format&crop=center&fit=crop&h=1600&ixlib=php-1.2.1&w=1600&s=29f5d5b443d5dd29466d00f977103c6b 1600w,https://ratio.imgix.net/https%3A%2F%2Fmakearchitects.wpengine.com%2Fwp-content%2Fuploads%2F2019%2F05%2FJacob-Loftus-resized.jpg?auto=format&crop=center&fit=crop&h=1920&ixlib=php-1.2.1&w=1920&s=751be47b25f8b6428c6b3ab231f58db7 1920w"
+                        data-src-ie="https://ratio.imgix.net/https%3A%2F%2Fmakearchitects.wpengine.com%2Fwp-content%2Fuploads%2F2019%2F05%2FJacob-Loftus-resized.jpg?auto=format&crop=center&fit=crop&h=1400&ixlib=php-1.2.1&w=1400&s=a3630e633abf173ef64cb82ca8ca1847"
+                        alt="#"
+                        sizes="(min-width: 992px) 33vw, 1px">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="c-projects-list-side-panel__centered c-projects-list-side-panel__centered--photo js-az-panel-left "
+                  data-panel-id="project-7327">
+                  <div class="c-projects-list-side-panel__centered--photo-wrapper">
+                    <div 
+                      class="lazy-container  [ image ]" style="padding-bottom: 100%;">
+                      <img
+                        data-srcset="https://ratio.imgix.net/https%3A%2F%2Fmakearchitects.wpengine.com%2Fwp-content%2Fuploads%2F2019%2F06%2FRopemaker-model-1.jpg?auto=format&crop=center&fit=crop&h=210&ixlib=php-1.2.1&w=210&s=28f7919ca004168b3cedb2d1f4d2cb69 210w,https://ratio.imgix.net/https%3A%2F%2Fmakearchitects.wpengine.com%2Fwp-content%2Fuploads%2F2019%2F06%2FRopemaker-model-1.jpg?auto=format&crop=center&fit=crop&h=420&ixlib=php-1.2.1&w=420&s=18e720295bed946941c3bef17c025e58 420w,https://ratio.imgix.net/https%3A%2F%2Fmakearchitects.wpengine.com%2Fwp-content%2Fuploads%2F2019%2F06%2FRopemaker-model-1.jpg?auto=format&crop=center&fit=crop&h=768&ixlib=php-1.2.1&w=768&s=c99bc450c59232a8cd7de92de2ee1ce1 768w,https://ratio.imgix.net/https%3A%2F%2Fmakearchitects.wpengine.com%2Fwp-content%2Fuploads%2F2019%2F06%2FRopemaker-model-1.jpg?auto=format&crop=center&fit=crop&h=1024&ixlib=php-1.2.1&w=1024&s=247f0cb0e34a4e33d155b1c1efa17b2a 1024w,https://ratio.imgix.net/https%3A%2F%2Fmakearchitects.wpengine.com%2Fwp-content%2Fuploads%2F2019%2F06%2FRopemaker-model-1.jpg?auto=format&crop=center&fit=crop&h=1400&ixlib=php-1.2.1&w=1400&s=cc84c4deba3300742399f2ee79bdfcbb 1400w,https://ratio.imgix.net/https%3A%2F%2Fmakearchitects.wpengine.com%2Fwp-content%2Fuploads%2F2019%2F06%2FRopemaker-model-1.jpg?auto=format&crop=center&fit=crop&h=1600&ixlib=php-1.2.1&w=1600&s=f1b4ed2e6347cba130c95497f0643d40 1600w,https://ratio.imgix.net/https%3A%2F%2Fmakearchitects.wpengine.com%2Fwp-content%2Fuploads%2F2019%2F06%2FRopemaker-model-1.jpg?auto=format&crop=center&fit=crop&h=1920&ixlib=php-1.2.1&w=1920&s=8bc6a5f1554a56a45d9d5bf70f184827 1920w"
+                        data-src-ie="https://ratio.imgix.net/https%3A%2F%2Fmakearchitects.wpengine.com%2Fwp-content%2Fuploads%2F2019%2F06%2FRopemaker-model-1.jpg?auto=format&crop=center&fit=crop&h=1400&ixlib=php-1.2.1&w=1400&s=cc84c4deba3300742399f2ee79bdfcbb"
+                        alt="#"
+                        sizes="(min-width: 992px) 33vw, 1px">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- single letter panel -->
+                <div class="c-projects-list-side-panel__centered c-projects-list-side-panel__centered js-az-panel-left" data-panel-id="letter">
+                  <div class="c-projects-list-side-panel__centered__letter c-projects-list-side-panel__centered__letter--single js-az-panel-big-letter"></div>
+                </div>
+
+                <!-- AZ panel -->
+                <div class="c-projects-list-side-panel__centered js-az-panel-left " data-panel-id="az">
+                  <div class="c-projects-list-side-panel__centered__letter c-projects-list-side-panel__centered__letter--a">A</div>
+                  <div class="c-projects-list-side-panel__centered__letter c-projects-list-side-panel__centered__letter--z">Z</div>
+                </div>
+
+                <!-- Project name panel -->
+                <div class="c-projects-list-side-panel__centered js-az-panel-left " data-panel-id="project-name">
+                  <div class="c-projects-list-side-panel__centered__letter c-projects-list-side-panel__centered__letter--project"></div>
+                  <div class="c-projects-list-side-panel__current-project js-az-panel-current-item">
+                    Current                    
+                  </div>
+                </div>
+              </div>
+
+              <div class="c-projects-list-side-panel__right c-projects-list-side-panel__right--half">
+                <div class="c-projects-list-side-panel__right__wrapper">
+                  <div class="c-projects-list-side-panel__right__list c-projects-list-side-panel__right__list--not-trimmed js-az-side-panel-right" id="az-categories">
+                    <div class="c-projects-list-side-panel__right__list__inner s-margin">
+                      <div class="c-projects-list-side-panel__right__list__container js-az-panel-container-list-letter block" data-letter="2019">
+                        <div class="c-projects-list-side-panel__right__list__container__year">
+                          2019
+                        </div>
+                        <ul>
+                          <li>
+                            <a href="https://www.makearchitects.com/thinking/make-models-20-ropemaker-street-part-2/" class="js-az-side-panel-cover" data-project-id="7298"  data-categories="all">
+                              Make models: 20 Ropemaker Street, part 2
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://www.makearchitects.com/thinking/the-value-of-the-drawing/" class="js-az-side-panel-cover" data-project-id="7382"  data-categories="all">
+                              The Value of the Drawing
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://www.makearchitects.com/thinking/balance/" class="js-az-side-panel-cover" data-project-id="6944"  data-categories="all">
+                              Balance
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="c-projects-list-side-panel__right__list__container js-az-panel-container-list-letter block" data-letter="2018">
+                        <div class="c-projects-list-side-panel__right__list__container__year">
+                          2018
+                        </div>
+                        <ul>
+                          <li>
+                            <a href="https://www.makearchitects.com/thinking/my-time-with-the-bco/" class="js-az-side-panel-cover" data-project-id="5409"  data-categories="all">
+                              My time with the BCO
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://www.makearchitects.com/thinking/the-call-of-the-wild/" class="js-az-side-panel-cover" data-project-id="5055"  data-categories="all">
+                              The call of the wild
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://www.makearchitects.com/thinking/long-live-the-office/" class="js-az-side-panel-cover" data-project-id="6576"  data-categories="all">
+                              Long live the office
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://www.makearchitects.com/thinking/the-art-of-an-art-historian/" class="js-az-side-panel-cover" data-project-id="6087"  data-categories="all">
+                              The art of an art historian
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="c-projects-list-side-panel__right__list__container js-az-panel-container-list-letter block" data-letter="2017">
+                        <div class="c-projects-list-side-panel__right__list__container__year">
+                          2017
+                        </div>
+                        <ul>
+                          <li>
+                            <a href="https://www.makearchitects.com/thinking/lessons-future-office-design-from-asia-pacific/" class="js-az-side-panel-cover" data-project-id="2629"  data-categories="all">
+                              Lessons on future office design from Asia Pacific
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://www.makearchitects.com/thinking/the-human-office/" class="js-az-side-panel-cover" data-project-id="2736"  data-categories="all">
+                              The human office
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://www.makearchitects.com/thinking/drawing-made-architecture/" class="js-az-side-panel-cover" data-project-id="2653"  data-categories="all">
+                              How drawing made architecture
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://www.makearchitects.com/thinking/advocating-sustainable-facade-design/" class="js-az-side-panel-cover" data-project-id="1857"  data-categories="all">
+                              Advocating sustainable facade design
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="c-projects-list-side-panel__right__list__container js-az-panel-container-list-letter block" data-letter="2016">
+                        <div class="c-projects-list-side-panel__right__list__container__year">
+                          2016
+                        </div>
+                        <ul>
+                          <li>
+                            <a href="https://www.makearchitects.com/thinking/uk-employee-ownership-day-2016/" class="js-az-side-panel-cover" data-project-id="2755"  data-categories="all">
+                              UK Employee Ownership Day 2016
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://www.makearchitects.com/thinking/propertys-rising-stars-future-industry/" class="js-az-side-panel-cover" data-project-id="2745"  data-categories="all">
+                              Property’s rising stars on the future of the industry
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="c-projects-list-side-panel__right__list__container js-az-panel-container-list-letter block" data-letter="2015">
+                        <div class="c-projects-list-side-panel__right__list__container__year">2015</div>
+                        <ul>
+                          <li>
+                            <a href="https://www.makearchitects.com/thinking/greener-cities/" class="js-az-side-panel-cover" data-project-id="2799"  data-categories="all">
+                              Greener cities
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://www.makearchitects.com/thinking/future-architecture-alejandro-nieto/" class="js-az-side-panel-cover" data-project-id="2818"  data-categories="all">
+                              The future of architecture – Alejandro Nieto
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://www.makearchitects.com/thinking/future-architecture-gavin-mullan/" class="js-az-side-panel-cover" data-project-id="2808"  data-categories="all">
+                              The future of architecture – Gavin Mullan
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://www.makearchitects.com/thinking/unique-cities-questions-identity/" class="js-az-side-panel-cover" data-project-id="2782"  data-categories="all">
+                              Unique cities – questions of identity
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="c-projects-list-side-panel__right__list__container js-az-panel-container-list-letter block" data-letter="2014">
+                        <div class="c-projects-list-side-panel__right__list__container__year">2014</div>
+                        <ul>
+                          <li>
+                            <a href="https://www.makearchitects.com/thinking/future-architecture-matthew-bugg/" class="js-az-side-panel-cover" data-project-id="2992"  data-categories="all">
+                              The future of architecture – Matthew Bugg
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://www.makearchitects.com/thinking/future-architecture-jet-chu/" class="js-az-side-panel-cover" data-project-id="2998"  data-categories="all">
+                              The future of architecture – Jet Chu
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://www.makearchitects.com/thinking/future-architecture-robert-lunn/" class="js-az-side-panel-cover" data-project-id="2991"  data-categories="all">
+                              The future of architecture – Robert Lunn
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="c-projects-list-side-panel__right__list__container js-az-panel-container-list-letter block" data-letter="2013">
+                        <div class="c-projects-list-side-panel__right__list__container__year">
+                          2013
+                        </div>
+                        <ul>
+                          <li>
+                            <a href="https://www.makearchitects.com/thinking/designing-city-westminster/" class="js-az-side-panel-cover" data-project-id="2883"  data-categories="all">
+                              Designing in the City of Westminster
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://www.makearchitects.com/thinking/rolled-gold/" class="js-az-side-panel-cover" data-project-id="2900"  data-categories="all">
+                              Rolled gold
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://www.makearchitects.com/thinking/make-fine-suit/" class="js-az-side-panel-cover" data-project-id="2896"  data-categories="all">
+                              How to make a fine suit
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://www.makearchitects.com/thinking/responsible-sourcing-starts-design/" class="js-az-side-panel-cover" data-project-id="2876"  data-categories="all">
+                              Responsible sourcing starts with design
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="c-projects-list-side-panel__right__list__container js-az-panel-container-list-letter block" data-letter="2012">
+                        <div class="c-projects-list-side-panel__right__list__container__year">
+                          2012
+                        </div>
+                        <ul>
+                          <li>
+                            <a href="https://www.makearchitects.com/thinking/judos-big-fight/" class="js-az-side-panel-cover" data-project-id="2909"  data-categories="all">
+                              &#8217;s big fight
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://www.makearchitects.com/thinking/electricity-pylon-competition/" class="js-az-side-panel-cover" data-project-id="2916"  data-categories="all">
+                              Make models: electricity pylon competition
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://www.makearchitects.com/thinking/just-a-game/" class="js-az-side-panel-cover" data-project-id="2903"  data-categories="all">
+                              Just a game?
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://www.makearchitects.com/thinking/hand-hand-combat/" class="js-az-side-panel-cover" data-project-id="2912"  data-categories="all">
+                              Hand-to-hand combat
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <span class="[ project-list ]" data-open-drawer="#project-alphabet">
+          <span class="[ project-nav__btn ] [ ui-btn ui-btn--semi ]">
+            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+              <defs>
+                <style>.cls-3{opacity:0}.cls-2{fill:#fff}</style>
+              </defs>
+              <title>list</title>
+              <circle class="cls-3" cx="20" cy="20" r="20"/>
+              <path class="cls-2" d="M18 13h9v2h-9zM18 25h9v2h-9zM13 13h2v2h-2zM13 25h2v2h-2zM18 19h9v2h-9zM13 19h2v2h-2z"/>
+            </svg>
+          </span>
+          <span class="project-nav__label">Список статей</span>
+        </span>
+
+        <section class="page-title page-title--visible-on-mobile-only page-title--double-bar-over-section">
+          <div class="grid__container">
+          <div class="grid__row">
+            <h1 class="page-title__title">
+              Thinking        
+            </h1>
+          </div>
+        </section>
+
+        <section class="irregular-grid js-projects-grid">
+          <div class="grid__container mobile-container">
+            <div class="grid__row items">
+              <div class="c-box-big js-projects-filters-project dark" data-sector="">
+                <div class="image-wrapper">
+                  <a href="news-article.html">
+                    <div class="lazy-container  [ image ]" style="padding-bottom: 66.6684026874%;">
+                      <img
+                        data-srcset="https://ratio.imgix.net/https%3A%2F%2Fmakearchitects.wpengine.com%2Fwp-content%2Fuploads%2F2019%2F07%2FSydney-Opera-House-%C2%A9-Larry-Koester.jpg?auto=format&crop=center&fit=crop&h=140&ixlib=php-1.2.1&w=210&s=68e4bfff5f59d99dc11a8ad37ffd2edc 210w,https://ratio.imgix.net/https%3A%2F%2Fmakearchitects.wpengine.com%2Fwp-content%2Fuploads%2F2019%2F07%2FSydney-Opera-House-%C2%A9-Larry-Koester.jpg?auto=format&crop=center&fit=crop&h=280&ixlib=php-1.2.1&w=420&s=6f9a3763f269833f0e181758cc770420 420w,https://ratio.imgix.net/https%3A%2F%2Fmakearchitects.wpengine.com%2Fwp-content%2Fuploads%2F2019%2F07%2FSydney-Opera-House-%C2%A9-Larry-Koester.jpg?auto=format&crop=center&fit=crop&h=512&ixlib=php-1.2.1&w=768&s=258155707557582c6c6b0058fd1fb7ba 768w,https://ratio.imgix.net/https%3A%2F%2Fmakearchitects.wpengine.com%2Fwp-content%2Fuploads%2F2019%2F07%2FSydney-Opera-House-%C2%A9-Larry-Koester.jpg?auto=format&crop=center&fit=crop&h=683&ixlib=php-1.2.1&w=1024&s=dcda08bfa7a2c91418385ccf15794546 1024w,https://ratio.imgix.net/https%3A%2F%2Fmakearchitects.wpengine.com%2Fwp-content%2Fuploads%2F2019%2F07%2FSydney-Opera-House-%C2%A9-Larry-Koester.jpg?auto=format&crop=center&fit=crop&h=933&ixlib=php-1.2.1&w=1400&s=beb48523f3bc158413612dfdba2a1b5f 1400w,https://ratio.imgix.net/https%3A%2F%2Fmakearchitects.wpengine.com%2Fwp-content%2Fuploads%2F2019%2F07%2FSydney-Opera-House-%C2%A9-Larry-Koester.jpg?auto=format&crop=center&fit=crop&h=1067&ixlib=php-1.2.1&w=1600&s=d5a1920cc4a2e1d5ef94fae1ae479b8b 1600w,https://ratio.imgix.net/https%3A%2F%2Fmakearchitects.wpengine.com%2Fwp-content%2Fuploads%2F2019%2F07%2FSydney-Opera-House-%C2%A9-Larry-Koester.jpg?auto=format&crop=center&fit=crop&h=1280&ixlib=php-1.2.1&w=1920&s=d4e1593228bab8edb04177c70e5151e0 1920w"
+                        data-src-ie="https://ratio.imgix.net/https%3A%2F%2Fmakearchitects.wpengine.com%2Fwp-content%2Fuploads%2F2019%2F07%2FSydney-Opera-House-%C2%A9-Larry-Koester.jpg?auto=format&crop=center&fit=crop&h=933&ixlib=php-1.2.1&w=1400&s=beb48523f3bc158413612dfdba2a1b5f"
+                        alt="#"
+                        sizes="(min-width: 992px) 35vw, 88vw">
+                    </div>
+                  </a>
+                </div>
+
+                <div class="c-box-big__date">
+                  <span class="label">Дата</span> <a href="news-article.html">17.07.2019</a>
+                </div>
+
+                <div class="c-box-big__title">
+                  <a href="news-article.html">
+                    Sydney born and razed
+                  </a>
+                </div>
+
+                <div class="c-box-big__author">
+                  <!-- <span class="label">By</span> -->
+                  <span class="value value--red c-tooltip" aria-label="Make partner">Александр Попескул</span>
+                </div>
+              </div>
+
+              <div class="c-box-big js-projects-filters-project dark" data-sector="">
+                <div class="image-wrapper">
+                  <a href="news-article.html">
+                    <div class="lazy-container  [ image ]" style="padding-bottom: 133.331597313%;">
+                      <img
+                        data-srcset="https://ratio.imgix.net/https%3A%2F%2Fmakearchitects.wpengine.com%2Fwp-content%2Fuploads%2F2019%2F05%2FWynyard-resized.jpg?auto=format&crop=center&fit=crop&h=280&ixlib=php-1.2.1&w=210&s=8e47eb4994068cf03f0fd65ada94a44b 210w,https://ratio.imgix.net/https%3A%2F%2Fmakearchitects.wpengine.com%2Fwp-content%2Fuploads%2F2019%2F05%2FWynyard-resized.jpg?auto=format&crop=center&fit=crop&h=560&ixlib=php-1.2.1&w=420&s=5a72f306ae52f2b27ba5af146ea9df72 420w,https://ratio.imgix.net/https%3A%2F%2Fmakearchitects.wpengine.com%2Fwp-content%2Fuploads%2F2019%2F05%2FWynyard-resized.jpg?auto=format&crop=center&fit=crop&h=1024&ixlib=php-1.2.1&w=768&s=ba08824611762741540fce5d548a05eb 768w,https://ratio.imgix.net/https%3A%2F%2Fmakearchitects.wpengine.com%2Fwp-content%2Fuploads%2F2019%2F05%2FWynyard-resized.jpg?auto=format&crop=center&fit=crop&h=1365&ixlib=php-1.2.1&w=1024&s=91c19860ee1ffe81c8f4aa8f31dd5de3 1024w,https://ratio.imgix.net/https%3A%2F%2Fmakearchitects.wpengine.com%2Fwp-content%2Fuploads%2F2019%2F05%2FWynyard-resized.jpg?auto=format&crop=center&fit=crop&h=1867&ixlib=php-1.2.1&w=1400&s=1714cc47688a9e5a5f7aa70e7488449f 1400w,https://ratio.imgix.net/https%3A%2F%2Fmakearchitects.wpengine.com%2Fwp-content%2Fuploads%2F2019%2F05%2FWynyard-resized.jpg?auto=format&crop=center&fit=crop&h=2133&ixlib=php-1.2.1&w=1600&s=d37c073fcd51895da4e1b8fa6b803c6a 1600w,https://ratio.imgix.net/https%3A%2F%2Fmakearchitects.wpengine.com%2Fwp-content%2Fuploads%2F2019%2F05%2FWynyard-resized.jpg?auto=format&crop=center&fit=crop&h=2560&ixlib=php-1.2.1&w=1920&s=3a71a4b91d68eecd938546d9ec8415a1 1920w"
+                        data-src-ie="https://ratio.imgix.net/https%3A%2F%2Fmakearchitects.wpengine.com%2Fwp-content%2Fuploads%2F2019%2F05%2FWynyard-resized.jpg?auto=format&crop=center&fit=crop&h=1867&ixlib=php-1.2.1&w=1400&s=1714cc47688a9e5a5f7aa70e7488449f"
+                        alt="#"
+                        sizes="(min-width: 992px) 35vw, 88vw">
+                    </div>
+                  </a>
+                </div>
+                <div class="c-box-big__date">
+                  <span class="label">Дата</span> <a href="news-article.html">10.07.2019</a>
+                </div>
+                <div class="c-box-big__title">
+                  <a href="#">Interview with Brookfield Properties&#8217; Stuart Harman</a>
+                </div>
+                <div class="c-box-big__author">
+                  <span class="label">By</span>
+                  <span class="value value--red c-tooltip" aria-label="Stuart Harman is head of design at Brookfield Properties and Jack Sallabank is founder of Future Places Studios">Jack Sallabank interviewing Stuart Harman</span>
+                </div>
+              </div>
+
+              <div class="c-box-big js-projects-filters-project dark" data-sector="">
+                <div class="image-wrapper">
+                  <a href="news-article.html">
+                    <div class="lazy-container  [ image ]" style="padding-bottom: 100%;">
+                      <img
+                        data-srcset="https://ratio.imgix.net/https%3A%2F%2Fmakearchitects.wpengine.com%2Fwp-content%2Fuploads%2F2019%2F07%2FKens-sketch_Make.jpg?auto=format&crop=center&fit=crop&h=210&ixlib=php-1.2.1&w=210&s=b4a4dc8b66923668d894250ef31c536b 210w,https://ratio.imgix.net/https%3A%2F%2Fmakearchitects.wpengine.com%2Fwp-content%2Fuploads%2F2019%2F07%2FKens-sketch_Make.jpg?auto=format&crop=center&fit=crop&h=420&ixlib=php-1.2.1&w=420&s=af5ded9fe56865fa24200ded0a8a3afe 420w,https://ratio.imgix.net/https%3A%2F%2Fmakearchitects.wpengine.com%2Fwp-content%2Fuploads%2F2019%2F07%2FKens-sketch_Make.jpg?auto=format&crop=center&fit=crop&h=768&ixlib=php-1.2.1&w=768&s=56381ac7987d470081721df06a71cce8 768w,https://ratio.imgix.net/https%3A%2F%2Fmakearchitects.wpengine.com%2Fwp-content%2Fuploads%2F2019%2F07%2FKens-sketch_Make.jpg?auto=format&crop=center&fit=crop&h=1024&ixlib=php-1.2.1&w=1024&s=66dacca63f758e83d2e8c222105eaeb4 1024w,https://ratio.imgix.net/https%3A%2F%2Fmakearchitects.wpengine.com%2Fwp-content%2Fuploads%2F2019%2F07%2FKens-sketch_Make.jpg?auto=format&crop=center&fit=crop&h=1400&ixlib=php-1.2.1&w=1400&s=8b9bd43c6099c8a943f3169b10f4fe2a 1400w,https://ratio.imgix.net/https%3A%2F%2Fmakearchitects.wpengine.com%2Fwp-content%2Fuploads%2F2019%2F07%2FKens-sketch_Make.jpg?auto=format&crop=center&fit=crop&h=1600&ixlib=php-1.2.1&w=1600&s=4adac02df4923da30e88691de08f335b 1600w,https://ratio.imgix.net/https%3A%2F%2Fmakearchitects.wpengine.com%2Fwp-content%2Fuploads%2F2019%2F07%2FKens-sketch_Make.jpg?auto=format&crop=center&fit=crop&h=1920&ixlib=php-1.2.1&w=1920&s=97914f29882834c70b502061b05fbdc7 1920w"
+                        data-src-ie="https://ratio.imgix.net/https%3A%2F%2Fmakearchitects.wpengine.com%2Fwp-content%2Fuploads%2F2019%2F07%2FKens-sketch_Make.jpg?auto=format&crop=center&fit=crop&h=1400&ixlib=php-1.2.1&w=1400&s=8b9bd43c6099c8a943f3169b10f4fe2a"
+                        alt="#"
+                        sizes="(min-width: 992px) 35vw, 88vw">
+                    </div>
+                  </a>
+                </div>
+                <div class="c-box-big__date">
+                  <span class="label">Дата</span> <a href="news-article.html">03.07.2019</a>
+                </div>
+                <div class="c-box-big__title">
+                  <a href="news-article.html">The Value of the Drawing</a>
+                </div>
+                <div class="c-box-big__author">
+                  <span class="label">By</span>
+                  <span class="value value--red c-tooltip" aria-label="Programme director for the World Architecture Festival and editorial director of Architects' Journal">Paul Finch</span>
+                </div>
+              </div>
+
+              <div class="c-box-big js-projects-filters-project dark" data-sector="">
+                <div class="image-wrapper">
+                  <a href="news-article.html">
+                    <div class="lazy-container  [ image ]" style="padding-bottom: 100%;">
+                      <img
+                        data-srcset="img/Jacob-Loftus-resized.jpg"
+                        data-src-ie="img/Jacob-Loftus-resized.jpg"
+                        alt="#"
+                        sizes="(min-width: 992px) 35vw, 88vw">
+                    </div>
+                  </a>
+                </div>
+
+                <div class="c-box-big__date">
+                  <span class="label">Дата</span> <a href="news-article.html">25.06.2019</a>
+                </div>
+
+                <div class="c-box-big__title">
+                  <a href="news-article.html">Interview with General Projects&#8217; Jacob Loftus</a>
+                </div>
+
+                <div class="c-box-big__author">
+                  <span class="label">By</span>
+                  <span class="value value--red c-tooltip" aria-label="Jacob Loftus is CEO of General Projects and Jack Sallabank is founder of Future Places Studio">
+                    Jack Sallabank interviewing Jacob Loftus
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid__container desktop-container"></div>
+
+          <div class="LoadMore">
+            Загрузить ещё        
+          </div>
+        </section>
+      </main>
+
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+  </div>
+
+  @@include('blocks/modal-search/modal-search.html')
+
+  @@include('blocks/modal-map/modal-map.html')
+
+  @@include('blocks/modal-photoswipe/modal-photoswipe.html')
+
+  @@include('_include/page_bottom.html')
+</body>
+</html>

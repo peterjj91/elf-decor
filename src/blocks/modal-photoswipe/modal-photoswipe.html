@@ -1,0 +1,124 @@
+<!-- pop-up photoswipe start -->
+<div class="c-drawer js-drawer" id="photoswipe-panel">
+  <div class="c-drawer__background"></div>
+  <div class=" c-drawer__wrapper js-drawer-content t-black">
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+    <div class="pswp js-photoswipe-gallery" tabindex="-1" role="dialog" aria-hidden="true">
+      <!-- Background of PhotoSwipe. 
+      It's a separate element as animating opacity is faster than rgba(). -->
+      <div class="pswp__bg"></div>
+      <!-- Slides wrapper with overflow:hidden. -->
+      <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+          PhotoSwipe keeps only 3 of them in the DOM to save memory.
+          Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui">
+          <div class="c-photoswipe-top-navigation">
+            <span class="c-photoswipe-top-navigation__button c-photoswipe-top-navigation__button--left js-close-drawer-hook" data-id="#photoswipe-panel">
+              <svg xmlns="http://www.w3.org/2000/svg" width="9.79" height="16" viewBox="0 0 9.79 16">
+                <title>left-2</title>
+                <g data-name="Layer 2">
+                  <path d="M3.56 8l6.23-6.23L8 0 1.77 6.23 0 8l1.77 1.77L8 16l1.77-1.77z" data-name="Layer 1" />
+                </g>
+              </svg>
+            </span>
+            <span class="c-photoswipe-top-navigation__button c-photoswipe-top-navigation__button--right" data-open-drawer="#photoswipe-gallery">
+              <span>Все фотографии</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                <title>small_grid</title>
+                <g data-name="Layer 2">
+                  <g data-name="Layer 1" fill="#fff">
+                    <path d="M0 0h5v5H0zM9 9h5v5H9zM9 0h5v5H9zM0 9h5v5H0z" />
+                  </g>
+                </g>
+              </svg>
+            </span>
+          </div>
+          <div class="c-photoswipe-cursor cursor-left"></div>
+          <div class="c-photoswipe-cursor cursor-right"></div>
+          <div class="pswp__top-bar">
+            <!--  Controls are self-explanatory. Order can be changed. -->
+            <div class="pswp__counter"></div>
+            <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+            <!-- element will get class pswp__preloader--active when preloader is running -->
+            <div class="pswp__preloader">
+              <div class="pswp__preloader__icn">
+                <div class="pswp__preloader__cut">
+                  <div class="pswp__preloader__donut"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pswp__bottom-bar">
+            <button class="pswp__button pswp__button--zoom" title="Zoom in/out">
+              <span>Увеличить</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                <title>plus_small</title>
+                <g data-name="Layer 2">
+                  <path fill="#fff" d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6z" data-name="Layer 1" />
+                </g>
+              </svg>
+            </button>
+            <a href="#0" class="pswp__button pswp__button--download" title="download" download>
+              <span>Скачать</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                <title>Скачать</title>
+                <g data-name="Layer 2">
+                  <g data-name="Layer 1">
+                    <path d="M0 12h14v2H0zM7 7.78l1.41-1.42 4.95-4.95L11.95 0 7 4.95 2.05 0 .64 1.41l4.95 4.95L7 7.78z" />
+                  </g>
+                </g>
+              </svg>
+            </a>
+          </div>
+          <div class="pswp__caption">
+            <div class="pswp__caption__center"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="c-drawer js-drawer" id="photoswipe-gallery">
+      <div class="c-drawer__background"></div>
+      <div class=" c-drawer__wrapper js-drawer-content t-white">
+        <div class="c-photoswipe-grid-gallery js-photoswipe-grid-gallery">
+          <div class="c-photoswipe-grid-gallery__category-tags-wrapper">
+            <div class="c-photoswipe-back js-close-drawer-hook" data-id="#photoswipe-gallery">
+              <svg xmlns="http://www.w3.org/2000/svg" width="9.79" height="16" viewBox="0 0 9.79 16">
+                <title>left-2</title>
+                <g data-name="Layer 2">
+                  <path d="M3.56 8l6.23-6.23L8 0 1.77 6.23 0 8l1.77 1.77L8 16l1.77-1.77z" data-name="Layer 1" />
+                </g>
+              </svg>
+            </div>
+            <div class="c-photoswipe-grid-gallery__category-tag js-photoswipe-tag is-selected is-hidden" data-photoswipe-tag="All">Все фотографии</div>
+            <div class="c-photoswipe-grid-gallery__category-tag js-photoswipe-tag is-hidden" data-photoswipe-tag="Drawings">Drawings</div>
+            <span class="pswp__button pswp__button--grid js-close-drawer-hook" title="Toggle grid view" data-id="#photoswipe-gallery">
+              <span>Фотография</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                <title>big_grid</title>
+                <g data-name="Layer 2">
+                  <path d="M0 0h14v14H0z" data-name="Layer 1" />
+                </g>
+              </svg>
+            </span>
+          </div>
+
+          <div class="c-photoswipe-grid-gallery__category-grid">
+            <div class="row js-photoswipe-grid is-selected" data-photoswipe-grid="All"></div>
+          </div>
+          <div class="c-photoswipe-grid-gallery__category-grid">
+            <div class="row js-photoswipe-grid" data-photoswipe-grid="Drawings"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- pop-up photoswipe end -->

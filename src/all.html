@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Все страницы</title>
+  @@include('_include/page_head.html')
+</head>
+<body class="no-full-bleed pll-en-gb">
+  <div id="app" class="site">
+    @@include('blocks/cookie-message/cookie-message.html')
+
+    <div class="main-body no-full-bleed pll-en-gb">
+      <main class="l-main">
+        <header class="[ l-header l-header--int ] headroom">
+          @@include('blocks/page-header/page-header.html')
+        </header>
+
+        <article class="c-content-modules c-content-modules--studio" id="studio-body">
+          <section class="[ grid__container ] m-heading-content">
+            <div class="container">
+              
+              <ul>
+                <li>
+                  <a href="index.html">Главная</a>
+                </li>
+              </ul>
+
+            </div>
+          </section>
+        </article>
+      </main>
+
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+  </div>
+
+  <!-- @@include('blocks/video-player/video-player.html') -->
+
+  @@include('blocks/modal-search/modal-search.html')
+
+  <!-- @@include('blocks/modal-map/modal-map.html') -->
+
+  <!-- @@include('blocks/modal-photoswipe/modal-photoswipe.html') -->
+
+  @@include('_include/page_bottom.html')
+</body>
+</html>
