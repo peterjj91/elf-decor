@@ -1,0 +1,65 @@
+/*  ==========================================================================
+    LoadMore
+    ========================================================================== */
+    
+.LoadMore {
+  color: #8d8d8d;
+  -webkit-animation: pulse 3s infinite ease-in-out;
+          animation: pulse 3s infinite ease-in-out;
+  margin-top: calc(0.125 * 100vw + -12.5px);
+  margin-bottom: calc(0.04167 * 100vw + 9.16667px);
+  text-align: center;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+
+@media (max-width: 739px) {
+  .LoadMore {
+    margin-top: 80px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .LoadMore {
+    margin-top: 200px;
+  }
+}
+
+@media (max-width: 739px) {
+  .LoadMore {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .LoadMore {
+    margin-bottom: 80px;
+  }
+}
+
+.LoadMore--dark {
+  color: white;
+}
+

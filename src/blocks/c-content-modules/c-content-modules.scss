@@ -1,0 +1,85 @@
+/*  ==========================================================================
+    c-content-modules
+    ========================================================================== */
+
+.c-content-modules {
+  position: relative;
+}
+
+.c-content-modules section + section {
+  padding-top: calc(0.125 * 100vw + -12.5px);
+}
+
+@media (max-width: 739px) {
+  .c-content-modules section + section {
+    padding-top: 80px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .c-content-modules section + section {
+    padding-top: 200px;
+  }
+}
+
+.c-content-modules section + section.m-heading-content,
+.c-content-modules section + section.m-text,
+.c-content-modules section + section.m-lede-text {
+  padding-top: calc(0.04167 * 100vw + 9.16667px);
+}
+
+@media (max-width: 739px) {
+  .c-content-modules section + section.m-heading-content,
+  .c-content-modules section + section.m-text,
+  .c-content-modules section + section.m-lede-text {
+    padding-top: 40px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .c-content-modules section + section.m-heading-content,
+  .c-content-modules section + section.m-text,
+  .c-content-modules section + section.m-lede-text {
+    padding-top: 80px;
+  }
+}
+
+.c-content-modules section:last-child {
+  padding-bottom: calc(0.04167 * 100vw + 29.16667px);
+}
+
+@media (max-width: 739px) {
+  .c-content-modules section:last-child {
+    padding-bottom: 60px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .c-content-modules section:last-child {
+    padding-bottom: 100px;
+  }
+}
+
+.c-content-modules ul,
+.c-content-modules ol {
+  padding-left: 0;
+}
+
+.c-content-modules--studio {
+  z-index: 3;
+  background: white;
+  padding-top: calc(0.04167 * 100vw + 29.16667px);
+}
+
+@media (max-width: 739px) {
+  .c-content-modules--studio {
+    padding-top: 60px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .c-content-modules--studio {
+    padding-top: 100px;
+  }
+}
+

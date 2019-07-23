@@ -1,0 +1,46 @@
+/*  ==========================================================================
+    Page Content
+    ========================================================================== */
+/*
+    Block
+    ========================================================================== */
+.page-content {
+  font-size: 22px;
+  font-size: rem-calc(22);
+}
+
+@media screen and (max-width: 580px) {
+  .page-content {
+    font-size: 18px;
+    font-size: rem-calc(18);
+  }
+}
+
+/*
+    Elements
+    ========================================================================== */
+.page-content h2,
+.page-content h3,
+.page-content h4 {
+  font-size: 22px;
+  font-size: rem-calc(22);
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 580px) {
+  .page-content h2,
+  .page-content h3,
+  .page-content h4 {
+    font-size: 18px;
+    font-size: rem-calc(18);
+  }
+}
+
+.page-content a {
+  color: #ed1c24;
+}
+
+.page-content a:hover {
+  color: #ed1c24;
+  opacity: .7;
+}

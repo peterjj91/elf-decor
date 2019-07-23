@@ -1,0 +1,50 @@
+/*  ==========================================================================
+    c-project-filter-mobile
+    ========================================================================== */
+    
+.c-project-filter-mobile {
+  padding-bottom: 15px;
+}
+
+.c-project-filter-mobile label {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.c-project-filter-mobile input {
+  border: 0 !important;
+  clip: rect(0 0 0 0) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+}
+
+.c-project-filter-mobile input:checked ~ .c-project-filter-mobile__indicator, .c-project-filter-mobile input.is-selected ~ .c-project-filter-mobile__indicator {
+  background-color: #000;
+}
+
+.c-project-filter-mobile.is-disabled {
+  display: none;
+}
+
+.c-project-filter-mobile:last-of-type {
+  padding-bottom: 0;
+}
+
+.c-project-filter-mobile__indicator {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid #000;
+}
+

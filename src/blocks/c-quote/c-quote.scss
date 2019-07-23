@@ -1,0 +1,54 @@
+/*  ==========================================================================
+    Quote
+    ========================================================================== */
+/*
+    Block
+    ========================================================================== */
+.c-quote,
+blockquote p {
+  quotes: "\201C" "\201D";
+  position: relative;
+  margin: 0;
+}
+
+/*
+    Elements
+    ========================================================================== */
+.c-quote:before,
+blockquote p:before {
+  display: block;
+  position: absolute;
+  content: open-quote;
+  top: 0;
+  left: -16px;
+}
+
+@media screen and (max-width: 1024px) {
+  .c-quote:before,
+  blockquote p:before {
+    left: -10px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .c-quote:before,
+  blockquote p:before {
+    left: -8px;
+  }
+}
+
+.c-quote:after,
+blockquote p:after {
+  content: close-quote;
+}
+
+.c-quote__cite {
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 580px) {
+  .c-quote__cite {
+    font-size: 16px;
+    font-size: rem-calc(16);
+  }
+}

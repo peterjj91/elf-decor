@@ -1,0 +1,98 @@
+/*  ==========================================================================
+    Masonry grid
+    ========================================================================== */
+/*
+    Block
+    ========================================================================== */
+.masonry-grid {
+  overflow: hidden;
+}
+
+/*
+    Elements
+    ========================================================================== */
+.masonry-grid__item {
+  float: left;
+  margin-bottom: 150px;
+}
+
+.masonry-grid__item,
+.grid-sizer {
+  width: calc(99.9% * 12/24);
+}
+
+.masonry-grid__item:nth-child(1n),
+.grid-sizer:nth-child(1n) {
+  float: left;
+  margin-right: 0;
+  clear: none;
+}
+
+.masonry-grid__item:last-child,
+.grid-sizer:last-child {
+  margin-right: 0;
+}
+
+.masonry-grid__item:nth-child(0n),
+.grid-sizer:nth-child(0n) {
+  float: right;
+}
+
+.masonry-grid__item .lazy-container {
+  margin-bottom: 35px;
+}
+
+/*
+    Modifiers
+    ========================================================================== */
+.masonry-grid__item--large {
+  width: calc(99.9% * 18/24);
+}
+.masonry-grid__item--large:nth-child(1n) {
+  float: left;
+  margin-right: 0;
+  clear: none;
+}
+.masonry-grid__item--large:last-child {
+  margin-right: 0;
+}
+.masonry-grid__item--large:nth-child(0n) {
+  float: right;
+}
+
+.masonry-grid__item--medium {
+  width: calc(99.9% * 8/24);
+}
+
+.masonry-grid__item--medium:nth-child(1n) {
+  float: left;
+  margin-right: 0;
+  clear: none;
+}
+
+.masonry-grid__item--medium:last-child {
+  margin-right: 0;
+}
+
+.masonry-grid__item--medium:nth-child(0n) {
+  float: right;
+}
+
+.masonry-grid__item--small {
+  width: calc(99.9% * 6/24);
+}
+
+.masonry-grid__item--small:nth-child(1n) {
+  float: left;
+  margin-right: 0;
+  clear: none;
+}
+
+.masonry-grid__item--small:last-child {
+  margin-right: 0;
+}
+
+.masonry-grid__item--small:nth-child(0n) {
+  float: right;
+}
+

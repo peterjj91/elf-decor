@@ -1,0 +1,168 @@
+/*  ==========================================================================
+    Title
+    ========================================================================== */
+.title--xxl {
+  font-size: 120px;
+  font-size: rem-calc(120);
+  line-height: 1;
+}
+
+@media screen and (max-width: 1374px) {
+  .title--xxl {
+    font-size: 100px;
+    font-size: rem-calc(100);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .title--xxl {
+    font-size: 80px;
+    font-size: rem-calc(80);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title--xxl {
+    font-size: 60px;
+    font-size: rem-calc(60);
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .title--xxl {
+    font-size: 40px;
+    font-size: rem-calc(40);
+  }
+}
+
+.title--xl {
+  font-size: 75px;
+  font-size: rem-calc(75);
+  line-height: 1;
+}
+
+.title--l {
+  font-size: 65px;
+  font-size: rem-calc(65);
+  line-height: 1.1;
+}
+
+@media screen and (max-width: 768px) {
+  .title--l {
+    font-size: 50px;
+    font-size: rem-calc(50);
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .title--l {
+    font-size: 40px;
+    font-size: rem-calc(40);
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .title--l {
+    font-size: 30px;
+    font-size: rem-calc(30);
+  }
+}
+
+.title--ml {
+  font-size: 55px;
+  font-size: rem-calc(55);
+  line-height: 1.1;
+}
+
+@media screen and (max-width: 768px) {
+  .title--ml {
+    font-size: 50px;
+    font-size: rem-calc(50);
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .title--ml {
+    font-size: 40px;
+    font-size: rem-calc(40);
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .title--ml {
+    font-size: 30px;
+    font-size: rem-calc(30);
+  }
+}
+
+.title--m {
+  font-size: 50px;
+  font-size: rem-calc(50);
+}
+
+@media screen and (max-width: 1024px) {
+  .title--m {
+    font-size: 44px;
+    font-size: rem-calc(44);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title--m {
+    font-size: 40px;
+    font-size: rem-calc(40);
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .title--m {
+    font-size: 24px;
+    font-size: rem-calc(24);
+  }
+}
+
+.title--s {
+  font-size: 45px;
+  font-size: rem-calc(45);
+}
+
+@media screen and (max-width: 580px) {
+  .title--s {
+    font-size: 30px;
+    font-size: rem-calc(30);
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .title--s {
+    font-size: 22px;
+    font-size: rem-calc(22);
+  }
+}
+
+.title--xs {
+  font-size: 40px;
+  font-size: rem-calc(40);
+  line-height: 1.15;
+}
+
+@media screen and (max-width: 1024px) {
+  .title--xs {
+    font-size: 36px;
+    font-size: rem-calc(36);
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .title--xs {
+    font-size: 30px;
+    font-size: rem-calc(30);
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .title--xs {
+    font-size: 26px;
+    font-size: rem-calc(26);
+  }
+}

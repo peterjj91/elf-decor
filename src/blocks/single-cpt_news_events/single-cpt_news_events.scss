@@ -1,0 +1,32 @@
+/*  ==========================================================================
+    single-cpt_news_events
+    ========================================================================== */
+    
+body.single-cpt_news_events main .irregular-grid {
+  padding-top: calc(0.05208 * 100vw + 11.45833px);
+  padding-bottom: calc(0.05208 * 100vw + 11.45833px);
+}
+
+@media (max-width: 739px) {
+  body.single-cpt_news_events main .irregular-grid {
+    padding-top: 50px;
+  }
+}
+
+@media (min-width: 1700px) {
+  body.single-cpt_news_events main .irregular-grid {
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 739px) {
+  body.single-cpt_news_events main .irregular-grid {
+    padding-bottom: 50px;
+  }
+}
+
+@media (min-width: 1700px) {
+  body.single-cpt_news_events main .irregular-grid {
+    padding-bottom: 100px;
+  }
+}

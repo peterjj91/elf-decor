@@ -1,0 +1,356 @@
+
+/*  ==========================================================================
+    Module
+    ========================================================================== */
+/*
+    Block
+    ========================================================================== */
+/*
+    Elements
+    ========================================================================== */
+.c-module__col .c-module--text:last-child {
+  margin-bottom: 80px;
+}
+
+/*
+    Modifiers
+    ========================================================================== */
+.c-module--text {
+  font-size: 27px;
+  font-size: rem-calc(27);
+  line-height: 1.2;
+  position: relative;
+  z-index: 3;
+}
+
+@media screen and (max-width: 768px) {
+  .c-module--text {
+    font-size: 22px;
+    font-size: rem-calc(22);
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .c-module--text {
+    font-size: 18px;
+    font-size: rem-calc(18);
+  }
+}
+
+.c-module--text p:last-child {
+  margin-bottom: 0;
+}
+
+.c-module--text a {
+  color: #ed1c24;
+}
+
+.c-module--text a:hover {
+  color: #ed1c24;
+  opacity: .7;
+}
+
+.c-module--text ul {
+  margin-bottom: 35px;
+  padding-left: 0;
+}
+
+.c-module--text li {
+  list-style: none;
+  padding-left: 40px;
+  position: relative;
+}
+
+@media screen and (max-width: 580px) {
+  .c-module--text li {
+    padding-left: 24px;
+  }
+}
+
+.c-module--text li:before {
+  content: '\2014';
+  display: inline-block;
+  margin-right: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+@media screen and (max-width: 580px) {
+  .c-module--text li:before {
+    margin-right: 10px;
+  }
+}
+
+.c-module--text blockquote {
+  font-size: 40px;
+  font-size: rem-calc(40);
+  line-height: 1.15;
+}
+
+.c-module--text-overview p:last-child {
+  margin-bottom: 35px;
+}
+
+.c-module--text-small {
+  font-size: 22px;
+  font-size: rem-calc(22);
+}
+
+@media screen and (max-width: 580px) {
+  .c-module--text-small {
+    font-size: 18px;
+    font-size: rem-calc(18);
+  }
+}
+
+.c-module--text-flush p,
+.c-module--text-flush li {
+  margin-bottom: 0;
+}
+
+.c-module--text-margin-s {
+  margin-bottom: 35px;
+}
+
+@media screen and (max-width: 580px) {
+  .c-module--text-margin-s {
+    margin-bottom: 0;
+  }
+}
+
+.c-module--text-margin-m {
+  margin-bottom: 80px;
+}
+
+@media screen and (max-width: 580px) {
+  .c-module--text-margin-m {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .c-module--text-margin-m {
+    margin-bottom: 30px;
+  }
+}
+
+.c-module--video,
+.c-module--image {
+  width: 100%;
+  display: block;
+  margin-bottom: 80px;
+  overflow: hidden;
+  position: relative;
+}
+
+@media screen and (max-width: 580px) {
+  .c-module--video,
+  .c-module--image {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .c-module--video,
+  .c-module--image {
+    margin-bottom: 30px;
+  }
+}
+
+.c-module--video-flush {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .c-module--image-flush-bp-tl {
+    margin-bottom: 0;
+  }
+}
+
+.c-module--margin-bottom-xl {
+  margin-bottom: 150px;
+}
+
+@media screen and (max-width: 1024px) {
+  .c-module--margin-bottom-xl {
+    margin-bottom: 80px;
+  }
+}
+
+.c-module--caption {
+  font-size: 18px;
+  font-size: rem-calc(18);
+  padding-top: 25px;
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 768px) {
+  .c-module--caption {
+    font-size: 16px;
+    font-size: rem-calc(16);
+    padding-top: 30px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .c-module--caption {
+    font-size: 14px;
+    font-size: rem-calc(14);
+    padding-top: 20px;
+  }
+}
+
+.c-module--caption p:last-child {
+  margin-bottom: 0;
+}
+
+.c-module--caption-reg {
+  font-size: 22px;
+  font-size: rem-calc(22);
+  padding-top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .c-module--caption-reg {
+    font-size: 18px;
+    font-size: rem-calc(18);
+    padding-top: 30px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .c-module--caption-reg {
+    font-size: 14px;
+    font-size: rem-calc(14);
+    padding-top: 20px;
+  }
+}
+
+.c-module--lede {
+  font-size: 40px;
+  font-size: rem-calc(40);
+  line-height: 1.2;
+  position: relative;
+  z-index: 2;
+}
+
+@media screen and (max-width: 768px) {
+  .c-module--lede {
+    font-size: 30px;
+    font-size: rem-calc(30);
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .c-module--lede {
+    font-size: 26px;
+    font-size: rem-calc(26);
+  }
+}
+
+.c-module--lede p:last-child {
+  margin-bottom: 0;
+}
+
+.c-module--lede__bg-img {
+  position: absolute;
+  width: 60vw;
+  top: 0;
+  right: 3%;
+  opacity: 0.4;
+  z-index: -1;
+  top: calc(0.05208 * 100vw + -38.54167px);
+}
+
+@media (max-width: 739px) {
+  .c-module--lede__bg-img {
+    top: 0px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .c-module--lede__bg-img {
+    top: 50px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .c-module--lede__bg-img {
+    width: 100vw;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .c-module--lede__bg-img {
+    display: none;
+  }
+}
+
+.c-module--details {
+  margin-bottom: 50px;
+}
+
+.c-module--quote p {
+  font-size: 40px;
+  font-size: rem-calc(40);
+  line-height: 1.15;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1374px) {
+  .c-module--quote p {
+    font-size: 30px;
+    font-size: rem-calc(30);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .c-module--quote p {
+    font-size: 22px;
+    font-size: rem-calc(22);
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .c-module--quote p {
+    font-size: 18px;
+    font-size: rem-calc(18);
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .c-module--adjacent-images .no-caption:first-child {
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .c-module--adjacent-images .no-caption:first-child {
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .c-module--adjacent-images .no-caption:first-child {
+    margin-bottom: 50px;
+  }
+}
+
+.c-module--padding-top-m {
+  padding-top: 80px;
+}
+
+.c-module--padding-top-s {
+  padding-top: 50px;
+}
+
+.c-module--last {
+  margin-bottom: 0;
+}
+
+.c-module--iframe iframe {
+  height: 90vh !important;
+}
+

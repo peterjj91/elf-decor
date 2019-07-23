@@ -1,0 +1,167 @@
+/*  ==========================================================================
+    Header
+    ========================================================================== */
+/*
+    Block
+    ========================================================================== */
+.l-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+  background-color: transparent;
+  max-height: 84px;
+  height: 84px;
+}
+
+@media screen and (max-width: 1374px) {
+  .l-header {
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .l-header {
+    height: 70px;
+  }
+}
+
+/*
+    Elements
+    ========================================================================== */
+.l-header__col {
+  position: relative;
+  width: 50%;
+  width: calc(99.9% * 1/2 - (35px - 35px * 1/2));
+  display: inline-block;
+  float: left;
+}
+.l-header__col:nth-child(1n) {
+  float: left;
+  margin-right: 35px;
+  clear: none;
+}
+.l-header__col:last-child {
+  margin-right: 0;
+}
+.l-header__col:nth-child(2n) {
+  margin-right: 0;
+  float: right;
+}
+.l-header__col:nth-child(2n + 1) {
+  clear: both;
+}
+
+.l-header__logo {
+  position: absolute;
+  top: 24px;
+  left: 0;
+  z-index: 3;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 1024px) {
+  .l-header__logo {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 1374px) {
+  .l-header__logo {
+    top: 20px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .l-header__logo {
+    top: 17px;
+  }
+}
+
+.l-header__search {
+  position: absolute;
+  display: block;
+  right: 0;
+  top: 35px;
+  z-index: 3;
+  -webkit-transition: opacity 0.1s linear;
+  transition: opacity 0.1s linear;
+  cursor: pointer;
+}
+
+.l-header__search svg {
+  -webkit-transition: fill 0.2s ease-in-out;
+  transition: fill 0.2s ease-in-out;
+}
+
+.l-header__search:hover {
+  opacity: .7;
+}
+
+@media screen and (max-width: 1374px) {
+  .l-header__search {
+    display: none;
+  }
+}
+
+.l-header__nav-icon {
+  display: none;
+  width: calc( 30px + 14%);
+  padding: 0 7%;
+  height: 80px;
+  line-height: 86px;
+  text-align: center;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1374px) {
+  .l-header__nav-icon {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 739px) {
+  .l-header__nav-icon {
+    width: calc( 30px + 10%);
+    padding: 0 5%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .l-header__nav-icon {
+    height: 70px;
+    line-height: 74px;
+    width: calc( 30px + 10%);
+    padding: 0 5%;
+  }
+}
+
+.l-header__nav-icon svg {
+  fill: #000;
+  -webkit-transition: fill 0.2s ease-in-out;
+  transition: fill 0.2s ease-in-out;
+}
+
+.l-header__nav-icon.active svg {
+  fill: #000;
+}
+
+/*
+    Modifiers
+    ========================================================================== */
+.l-header--invert .l-header__logo svg {
+  fill: #fff;
+}
+
+.l-header--invert .l-nav--main a {
+  color: green;
+}
+

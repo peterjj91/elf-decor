@@ -1,0 +1,39 @@
+/*  ==========================================================================
+    c-categories
+    ========================================================================== */
+    
+.c-categories__menu__item {
+  color: #8d8d8d;
+}
+
+.c-categories__menu__item:hover {
+  color: #fff;
+}
+
+.c-categories__menu__item:focus {
+  outline: none;
+}
+
+.c-categories__menu__item.is-selected {
+  color: #fff;
+}
+
+@media (max-width: 789px) {
+  .c-categories__menu__item.is-selected {
+    color: #000;
+  }
+}
+
+.c-categories__menu__item + .c-categories__menu__item:before {
+  content: '/';
+  color: #8d8d8d;
+  display: inline-block;
+  margin: 0 4px;
+}
+
+@media (max-width: 789px) {
+  .c-categories__menu__item + .c-categories__menu__item:before {
+    color: #8d8d8d;
+  }
+}
+

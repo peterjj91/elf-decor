@@ -1,0 +1,297 @@
+/*  ==========================================================================
+    blog
+    ========================================================================== */
+    
+body.blog main .filters-desktop, body.archive.tag main .filters-desktop {
+  pointer-events: auto;
+}
+
+body.blog main .irregular-grid, body.archive.tag main .irregular-grid {
+  padding-bottom: calc(0.05208 * 100vw + 11.45833px);
+}
+
+@media (max-width: 739px) {
+  body.blog main .irregular-grid, body.archive.tag main .irregular-grid {
+    padding-bottom: 50px;
+  }
+}
+
+@media (min-width: 1700px) {
+  body.blog main .irregular-grid, body.archive.tag main .irregular-grid {
+    padding-bottom: 100px;
+  }
+}
+
+@media (min-width: 790px) {
+  body.blog main .irregular-grid, body.archive.tag main .irregular-grid {
+    padding-top: calc(0.02083 * 100vw + 164.58333px);
+  }
+}
+
+@media (min-width: 790px) and (max-width: 739px) {
+  body.blog main .irregular-grid, body.archive.tag main .irregular-grid {
+    padding-top: 180px;
+  }
+}
+
+@media (min-width: 790px) and (min-width: 1700px) {
+  body.blog main .irregular-grid, body.archive.tag main .irregular-grid {
+    padding-top: 200px;
+  }
+}
+
+body.blog main .page-thinking__filter-clear, body.archive.tag main .page-thinking__filter-clear {
+  display: inline-block;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity .1s, visibility .1s;
+  transition: opacity .1s, visibility .1s;
+}
+
+body.blog main .page-thinking__filter-clear.visible, body.archive.tag main .page-thinking__filter-clear.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+body.blog main .page-thinking__filter-clear svg, body.archive.tag main .page-thinking__filter-clear svg {
+  width: 22px;
+  height: 22px;
+  position: relative;
+  top: 4px;
+  left: 6px;
+  cursor: pointer;
+}
+
+body.blog main .page-thinking__filter-by, body.archive.tag main .page-thinking__filter-by {
+  font-size: calc(0.00417 * 100vw + 14.91667px);
+  line-height: 1.2;
+  line-height: 1.1;
+  pointer-events: auto;
+  padding-top: 17px;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 739px) {
+  body.blog main .page-thinking__filter-by, body.archive.tag main .page-thinking__filter-by {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1700px) {
+  body.blog main .page-thinking__filter-by, body.archive.tag main .page-thinking__filter-by {
+    font-size: 22px;
+  }
+}
+
+body.blog main .page-thinking__filter-by .category, body.archive.tag main .page-thinking__filter-by .category {
+  color: #ed1c24;
+  -webkit-transition: opacity .1s;
+  transition: opacity .1s;
+  cursor: pointer;
+}
+
+body.blog main .page-thinking__filter-by .category:hover, body.archive.tag main .page-thinking__filter-by .category:hover {
+  opacity: .5;
+}
+
+body.blog main .page-thinking__filter-by-tag, body.archive.tag main .page-thinking__filter-by-tag {
+  font-size: calc(0.00417 * 100vw + 14.91667px);
+  line-height: 1.2;
+  line-height: 1.1;
+  padding-top: 17px;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 739px) {
+  body.blog main .page-thinking__filter-by-tag, body.archive.tag main .page-thinking__filter-by-tag {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1700px) {
+  body.blog main .page-thinking__filter-by-tag, body.archive.tag main .page-thinking__filter-by-tag {
+    font-size: 22px;
+  }
+}
+
+body.blog main .page-thinking__filter-categories, body.archive.tag main .page-thinking__filter-categories {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000000;
+  color: white;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  visibility: hidden;
+}
+
+body.blog main .page-thinking__filter-categories .item, body.archive.tag main .page-thinking__filter-categories .item {
+  position: relative;
+  opacity: 0;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  -webkit-transition: none;
+  transition: none;
+}
+
+body.blog main .page-thinking__filter-categories .item.visible, body.archive.tag main .page-thinking__filter-categories .item.visible {
+  -webkit-transition: opacity 1s, -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: opacity 1s, -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), opacity 1s;
+  transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), opacity 1s, -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-transform: none;
+          transform: none;
+  opacity: 1;
+}
+
+body.blog main .page-thinking__filter-categories a, body.archive.tag main .page-thinking__filter-categories a {
+  color: white;
+  height: 100%;
+  display: inline-block;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+}
+
+body.blog main .page-thinking__filter-categories a.inactive, body.archive.tag main .page-thinking__filter-categories a.inactive {
+  opacity: 0.5;
+}
+
+body.blog main .page-thinking__filter-categories .page-thinking__filter-categories__close, body.archive.tag main .page-thinking__filter-categories .page-thinking__filter-categories__close {
+  z-index: 10;
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #8d8d8d;
+  -webkit-transition: background-color .15s;
+  transition: background-color .15s;
+  line-height: 0;
+}
+
+body.blog main .page-thinking__filter-categories .page-thinking__filter-categories__close:hover, body.archive.tag main .page-thinking__filter-categories .page-thinking__filter-categories__close:hover {
+  background-color: white;
+}
+
+@media (max-width: 1373px) {
+  body.blog main .page-thinking__filter-categories .page-thinking__filter-categories__close, body.archive.tag main .page-thinking__filter-categories .page-thinking__filter-categories__close {
+    top: 20px;
+    right: 20px;
+  }
+}
+
+body.blog main .page-thinking__filter-categories .page-thinking__filter-categories-wrapper, body.archive.tag main .page-thinking__filter-categories .page-thinking__filter-categories-wrapper {
+  padding-top: calc(0.04167 * 100vw + 9.16667px);
+  padding-bottom: calc(0.04167 * 100vw + 9.16667px);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  opacity: 0;
+  will-change: transform;
+  min-height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+@media (max-width: 739px) {
+  body.blog main .page-thinking__filter-categories .page-thinking__filter-categories-wrapper, body.archive.tag main .page-thinking__filter-categories .page-thinking__filter-categories-wrapper {
+    padding-top: 40px;
+  }
+}
+
+@media (min-width: 1700px) {
+  body.blog main .page-thinking__filter-categories .page-thinking__filter-categories-wrapper, body.archive.tag main .page-thinking__filter-categories .page-thinking__filter-categories-wrapper {
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 739px) {
+  body.blog main .page-thinking__filter-categories .page-thinking__filter-categories-wrapper, body.archive.tag main .page-thinking__filter-categories .page-thinking__filter-categories-wrapper {
+    padding-bottom: 40px;
+  }
+}
+
+@media (min-width: 1700px) {
+  body.blog main .page-thinking__filter-categories .page-thinking__filter-categories-wrapper, body.archive.tag main .page-thinking__filter-categories .page-thinking__filter-categories-wrapper {
+    padding-bottom: 80px;
+  }
+}
+
+body.blog main .page-thinking__filter-categories.opened, body.archive.tag main .page-thinking__filter-categories.opened {
+  display: block;
+  visibility: visible;
+}
+
+body.blog main .page-thinking__filter-categories.opened .page-thinking__filter-categories-wrapper, body.archive.tag main .page-thinking__filter-categories.opened .page-thinking__filter-categories-wrapper {
+  -webkit-transform: none;
+          transform: none;
+  opacity: 1;
+}
+
+body.blog main .page-thinking__filter-categories .page-thinking__filter-categories__container, body.archive.tag main .page-thinking__filter-categories .page-thinking__filter-categories__container {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  max-width: 100%;
+  font-weight: bold;
+  font-size: calc(0.02083 * 100vw + 9.58333px);
+  line-height: 1.2;
+}
+
+@media (min-width: 740px) {
+  body.blog main .page-thinking__filter-categories .page-thinking__filter-categories__container, body.archive.tag main .page-thinking__filter-categories .page-thinking__filter-categories__container {
+    padding-right: 12.5px;
+    padding-left: 12.5px;
+  }
+}
+
+@media (min-width: 1374px) {
+  body.blog main .page-thinking__filter-categories .page-thinking__filter-categories__container, body.archive.tag main .page-thinking__filter-categories .page-thinking__filter-categories__container {
+    padding-right: 17.5px;
+    padding-left: 17.5px;
+  }
+}
+
+@media (max-width: 739px) {
+  body.blog main .page-thinking__filter-categories .page-thinking__filter-categories__container, body.archive.tag main .page-thinking__filter-categories .page-thinking__filter-categories__container {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 1700px) {
+  body.blog main .page-thinking__filter-categories .page-thinking__filter-categories__container, body.archive.tag main .page-thinking__filter-categories .page-thinking__filter-categories__container {
+    font-size: 45px;
+  }
+}
+
+@media screen and (min-device-width: 740px) and (max-device-width: 790px) and (orientation: portrait) {
+  body.blog main .page-thinking__filter-categories .page-thinking__filter-categories__container, body.archive.tag main .page-thinking__filter-categories .page-thinking__filter-categories__container {
+    font-size: calc(0.02708 * 100vw + 12.45833px);
+  }
+}
+
+@media screen and (min-device-width: 740px) and (max-device-width: 790px) and (orientation: portrait) and (max-width: 739px) {
+  body.blog main .page-thinking__filter-categories .page-thinking__filter-categories__container, body.archive.tag main .page-thinking__filter-categories .page-thinking__filter-categories__container {
+    font-size: 32.5px;
+  }
+}
+
+@media screen and (min-device-width: 740px) and (max-device-width: 790px) and (orientation: portrait) and (min-width: 1700px) {
+  body.blog main .page-thinking__filter-categories .page-thinking__filter-categories__container, body.archive.tag main .page-thinking__filter-categories .page-thinking__filter-categories__container {
+    font-size: 58.5px;
+  }
+}
+
+@media (max-width: 789px) {
+  body.blog main .page-thinking__filter-categories .page-thinking__filter-categories__container:first-child, body.archive.tag main .page-thinking__filter-categories .page-thinking__filter-categories__container:first-child {
+    margin-top: 20px;
+  }
+}

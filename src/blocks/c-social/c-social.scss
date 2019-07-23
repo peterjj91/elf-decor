@@ -1,0 +1,49 @@
+
+/*  ==========================================================================
+    Social
+    ========================================================================== */
+/*
+    Block
+    ========================================================================== */
+/*
+    Elements
+    ========================================================================== */
+.c-social__network a,
+.c-social__network svg {
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+
+@media screen and (max-width: 580px) {
+  .c-social__network a,
+  .c-social__network svg {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+.c-social__network svg {
+  fill: #bab8b8;
+  -webkit-transition: fill 0.2s linear;
+  transition: fill 0.2s linear;
+}
+
+.c-social__network svg:hover {
+  fill: #000;
+}
+
+/*
+    Modifiers
+    ========================================================================== */
+.c-social__network--dark svg {
+  fill: #8d8d8d;
+}
+
+.c-social__network--on-dark-background svg {
+  fill: #eaeaea;
+}
+
+.c-social__network--on-dark-background svg:hover {
+  fill: white;
+}

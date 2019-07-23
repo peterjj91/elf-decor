@@ -1,0 +1,95 @@
+/*  ==========================================================================
+    media-news
+    ========================================================================== */
+.mediapublicationsannual .report-number__wrapper,
+.cpt_publications-template-default.single-cpt_publications .report-number__wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 739px) {
+  .mediapublicationsannual .report-number__wrapper,
+  .cpt_publications-template-default.single-cpt_publications .report-number__wrapper {
+    display: none;
+  }
+}
+
+.mediapublicationsannual .report-number__spacer,
+.cpt_publications-template-default.single-cpt_publications .report-number__spacer {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  margin-bottom: calc(0.05208 * 100vw + 11.45833px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+@media (max-width: 739px) {
+  .mediapublicationsannual .report-number__spacer,
+  .cpt_publications-template-default.single-cpt_publications .report-number__spacer {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .mediapublicationsannual .report-number__spacer,
+  .cpt_publications-template-default.single-cpt_publications .report-number__spacer {
+    margin-bottom: 100px;
+  }
+}
+
+.mediapublicationsannual .report-number__number,
+.cpt_publications-template-default.single-cpt_publications .report-number__number {
+  margin-left: 5vw;
+  color: white;
+  font-weight: 700;
+  line-height: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-size: calc(0.19792 * 100vw + 53.54167px);
+}
+
+@media (min-width: 740px) {
+  .mediapublicationsannual .report-number__number,
+  .cpt_publications-template-default.single-cpt_publications .report-number__number {
+    margin-left: 7vw;
+  }
+}
+
+@media (min-width: 2280px) {
+  .mediapublicationsannual .report-number__number,
+  .cpt_publications-template-default.single-cpt_publications .report-number__number {
+    margin-left: calc((100vw - 2000px)/ 2);
+  }
+}
+
+@media (max-width: 739px) {
+  .mediapublicationsannual .report-number__number,
+  .cpt_publications-template-default.single-cpt_publications .report-number__number {
+    font-size: 200px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .mediapublicationsannual .report-number__number,
+  .cpt_publications-template-default.single-cpt_publications .report-number__number {
+    font-size: 390px;
+  }
+}
+
+.mediapublicationsannual .report-number__number span,
+.cpt_publications-template-default.single-cpt_publications .report-number__number span {
+  margin-bottom: -0.154em;
+  margin-left: -0.05em;
+}

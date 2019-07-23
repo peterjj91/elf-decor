@@ -1,0 +1,70 @@
+/*  ==========================================================================
+    map
+    ========================================================================== */
+
+#map {
+  height: 100%;
+}
+
+#see-on-google-maps {
+  color: #000;
+  position: absolute;
+
+  font-size: calc(0.00417 * 100vw + 14.91667px);
+  line-height: 1.2;
+  top: calc(0.01042 * 100vw + 12.29167px);
+  right: calc(0.01042 * 100vw + 12.29167px);
+  z-index: 1000;
+}
+
+@media (max-width: 739px) {
+  #see-on-google-maps {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1700px) {
+  #see-on-google-maps {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 739px) {
+  #see-on-google-maps {
+    top: 20px;
+  }
+}
+
+@media (min-width: 1700px) {
+  #see-on-google-maps {
+    top: 30px;
+  }
+}
+
+@media (max-width: 739px) {
+  #see-on-google-maps {
+    right: 20px;
+  }
+}
+
+@media (min-width: 1700px) {
+  #see-on-google-maps {
+    right: 30px;
+  }
+}
+
+#see-on-google-maps:hover {
+  color: #ed1c24;
+}
+
+.page-template-tpl-the-make-charter .text--flush > .c-play-button {
+  display: none;
+}
+
+.is-drag .carousel__item {
+  pointer-events: none;
+}
+
+.js-google-map-marker-trigger {
+  cursor: pointer;
+}

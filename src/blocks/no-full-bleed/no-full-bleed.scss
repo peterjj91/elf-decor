@@ -1,0 +1,43 @@
+/*  ==========================================================================
+    no-full-bleed
+    ========================================================================== */
+
+.no-full-bleed .l-header {
+  background-color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+  .no-full-bleed .l-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.11);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .no-full-bleed .l-header {
+    border-bottom: 1px solid #eaeaea;
+  }
+}
+
+.no-full-bleed .l-header__logo svg {
+  fill: #ed1c24;
+}
+
+.no-full-bleed .c-language-switcher,
+.no-full-bleed .lang-item a,
+.no-full-bleed .l-nav--main a {
+  color: #000;
+}
+
+.no-full-bleed .l-header__search svg {
+  fill: #000;
+}
+
+@media screen and (min-width: 1374px) {
+  .no-full-bleed .l-header--invert .l-header__logo svg {
+    fill: #fff;
+  }
+}
+
+.no-full-bleed.single-cpt_projects .header--top {
+  border-bottom: 0;
+}

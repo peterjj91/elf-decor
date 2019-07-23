@@ -1,0 +1,83 @@
+/*  ==========================================================================
+    Container
+    ========================================================================== */
+/*
+    Block
+    ========================================================================== */
+.container {
+  margin: 0 auto;
+  width: auto;
+  max-width: 2000px;
+  position: relative;
+  clear: both;
+}
+
+/*
+    Modifiers
+    ========================================================================== */
+.container--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container--flex-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container--flex-end {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.container--flex-vh {
+  height: calc( 100vh - 84px);
+  top: 84px;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+@media screen and (max-width: 1024px) {
+  .container--flex-vh {
+    height: 100vh;
+  }
+}
+
+.container--vh {
+  height: 100vh;
+}
+
+.container--border-top {
+  border-top: 1px solid #eaeaea;
+}
+
+.container--reverse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 1024px) {
+  .container--no-flex-bp-tl {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container--no-flex-bp-tp {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .container--no-flex-bp-ml {
+    display: block;
+  }
+}

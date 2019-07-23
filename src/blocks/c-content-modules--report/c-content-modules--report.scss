@@ -1,0 +1,26 @@
+/*  ==========================================================================
+    c-content-modules--report
+    ========================================================================== */
+    
+.c-content-modules--report {
+  position: relative;
+  color: white;
+}
+
+@media (min-width: 740px) {
+  .c-content-modules--report {
+    padding-bottom: calc(0.20833 * 100vw + -34.16667px);
+  }
+}
+
+@media (min-width: 740px) and (max-width: 739px) {
+  .c-content-modules--report {
+    padding-bottom: 120px;
+  }
+}
+
+@media (min-width: 740px) and (min-width: 1700px) {
+  .c-content-modules--report {
+    padding-bottom: 320px;
+  }
+}

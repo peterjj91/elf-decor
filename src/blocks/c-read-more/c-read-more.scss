@@ -1,0 +1,28 @@
+/*  ==========================================================================
+    Read More
+    ========================================================================== */
+/*
+    Block
+    ========================================================================== */
+.c-read-more {
+  height: auto;
+  overflow: hidden;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+  -webkit-transition: max-height 0.8s cubic-bezier(0.42, 0, 0.34, 1.01), opacity 0.8s linear 0.1s, -webkit-transform 0.8s cubic-bezier(0.42, 0, 0.34, 1.01);
+  transition: max-height 0.8s cubic-bezier(0.42, 0, 0.34, 1.01), opacity 0.8s linear 0.1s, -webkit-transform 0.8s cubic-bezier(0.42, 0, 0.34, 1.01);
+  transition: transform 0.8s cubic-bezier(0.42, 0, 0.34, 1.01), max-height 0.8s cubic-bezier(0.42, 0, 0.34, 1.01), opacity 0.8s linear 0.1s;
+  transition: transform 0.8s cubic-bezier(0.42, 0, 0.34, 1.01), max-height 0.8s cubic-bezier(0.42, 0, 0.34, 1.01), opacity 0.8s linear 0.1s, -webkit-transform 0.8s cubic-bezier(0.42, 0, 0.34, 1.01);
+}
+
+.c-read-more.hidden {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  opacity: 0;
+  max-height: 0 !important;
+  -webkit-transition: max-height 0.8s cubic-bezier(0.42, 0, 0.34, 1.01), opacity 0.6s linear, -webkit-transform 0.8s cubic-bezier(0.42, 0, 0.34, 1.01);
+  transition: max-height 0.8s cubic-bezier(0.42, 0, 0.34, 1.01), opacity 0.6s linear, -webkit-transform 0.8s cubic-bezier(0.42, 0, 0.34, 1.01);
+  transition: transform 0.8s cubic-bezier(0.42, 0, 0.34, 1.01), max-height 0.8s cubic-bezier(0.42, 0, 0.34, 1.01), opacity 0.6s linear;
+  transition: transform 0.8s cubic-bezier(0.42, 0, 0.34, 1.01), max-height 0.8s cubic-bezier(0.42, 0, 0.34, 1.01), opacity 0.6s linear, -webkit-transform 0.8s cubic-bezier(0.42, 0, 0.34, 1.01);
+}

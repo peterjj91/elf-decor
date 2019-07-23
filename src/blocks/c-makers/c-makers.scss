@@ -1,0 +1,342 @@
+
+/*  ==========================================================================
+    Maker
+    ========================================================================== */
+.c-makers {
+  position: relative;
+}
+
+/*
+    Block
+    ========================================================================== */
+.c-maker {
+  display: block;
+  position: relative;
+  -webkit-transition: opacity 0.1s ease-in-out;
+  transition: opacity 0.1s ease-in-out;
+  margin-bottom: calc(0.05208 * 100vw + 11.45833px);
+}
+
+@media (max-width: 739px) {
+  .c-maker {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .c-maker {
+    margin-bottom: 100px;
+  }
+}
+
+/*
+    Elements
+    ========================================================================== */
+.c-maker .lazy-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.c-maker .lazy-container img {
+  width: auto;
+  height: auto;
+}
+
+.c-maker__profile {
+  position: relative;
+  z-index: 31;
+}
+
+.c-maker__thumb {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  max-width: 101%;
+}
+
+.c-maker__name, .c-maker__image-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  pointer-events: none;
+  text-align: center;
+  line-height: .9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  max-height: 100vh;
+  min-height: 100vh;
+  font-weight: bold;
+  font-size: calc(0.09375 * 100vw + -39.375px);
+  line-height: 1.2;
+}
+
+@media (max-width: 739px) {
+  .c-maker__name, .c-maker__image-wrap {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .c-maker__name, .c-maker__image-wrap {
+    font-size: 120px;
+  }
+}
+
+@media screen and (min-device-width: 740px) and (max-device-width: 790px) and (orientation: portrait) {
+  .c-maker__name, .c-maker__image-wrap {
+    font-size: calc(0.14062 * 100vw + -59.0625px);
+  }
+}
+
+@media screen and (min-device-width: 740px) and (max-device-width: 790px) and (orientation: portrait) and (max-width: 739px) {
+  .c-maker__name, .c-maker__image-wrap {
+    font-size: 45px;
+  }
+}
+
+@media screen and (min-device-width: 740px) and (max-device-width: 790px) and (orientation: portrait) and (min-width: 1700px) {
+  .c-maker__name, .c-maker__image-wrap {
+    font-size: 180px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .c-maker__name, .c-maker__image-wrap {
+    display: none !important;
+  }
+}
+
+.c-maker__name.is_stuck, .is_stuck.c-maker__image-wrap {
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, 0, 0);
+          transform: translate3d(-50%, 0, 0);
+}
+
+.c-maker__image-wrap {
+  z-index: -1;
+}
+
+.c-maker__image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 0;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+  z-index: 20;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  max-width: 580px;
+  max-height: 733px;
+  display: block;
+  opacity: .6;
+}
+
+.c-maker__image.is_stuck {
+  top: 0;
+  -webkit-transform: translate3d(-50%, 0, 0);
+          transform: translate3d(-50%, 0, 0);
+}
+
+.c-maker__image .lazy-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  background: none;
+}
+
+.c-maker__image .lazy-container img {
+  width: 100%;
+  height: auto;
+  max-width: 50vh;
+  -webkit-transition: none;
+  transition: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .c-maker__image {
+    display: none !important;
+  }
+}
+
+.c-maker__label {
+  position: relative;
+  left: 0;
+  top: 100%;
+  right: 0;
+  display: block;
+  padding-top: 15px;
+  color: #000;
+  display: none;
+  /*font-family: "aktiv-grotesk", "aktiv-grotesk-reg", sans-serif;*/
+  font-size: calc(0.00313 * 100vw + 12.6875px);
+  line-height: 1.2;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+@media (max-width: 739px) {
+  .c-maker__label {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .c-maker__label {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .c-maker__label {
+    display: block;
+  }
+}
+
+.c-maker__filters {
+  margin-bottom: calc(0.01042 * 100vw + 12.29167px);
+}
+
+@media (max-width: 739px) {
+  .c-maker__filters {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .c-maker__filters {
+    margin-bottom: 30px;
+  }
+}
+
+.c-makers__wrap {
+  position: relative;
+}
+
+/*
+    Modifiers
+    ========================================================================== */
+.c-maker--square .lazy-container {
+  padding-top: 120%;
+}
+
+.c-maker--square .lazy-container:before, .c-maker--square .lazy-container:after {
+  content: '';
+  display: block;
+  height: 10%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+  .c-maker--square .lazy-container:before, .c-maker--square .lazy-container:after {
+    display: none;
+  }
+}
+
+.c-maker--square .lazy-container:before {
+  top: 0;
+}
+
+.c-maker--square .lazy-container:after {
+  bottom: 0;
+}
+
+.c-maker--search .lazy-container:before, .c-maker--search .lazy-container:after {
+  background-color: #000;
+}
+
+.c-maker--square .c-maker__thumb {
+  top: 10%;
+}
+
+@media screen and (max-width: 1024px) {
+  .c-maker--square .c-maker__thumb {
+    top: 0;
+  }
+}
+
+.c-maker--portrait .c-maker__thumb {
+  top: 0;
+}
+
+.c-maker--portrait .lazy-container {
+  padding-top: 120%;
+}
+
+.c-maker--list {
+  -webkit-column-count: 3;
+          column-count: 3;
+  -webkit-column-gap: 35px;
+          column-gap: 35px;
+  -webkit-column-fill: auto;
+          column-fill: auto;
+  position: relative;
+  z-index: 3;
+}
+
+@media screen and (max-width: 768px) {
+  .c-maker--list {
+    -webkit-column-count: 2;
+            column-count: 2;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .c-maker--list {
+    -webkit-column-count: 1;
+            column-count: 1;
+  }
+}
+
+.c-maker--list__letter {
+  margin-bottom: 30px;
+  overflow: hidden;
+  -webkit-column-break-inside: avoid;
+          break-inside: avoid-column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c-maker--list__letter > span {
+  -webkit-column-span: all;
+          column-span: all;
+  margin-bottom: 10px;
+  width: 35px;
+}
+
+.c-maker--list__letter a {
+  color: #000;
+}
+
+.c-maker--list__letter a.inactive {
+  color: #8d8d8d;
+  pointer-events: none;
+}
+
+.c-maker--list__letter a:hover {
+  opacity: .7;
+}
+

@@ -1,0 +1,33 @@
+/*  ==========================================================================
+    Form Defaults
+    ========================================================================== */
+/*
+    Block
+    ========================================================================== */
+form .field {
+  margin-bottom: 17.5px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input[type=text],
+form input[type=email],
+form input[type=phone],
+form input[type=password],
+form input[type=number],
+form input[type=search],
+form textarea {
+  -webkit-font-smoothing: antialiased;
+  -webkit-appearance: none;
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+form input[type="submit"] {
+  border-radius: 0;
+}

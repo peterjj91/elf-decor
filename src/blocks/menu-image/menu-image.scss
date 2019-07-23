@@ -1,0 +1,34 @@
+/*  ==========================================================================
+    Menu Image 
+    ========================================================================== */
+/*
+    Block
+    ========================================================================== */
+.menu-image-hover-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: calc( 50% - 150px);
+  opacity: 0;
+  z-index: 5;
+  height: 100vh;
+  pointer-events: none;
+  will-change: opacity, transform;
+  display: block;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  overflow: hidden;
+  -webkit-transition: opacity 0.4s cubic-bezier(0.42, 0, 0.34, 1.01), -webkit-transform 0.8s cubic-bezier(0.42, 0, 0.34, 1.01);
+  transition: opacity 0.4s cubic-bezier(0.42, 0, 0.34, 1.01), -webkit-transform 0.8s cubic-bezier(0.42, 0, 0.34, 1.01);
+  transition: transform 0.8s cubic-bezier(0.42, 0, 0.34, 1.01), opacity 0.4s cubic-bezier(0.42, 0, 0.34, 1.01);
+  transition: transform 0.8s cubic-bezier(0.42, 0, 0.34, 1.01), opacity 0.4s cubic-bezier(0.42, 0, 0.34, 1.01), -webkit-transform 0.8s cubic-bezier(0.42, 0, 0.34, 1.01);
+}
+
+/*
+    Elements
+    ========================================================================== */
+.menu-item a.menu-image-title-before.menu-image-not-hovered img,
+.menu-item a.menu-image-hovered.menu-image-title-before .menu-image-hover-wrapper {
+  padding: 0;
+}

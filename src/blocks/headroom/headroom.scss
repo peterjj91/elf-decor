@@ -1,0 +1,42 @@
+/*  ==========================================================================
+    Headroom
+    ========================================================================== */
+/*
+    Block
+    ========================================================================== */
+.headroom {
+  -webkit-transition: background-color 0.2s ease-in-out, top 0.2s cubic-bezier(0.42, 0, 0.34, 1.01), -webkit-transform 0.2s ease-in-out 0.1s;
+  transition: background-color 0.2s ease-in-out, top 0.2s cubic-bezier(0.42, 0, 0.34, 1.01), -webkit-transform 0.2s ease-in-out 0.1s;
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out 0.1s, top 0.2s cubic-bezier(0.42, 0, 0.34, 1.01);
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out 0.1s, top 0.2s cubic-bezier(0.42, 0, 0.34, 1.01), -webkit-transform 0.2s ease-in-out 0.1s;
+}
+
+/*
+    States
+    ========================================================================== */
+.header--unpinned,
+.header--not-top.down {
+  -webkit-transform: translate3d(0, -84px, 0);
+          transform: translate3d(0, -84px, 0);
+}
+
+@media screen and (max-width: 1374px) {
+  .header--unpinned,
+  .header--not-top.down {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@media screen and (min-width: 1374px) {
+  .l-header--invert.header--unpinned,
+  .header--bottom {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+.header--pinned,
+.header--bottom {
+  background-color: #fff;
+}

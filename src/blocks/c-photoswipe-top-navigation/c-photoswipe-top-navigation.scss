@@ -1,0 +1,128 @@
+/*  ==========================================================================
+    c-photoswipe-top-navigation
+    ========================================================================== */
+
+.c-photoswipe-top-navigation {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  z-index: 1501;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: calc(0.01667 * 100vw + 57.66667px);
+}
+
+@media (min-width: 740px) {
+  .c-photoswipe-top-navigation {
+    padding-right: 45px;
+    padding-left: 45px;
+  }
+}
+
+@media (min-width: 1374px) {
+  .c-photoswipe-top-navigation {
+    padding-right: 90px;
+    padding-left: 90px;
+  }
+}
+
+@media (max-width: 739px) {
+  .c-photoswipe-top-navigation {
+    height: 70px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .c-photoswipe-top-navigation {
+    height: 86px;
+  }
+}
+
+.c-photoswipe-top-navigation .c-photoswipe-top-navigation__button {
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.c-photoswipe-top-navigation .c-photoswipe-top-navigation__button:hover {
+  opacity: .6;
+}
+
+.c-photoswipe-top-navigation .c-photoswipe-top-navigation__button span {
+
+  font-size: calc(0.00417 * 100vw + 14.91667px);
+  line-height: 1.2;
+}
+
+@media (max-width: 739px) {
+  .c-photoswipe-top-navigation .c-photoswipe-top-navigation__button span {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .c-photoswipe-top-navigation .c-photoswipe-top-navigation__button span {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 789px) {
+  .c-photoswipe-top-navigation .c-photoswipe-top-navigation__button span {
+    display: none;
+  }
+}
+
+.c-photoswipe-top-navigation .c-photoswipe-top-navigation__button svg {
+  color: inherit;
+  fill: currentColor;
+  height: 15px;
+}
+
+.c-photoswipe-top-navigation .c-photoswipe-top-navigation__button--left {
+  position: relative;
+  top: 3px;
+}
+
+@media (max-width: 789px) {
+  .c-photoswipe-top-navigation .c-photoswipe-top-navigation__button--left {
+    visibility: visible;
+    padding: 10px 20px 10px 10px;
+    margin-left: -30px;
+  }
+}
+
+@media (max-width: 739px) {
+  .c-photoswipe-top-navigation .c-photoswipe-top-navigation__button--left {
+    margin-left: -20px;
+    padding-left: 20px;
+  }
+}
+
+.c-photoswipe-top-navigation .c-photoswipe-top-navigation__button--left svg {
+  height: 40px;
+}
+
+.c-photoswipe-top-navigation .c-photoswipe-top-navigation__button--right span {
+  margin-right: 10px;
+}
+
+@media (max-width: 789px) {
+  .c-photoswipe-top-navigation .c-photoswipe-top-navigation__button--right {
+    margin-right: -20px;
+    padding: 10px 20px 0 50px;
+  }
+}
+

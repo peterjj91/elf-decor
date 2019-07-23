@@ -1,0 +1,85 @@
+/*  ==========================================================================
+    Content Filters - component
+  ========================================================================== */
+.c-content-filters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+.c-content-filters.t-light .c-content-filters__filter.is-active, .c-content-filters.t-light .c-content-filters__filter:hover {
+  color: #000;
+}
+
+.c-content-filters.t-dark .c-content-filters__filter.is-active, .c-content-filters.t-dark .c-content-filters__filter:hover {
+  color: #fff;
+}
+
+.c-content-filters--aligned-to-right {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.c-content-filters__filter {
+  color: #8d8d8d;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: color 0.1s linear;
+  transition: color 0.1s linear;
+
+  font-size: calc(0.00417 * 100vw + 14.91667px);
+  line-height: 1.2;
+}
+
+@media (max-width: 739px) {
+  .c-content-filters__filter {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .c-content-filters__filter {
+    font-size: 22px;
+  }
+}
+
+.c-content-filters__filter + .c-content-filters__filter {
+  padding-left: 20px;
+}
+
+.c-content-filters__filter + .c-content-filters__filter:before {
+  color: #8d8d8d;
+  content: '/';
+  left: 7px;
+  position: absolute;
+  top: 1px;
+}
+
+.c-content-filters__filter.is-active {
+  pointer-events: none;
+}
+
+.c-content-filters__filter a {
+  color: inherit;
+}
+
+@media screen and (min-width: 1024px) {
+  .c-content-filters--naked:first-child .c-content-filters__filter {
+    display: block;
+    width: 100%;
+    padding-left: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .c-content-filters--naked:first-child .c-content-filters__filter:before {
+    display: none;
+  }
+}

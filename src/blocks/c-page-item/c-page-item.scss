@@ -1,0 +1,95 @@
+/*  ==========================================================================
+    Page Item
+    ========================================================================== */
+/*
+    Block
+    ========================================================================== */
+@media screen and (max-width: 580px) {
+  .c-page-item {
+    width: calc(99.9% * 10/12 - (5% - 5% * 10/12));
+  }
+  .c-page-item:nth-child(1n) {
+    float: left;
+    margin-right: 5%;
+    clear: none;
+  }
+  .c-page-item:last-child {
+    margin-right: 0;
+  }
+  .c-page-item:nth-child(0n) {
+    float: right;
+  }
+}
+
+.c-page-item:before {
+  content: attr(aria-label);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 100;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  padding: calc(0.03125 * 100vw + -3.125px);
+  font-weight: bold;
+  font-size: calc(0.01875 * 100vw + 8.125px);
+  line-height: 1.2;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 739px) {
+  .c-page-item:before {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .c-page-item:before {
+    padding: 50px;
+  }
+}
+
+@media (max-width: 739px) {
+  .c-page-item:before {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .c-page-item:before {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-device-width: 740px) and (max-device-width: 790px) and (orientation: portrait) {
+  .c-page-item:before {
+    font-size: calc(0.02062 * 100vw + 8.9375px);
+  }
+}
+
+@media screen and (min-device-width: 740px) and (max-device-width: 790px) and (orientation: portrait) and (max-width: 739px) {
+  .c-page-item:before {
+    font-size: 24.2px;
+  }
+}
+
+@media screen and (min-device-width: 740px) and (max-device-width: 790px) and (orientation: portrait) and (min-width: 1700px) {
+  .c-page-item:before {
+    font-size: 44px;
+  }
+}
+
+.c-page-item .lazy-container {
+  z-index: 1;
+}

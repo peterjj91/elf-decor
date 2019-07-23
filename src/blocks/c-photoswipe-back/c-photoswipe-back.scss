@@ -1,0 +1,33 @@
+/*  ==========================================================================
+    c-photoswipe-back
+    ========================================================================== */
+    
+.c-photoswipe-back {
+  height: 40px;
+  width: 40px;
+  padding: 12px;
+  z-index: 1;
+  position: absolute;
+  top: 21px;
+  left: 60px;
+  cursor: pointer;
+}
+
+@media (max-width: 789px) {
+  .c-photoswipe-back {
+    left: 18px;
+    padding: 8px;
+  }
+}
+
+.c-photoswipe-back:hover {
+  fill: #000;
+}
+
+.c-photoswipe-back svg {
+  display: block;
+  margin-top: 3px;
+  height: 15px;
+  fill: #fff;
+}
+

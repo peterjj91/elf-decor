@@ -1,0 +1,535 @@
+/*  ==========================================================================
+    Helper
+    ========================================================================== */
+/*
+    Clearfix - http://goo.gl/5Fvrh
+    ========================================================================== */
+.container:after,
+.cf:after,
+.l-row:after,
+.page-content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*
+    Text Align
+    ========================================================================== */
+.align--center {
+  text-align: center;
+}
+
+.align--right {
+  text-align: right;
+}
+
+/*
+    Floats
+    ========================================================================== */
+.float--right {
+  float: right;
+}
+
+.float--left {
+  float: left;
+}
+
+/*
+    Position
+    ========================================================================== */
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+}
+
+/*
+    Table
+    ========================================================================== */
+.table {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.table__cell {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
+
+/*
+    Cover
+    ========================================================================== */
+.cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*
+    Color
+    ========================================================================== */
+.color--white {
+  color: #fff;
+}
+
+.color--red {
+  color: #ed1c24;
+}
+
+.color--black {
+  color: #000;
+}
+
+/*
+    Background
+    ========================================================================== */
+.bg--red {
+  background-color: #ed1c24;
+}
+
+.bg--black {
+  background-color: #000;
+}
+
+/*
+    List
+    ========================================================================== */
+.list--bare {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.list--inline li {
+  display: inline-block;
+}
+
+.list--social,
+.list--contact {
+  line-height: 1;
+}
+
+.list--contact li {
+  float: left;
+  margin-right: 8px;
+}
+
+@media screen and (max-width: 580px) {
+  .list--contact li {
+    margin-right: 12px;
+  }
+}
+
+.list--social li {
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 580px) {
+  .list--social li {
+    margin-right: 12px;
+  }
+}
+
+.list--medium {
+  font-size: 22px;
+  font-size: rem-calc(22);
+}
+
+@media screen and (max-width: 768px) {
+  .list--medium {
+    font-size: 18px;
+    font-size: rem-calc(18);
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .list--medium {
+    font-size: 16px;
+    font-size: rem-calc(16);
+  }
+}
+
+.list--filters li {
+  position: relative;
+  margin-right: 13px;
+  line-height: 1.8;
+  color: #8d8d8d;
+}
+
+.list--filters li:after {
+  content: '/';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -13px;
+}
+
+.list--filters li:last-child {
+  margin-right: 0;
+}
+
+.list--filters li:last-child:after {
+  display: none;
+}
+
+.list--light,
+.list--light a {
+  color: #fff;
+}
+
+/*
+    Display
+    ========================================================================== */
+.block {
+  display: block;
+}
+
+.block--important {
+  display: block !important;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+/*
+    Image
+    ========================================================================== */
+.img-block {
+  display: block;
+}
+
+.img-block--full,
+.img-block--full img {
+  width: 100%;
+}
+
+.img-block--auto {
+  width: auto;
+}
+
+/*
+    Overlay
+    ========================================================================== */
+.overlay:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.overlay--light:before {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.overlay--white:before {
+  background-color: #fff;
+}
+
+.overlay--nav {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.2s cubic-bezier(0.42, 0, 0.34, 1.01), visibility 0.2s cubic-bezier(0.42, 0, 0.34, 1.01);
+  transition: opacity 0.2s cubic-bezier(0.42, 0, 0.34, 1.01), visibility 0.2s cubic-bezier(0.42, 0, 0.34, 1.01);
+}
+
+.overlay--visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*
+    Offset
+    ========================================================================== */
+.offset-top--l {
+  padding-top: 475px;
+}
+
+.offset-top--m {
+  padding-top: 385px;
+}
+
+.offset-top--s {
+  padding-top: 245px;
+}
+
+@media screen and (max-width: 1024px) {
+  .offset-top--flush-bp-tl {
+    padding-top: 0;
+  }
+}
+
+/*
+    Visibility
+    ========================================================================== */
+.semi-opaque {
+  opacity: 0.5;
+}
+
+.is-hidden {
+  opacity: 0;
+}
+
+.is-visible {
+  opacity: 1;
+}
+
+/*
+    Disable Scroll
+    ========================================================================== */
+.noscroll {
+  overflow-y: hidden;
+  /*overflow-y: scroll;
+    position: fixed;
+    width: 100%;
+    z-index: 0;*/
+}
+
+/*
+    Cursor
+    ========================================================================== */
+.pointer {
+  cursor: pointer;
+}
+
+.progress {
+  cursor: progress;
+}
+
+/*
+    Fill viewport
+    ========================================================================== */
+.fill-viewport {
+  width: 100vw;
+  height: 100vh;
+}
+
+.fill-viewport h1 {
+  font-weight: bold;
+  font-size: calc(0.03646 * 100vw + 3.02083px);
+  line-height: 1.14;
+}
+
+@media (max-width: 739px) {
+  .fill-viewport h1 {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .fill-viewport h1 {
+    font-size: 65px;
+  }
+}
+
+@media screen and (min-device-width: 740px) and (max-device-width: 790px) and (orientation: portrait) {
+  .fill-viewport h1 {
+    font-size: calc(0.0474 * 100vw + 3.92708px);
+  }
+}
+
+@media screen and (min-device-width: 740px) and (max-device-width: 790px) and (orientation: portrait) and (max-width: 739px) {
+  .fill-viewport h1 {
+    font-size: 39px;
+  }
+}
+
+@media screen and (min-device-width: 740px) and (max-device-width: 790px) and (orientation: portrait) and (min-width: 1700px) {
+  .fill-viewport h1 {
+    font-size: 84.5px;
+  }
+}
+
+.fill-viewport--lazyload {
+  position: relative;
+  overflow: hidden;
+  cursor: s-resize;
+}
+
+.fill-viewport--lazyload .lazy-container {
+  z-index: -1;
+}
+
+/*
+    JS Pseudo
+    ========================================================================== */
+.js-pseudo .overlay {
+  opacity: 0;
+  -webkit-transition: opacity 0.7s cubic-bezier(0.42, 0, 0.34, 1.01);
+  transition: opacity 0.7s cubic-bezier(0.42, 0, 0.34, 1.01);
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.js-pseudo .overlay.active {
+  opacity: 1;
+}
+
+/*
+    Hide
+    ========================================================================== */
+.hide {
+  display: none;
+}
+
+@media screen and (max-width: 1374px) {
+  .hide--ds {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hide--tl {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hide--tp {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .hide--ml {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .show--tl {
+    display: block;
+  }
+}
+
+.inline--tl {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .inline--tl {
+    display: inline-block;
+  }
+}
+
+.inline-flex--tl {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .inline-flex--tl {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+}
+
+/*
+    Padding
+    ========================================================================== */
+@media screen and (max-width: 1024px) {
+  .padding--left-flush-bp-tl {
+    padding-left: 0 !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .padding--left-flush-bp-tp {
+    padding-left: 0 !important;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .padding--left-flush-bp-ml {
+    padding-left: 0 !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .padding--right-flush-bp-tl {
+    padding-right: 0 !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .padding--right-flush-bp-tp {
+    padding-right: 0 !important;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .padding--right-flush-bp-ml {
+    padding-right: 0 !important;
+  }
+}
+
+@media screen and (max-width: 1374px) {
+  .padding--right-bp-ds {
+    padding-right: 7vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .padding--right-bp-tp {
+    padding-right: 7vw;
+  }
+}
+
+@media screen and (max-width: 1374px) {
+  .padding--left-bp-ds {
+    padding-left: 7vw;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .padding--left-bp-tl {
+    padding-left: 7vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .padding--left-bp-tp {
+    padding-left: 7vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .padding--bp-tp {
+    padding-left: 7vw;
+    padding-right: 7vw;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .padding--left-bp-ml {
+    padding-left: 7vw;
+  }
+}
+
+/*
+    Object fit
+    ========================================================================== */
+.object-fit-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}

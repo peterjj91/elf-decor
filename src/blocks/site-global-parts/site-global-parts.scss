@@ -1,0 +1,62 @@
+
+/*  ==========================================================================
+    Site Global Parts - prefix site-
+    ========================================================================== */
+body.is-waiting {
+  cursor: wait;
+}
+
+.site {
+  position: relative;
+}
+
+/*  ==========================================================================
+    Scroll Lock
+    ========================================================================== */
+html.scroll-lock,
+.scroll-lock body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  overflow-y: hidden !important;
+}
+
+html.scroll-lock {
+  overflow-y: scroll !important;
+}
+
+/*  ==========================================================================
+    Pages
+    ========================================================================== */
+.single-cpt_projects.full-bleed-header {
+  padding-top: 0;
+}
+
+/* invert bg */
+.invert-background .lazy-container {
+  background-color: #8d8d8d;
+}
+
+.invert-background .project {
+  background-color: #8d8d8d;
+  color: #fff;
+}
+
+.error404 .l-main {
+  overflow: hidden;
+}
+
+/* search */
+.search .l-main {
+  min-height: 100vh;
+}
+
+/* home */
+body.home {
+  overflow-y: hidden;
+}
+
+body.home.preloaded {
+  overflow-y: auto;
+}
+

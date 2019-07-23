@@ -1,0 +1,121 @@
+/*  ==========================================================================
+    Featured Project
+    ========================================================================== */
+/*
+    Block
+    ========================================================================== */
+#featured-projects {
+  overflow: hidden;
+}
+
+@media screen and (max-width: 580px) {
+  #featured-projects {
+    padding-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+.featured-project {
+  position: relative;
+  padding-top: calc(0.05208 * 100vw + 11.45833px);
+  padding-bottom: calc(0.05208 * 100vw + 11.45833px);
+}
+
+@media (max-width: 739px) {
+  .featured-project {
+    padding-top: 50px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .featured-project {
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 739px) {
+  .featured-project {
+    padding-bottom: 50px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .featured-project {
+    padding-bottom: 100px;
+  }
+}
+
+.featured-project:nth-child(3) {
+  padding-top: 0;
+}
+
+.featured-project:last-child {
+  padding-bottom: 0;
+}
+
+/*
+    Elements
+    ========================================================================== */
+.featured-project-title {
+  text-align: center;
+  margin: 0;
+  color: #fff;
+  pointer-events: none;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 1;
+  padding: 0 7%;
+}
+
+/*
+    Modifiers
+    ========================================================================== */
+.featured-project--1 .l-row {
+  left: -7%;
+  right: 7%;
+}
+
+@media screen and (max-width: 580px) {
+  .featured-project--1 .l-row {
+    left: auto;
+    right: auto;
+    top: auto;
+  }
+}
+
+.featured-project--1 .l-row .container {
+  margin-left: 0;
+}
+
+.featured-project--2 .l-row {
+  right: -7%;
+  left: 7%;
+}
+
+@media screen and (max-width: 580px) {
+  .featured-project--2 .l-row {
+    left: auto;
+    right: auto;
+  }
+}
+
+.featured-project--2 .l-row .container {
+  margin-right: 0;
+}
+
+.featured-project--3 .l-row {
+  right: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 580px) {
+  .featured-project--3 .l-row {
+    left: auto;
+    right: auto;
+  }
+}

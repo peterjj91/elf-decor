@@ -1,0 +1,82 @@
+// В этом файле должны быть стили для БЭМ-блока animate, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.animate {
+
+  $block-name: &; // #{$block-name}__element {}
+
+}
+
+
+/*  ==========================================================================
+    Animations
+    ========================================================================== */
+.animate--fade-in, .animate--fade-in-slow {
+  opacity: 0;
+  visibility: hidden;
+  will-change: opacity, visibility;
+}
+
+.animate--fade-in {
+  -webkit-transition: opacity 0.2s cubic-bezier(0.42, 0, 0.34, 1.01);
+  transition: opacity 0.2s cubic-bezier(0.42, 0, 0.34, 1.01);
+}
+
+.animate--fade-in-init {
+  visibility: visible;
+  opacity: 1;
+}
+
+.animate--fade-in-slow {
+  -webkit-transition: opacity 0.8s cubic-bezier(0.42, 0, 0.34, 1.01);
+  transition: opacity 0.8s cubic-bezier(0.42, 0, 0.34, 1.01);
+}
+
+.animate--fade-in-slow-init {
+  visibility: visible;
+  opacity: 1;
+}
+
+.animate--fade-out {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.2s cubic-bezier(0.42, 0, 0.34, 1.01);
+  transition: opacity 0.2s cubic-bezier(0.42, 0, 0.34, 1.01);
+  will-change: opacity, visibility;
+}
+
+.animate--fade-out-init {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.animate-slide-left {
+  left: 0;
+  right: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.42, 0, 0.34, 1.01);
+  transition: -webkit-transform 0.8s cubic-bezier(0.42, 0, 0.34, 1.01);
+  transition: transform 0.8s cubic-bezier(0.42, 0, 0.34, 1.01);
+  transition: transform 0.8s cubic-bezier(0.42, 0, 0.34, 1.01), -webkit-transform 0.8s cubic-bezier(0.42, 0, 0.34, 1.01);
+}
+
+.animate-slide-left--init {
+  -webkit-transform: translate3d(-100vw, 0, 0);
+          transform: translate3d(-100vw, 0, 0);
+}
+
+.animate-scroll-up {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.42, 0, 0.34, 1.01);
+  transition: -webkit-transform 0.2s cubic-bezier(0.42, 0, 0.34, 1.01);
+  transition: transform 0.2s cubic-bezier(0.42, 0, 0.34, 1.01);
+  transition: transform 0.2s cubic-bezier(0.42, 0, 0.34, 1.01), -webkit-transform 0.2s cubic-bezier(0.42, 0, 0.34, 1.01);
+}
+
+.animate-scroll-up--init {
+  -webkit-transform: translate3d(-84px, 0, 0);
+          transform: translate3d(-84px, 0, 0);
+}

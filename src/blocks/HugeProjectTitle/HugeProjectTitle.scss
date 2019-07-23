@@ -1,0 +1,88 @@
+/*  ==========================================================================
+    Helper
+    ========================================================================== */
+.HugeProjectTitle {
+  position: fixed;
+  z-index: 100000;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all .15s;
+  transition: all .15s;
+}
+
+.HugeProjectTitle.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.HugeProjectTitle .HugeProjectTitle__title {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  font-size: calc(0.09375 * 100vw + -39.375px);
+  line-height: 1.2;
+  color: white;
+}
+
+@media (min-width: 740px) {
+  .HugeProjectTitle .HugeProjectTitle__title {
+    padding-right: 12.5px;
+    padding-left: 12.5px;
+  }
+}
+
+@media (min-width: 1374px) {
+  .HugeProjectTitle .HugeProjectTitle__title {
+    padding-right: 17.5px;
+    padding-left: 17.5px;
+  }
+}
+
+@media (max-width: 739px) {
+  .HugeProjectTitle .HugeProjectTitle__title {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .HugeProjectTitle .HugeProjectTitle__title {
+    font-size: 120px;
+  }
+}
+
+@media screen and (min-device-width: 740px) and (max-device-width: 790px) and (orientation: portrait) {
+  .HugeProjectTitle .HugeProjectTitle__title {
+    font-size: calc(0.14062 * 100vw + -59.0625px);
+  }
+}
+
+@media screen and (min-device-width: 740px) and (max-device-width: 790px) and (orientation: portrait) and (max-width: 739px) {
+  .HugeProjectTitle .HugeProjectTitle__title {
+    font-size: 45px;
+  }
+}
+
+@media screen and (min-device-width: 740px) and (max-device-width: 790px) and (orientation: portrait) and (min-width: 1700px) {
+  .HugeProjectTitle .HugeProjectTitle__title {
+    font-size: 180px;
+  }
+}

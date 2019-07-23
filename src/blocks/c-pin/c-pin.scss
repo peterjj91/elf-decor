@@ -1,0 +1,74 @@
+
+/*  ==========================================================================
+    Pin
+    ========================================================================== */
+/*
+    Block
+    ========================================================================== */
+.c-pin {
+  width: 13px;
+  height: 17px;
+}
+
+@media screen and (max-width: 580px) {
+  .c-pin {
+    width: 11px;
+    height: 14px;
+  }
+}
+
+/*
+    Modifiers
+    ========================================================================== */
+.c-pin--red {
+  fill: #ed1c24;
+}
+
+/*  ==========================================================================
+    Icon
+    ========================================================================== */
+/*
+    Block
+    ========================================================================== */
+.c-icon {
+  -webkit-transition: fill 0.2s linear;
+  transition: fill 0.2s linear;
+}
+
+/*
+    Modifiers
+    ========================================================================== */
+.c-icon--small {
+  width: 26px;
+  height: 26px;
+}
+
+.c-icon--medium,
+.c-icon--medium svg {
+  width: 32px;
+  height: 32px;
+}
+
+@media screen and (max-width: 580px) {
+  .c-icon--medium,
+  .c-icon--medium svg {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+.c-icon--mid-grey,
+.c-icon--mid-grey svg {
+  fill: #bab8b8;
+}
+
+.c-icon--mid-grey:hover,
+.c-icon--mid-grey svg:hover {
+  fill: #000;
+}
+
+.c-icon--search {
+  width: 19px;
+  height: 19px;
+  fill: white;
+}

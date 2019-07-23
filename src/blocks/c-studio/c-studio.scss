@@ -1,0 +1,97 @@
+
+/*  ==========================================================================
+    Studio
+    ========================================================================== */
+/*
+    Block
+    ========================================================================== */
+.c-studio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .c-studio {
+    width: 100%;
+  }
+}
+
+/*
+    Elements
+    ========================================================================== */
+.c-studio > a {
+  height: 100%;
+  width: 100%;
+  -webkit-transition: -webkit-transform 1s cubic-bezier(0.42, 0, 0.34, 1.01);
+  transition: -webkit-transform 1s cubic-bezier(0.42, 0, 0.34, 1.01);
+  transition: transform 1s cubic-bezier(0.42, 0, 0.34, 1.01);
+  transition: transform 1s cubic-bezier(0.42, 0, 0.34, 1.01), -webkit-transform 1s cubic-bezier(0.42, 0, 0.34, 1.01);
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  will-change: transform;
+}
+
+.c-studio > a:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.c-studio__location {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #fff;
+  pointer-events: none;
+  padding: 0 7%;
+  font-weight: bold;
+  font-size: calc(0.02917 * 100vw + 5.41667px);
+  line-height: 1.14;
+}
+
+@media (max-width: 739px) {
+  .c-studio__location {
+    font-size: 27px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .c-studio__location {
+    font-size: 55px;
+  }
+}
+
+@media screen and (min-device-width: 740px) and (max-device-width: 790px) and (orientation: portrait) {
+  .c-studio__location {
+    font-size: calc(0.04375 * 100vw + 8.125px);
+  }
+}
+
+@media screen and (min-device-width: 740px) and (max-device-width: 790px) and (orientation: portrait) and (max-width: 739px) {
+  .c-studio__location {
+    font-size: 40.5px;
+  }
+}
+
+@media screen and (min-device-width: 740px) and (max-device-width: 790px) and (orientation: portrait) and (min-width: 1700px) {
+  .c-studio__location {
+    font-size: 82.5px;
+  }
+}
+
+.c-studio .overlay:before {
+  z-index: 1;
+}

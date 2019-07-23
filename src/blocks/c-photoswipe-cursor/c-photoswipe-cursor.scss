@@ -1,0 +1,38 @@
+/*  ==========================================================================
+    c-photoswipe-cursor
+    ========================================================================== */
+
+.c-photoswipe-cursor {
+  height: 100%;
+  width: 25%;
+  position: absolute;
+  top: 0;
+}
+
+.c-photoswipe-cursor.cursor-left {
+  left: 0;
+}
+
+.c-photoswipe-cursor.cursor-right {
+  right: 0;
+}
+
+@media (max-width: 789px) {
+  .c-photoswipe-cursor {
+    display: none;
+  }
+}
+
+.pswp--zoomed-in .c-photoswipe-cursor {
+  display: none;
+}
+
+.pswp__button > * {
+  pointer-events: none;
+}
+
+@media (max-width: 789px) {
+  .pswp__button span {
+    display: none;
+  }
+}

@@ -1,0 +1,145 @@
+/*  ==========================================================================
+    Load next
+    ========================================================================== */
+/*
+    Block
+    ========================================================================== */
+.c-load-next {
+  width: 100%;
+  height: 50vh;
+  max-height: 100vw;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  clear: both;
+}
+
+@media screen and (max-width: 768px) {
+  .c-load-next {
+    height: 30vh;
+  }
+}
+
+.c-load-next .col {
+  display: block;
+  position: relative;
+  height: 100%;
+  pointer-events: none;
+  float: right;
+}
+
+.c-load-next.loading .c-load-next__progress-bar {
+  width: 100%;
+}
+
+/*
+    Elements
+    ========================================================================== */
+.c-load-next__container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  left: 7%;
+  right: 7%;
+  height: 100%;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 580px) {
+  .c-load-next__container {
+    left: 5%;
+    right: 5%;
+  }
+}
+
+.c-load-next__title {
+  font-weight: bold;
+  font-size: calc(0.05 * 100vw + -10px);
+  line-height: 1.14;
+  color: #fff;
+  pointer-events: none;
+  position: relative;
+  top: 50%;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  -webkit-transform: translate3d(0, -50%, 0);
+          transform: translate3d(0, -50%, 0);
+}
+
+@media (max-width: 739px) {
+  .c-load-next__title {
+    font-size: 27px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .c-load-next__title {
+    font-size: 75px;
+  }
+}
+
+.c-load-next__image {
+  height: 100%;
+  -webkit-transition: -webkit-transform 1s cubic-bezier(0.42, 0, 0.34, 1.01);
+  transition: -webkit-transform 1s cubic-bezier(0.42, 0, 0.34, 1.01);
+  transition: transform 1s cubic-bezier(0.42, 0, 0.34, 1.01);
+  transition: transform 1s cubic-bezier(0.42, 0, 0.34, 1.01), -webkit-transform 1s cubic-bezier(0.42, 0, 0.34, 1.01);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  will-change: transform;
+}
+
+.c-load-next__image:hover {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+}
+
+.c-load-next__progress-bar {
+  width: 0;
+  height: 4px;
+  position: absolute;
+  background-color: #ed1c24;
+  top: 0;
+  left: 0;
+  bottom: auto;
+  z-index: 3;
+  -webkit-transition: width 0.6s cubic-bezier(0.42, 0, 0.34, 1.01);
+  transition: width 0.6s cubic-bezier(0.42, 0, 0.34, 1.01);
+}
+
+.c-load-next__loading-text {
+  position: absolute;
+  top: 0;
+  padding-top: calc(0.01042 * 100vw + 12.29167px);
+  left: 0;
+  font-size: calc(0.00417 * 100vw + 14.91667px);
+  line-height: 1.2;
+  color: #fff;
+}
+
+@media (max-width: 739px) {
+  .c-load-next__loading-text {
+    padding-top: 20px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .c-load-next__loading-text {
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 739px) {
+  .c-load-next__loading-text {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .c-load-next__loading-text {
+    font-size: 22px;
+  }
+}
+

@@ -1,0 +1,67 @@
+/*  ==========================================================================
+    Tabs
+    ========================================================================== */
+/*
+    Block
+    ========================================================================== */
+.tabs {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+/*
+    Elements
+    ========================================================================== */
+.tabs li {
+  background: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tabs li.current span {
+  color: #000;
+}
+
+.tab__content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-transition: all 0.6s cubic-bezier(0.42, 0, 0.34, 1.01);
+  transition: all 0.6s cubic-bezier(0.42, 0, 0.34, 1.01);
+}
+
+@media screen and (max-width: 768px) {
+  .tab__content {
+    display: block;
+  }
+}
+
+.tab__content.current {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: all 1s cubic-bezier(0.42, 0, 0.34, 1.01) 0.6s;
+  transition: all 1s cubic-bezier(0.42, 0, 0.34, 1.01) 0.6s;
+}
+
+.tabs__container {
+  position: relative;
+}
+
+/*
+    Modifiers
+    ========================================================================== */
+.tabs--light {
+  color: white;
+}
+
+.tabs__container--vh {
+  min-height: 100vh;
+}

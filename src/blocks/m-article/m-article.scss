@@ -1,0 +1,120 @@
+/*  ==========================================================================
+    Article
+    ========================================================================== */
+/*
+    Block
+    ========================================================================== */
+.m-article {
+  position: relative;
+  background-color: #fff;
+}
+
+.m-article section:last-child {
+  padding-bottom: 0;
+}
+
+.m-article section:first-child {
+  padding-top: calc(0.125 * 100vw + -12.5px);
+}
+
+@media (max-width: 739px) {
+  .m-article section:first-child {
+    padding-top: 80px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .m-article section:first-child {
+    padding-top: 200px;
+  }
+}
+
+/*
+    Elements
+    ========================================================================== */
+.m-article__info-outer {
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  top: 0;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1374px) {
+  .m-article__info-outer {
+    height: auto;
+    position: relative;
+    left: auto;
+    right: auto;
+    top: auto;
+    padding-top: 150px;
+    padding-bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .m-article__info-outer {
+    padding-top: 100px;
+    padding-bottom: 30px;
+  }
+}
+
+.m-article__info-outer .container {
+  height: 100vh;
+}
+
+@media screen and (max-width: 1374px) {
+  .m-article__info-outer .container {
+    height: auto;
+  }
+}
+
+.m-article__info {
+  position: absolute;
+  bottom: 40px;
+  height: 50vh;
+}
+
+@media screen and (max-width: 1374px) {
+  .m-article__info {
+    position: relative;
+    bottom: auto;
+    height: auto;
+  }
+}
+
+.m-article__info > div {
+  position: absolute;
+  bottom: 0;
+}
+
+@media screen and (max-width: 1374px) {
+  .m-article__info > div {
+    position: relative;
+  }
+}
+
+.m-article__info .title {
+  line-height: 1.1;
+  margin-bottom: 30px;
+}
+
+.m-article__info-meta {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1374px) {
+  .m-article__info-meta .c-tooltip:before,
+  .m-article__info-meta .c-tooltip:after {
+    display: none;
+  }
+}
+
+.m-article__info .list--social {
+  margin-bottom: 40px;
+}

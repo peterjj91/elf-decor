@@ -1,0 +1,198 @@
+/*  ==========================================================================
+    SectionPhotosGrid
+    ========================================================================== */
+    
+.SectionPhotosGrid {
+  position: relative;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+  min-height: 100vh;
+}
+
+.SectionPhotosGrid.visible {
+  opacity: 1;
+}
+
+.SectionPhotosGrid .SectionPhotosGrid__noResults {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+@media (min-width: 740px) {
+  .SectionPhotosGrid .SectionPhotosGrid__noResults {
+    padding-right: 12.5px;
+    padding-left: 12.5px;
+  }
+}
+
+@media (min-width: 1374px) {
+  .SectionPhotosGrid .SectionPhotosGrid__noResults {
+    padding-right: 17.5px;
+    padding-left: 17.5px;
+  }
+}
+
+.SectionPhotosGrid .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
+@media (min-width: 740px) {
+  .SectionPhotosGrid .row {
+    margin-right: -22.5px;
+    margin-left: -22.5px;
+  }
+}
+
+@media (min-width: 1374px) {
+  .SectionPhotosGrid .row {
+    margin-right: -45px;
+    margin-left: -45px;
+  }
+}
+
+.SectionPhotosGrid .SectionPhotosGrid__item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+html.touch .SectionPhotosGrid .SectionPhotosGrid__item {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.SectionPhotosGrid .SectionPhotosGrid__item a {
+  display: block;
+  width: 100%;
+  -webkit-transition: opacity .15s;
+  transition: opacity .15s;
+}
+
+.SectionPhotosGrid .SectionPhotosGrid__item a.inactive {
+  opacity: 0.5;
+}
+
+.SectionPhotosGrid .SectionPhotosGrid__item .image {
+  width: 100%;
+}
+
+@media (min-width: 740px) {
+  .SectionPhotosGrid .SectionPhotosGrid__item {
+    padding-right: 22.5px;
+    padding-left: 22.5px;
+  }
+}
+
+@media (min-width: 1374px) {
+  .SectionPhotosGrid .SectionPhotosGrid__item {
+    padding-right: 45px;
+    padding-left: 45px;
+  }
+}
+
+@media (max-width: 739px) {
+  .SectionPhotosGrid .SectionPhotosGrid__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .SectionPhotosGrid .SectionPhotosGrid__item:nth-child(2n+1) {
+    padding-right: 20px;
+  }
+  .SectionPhotosGrid .SectionPhotosGrid__item:nth-child(2n) {
+    padding-left: 20px;
+  }
+  .SectionPhotosGrid .SectionPhotosGrid__item:nth-child(n+3) {
+    padding-top: 20px;
+  }
+}
+
+@media (min-width: 740px) and (max-width: 789px) {
+  .SectionPhotosGrid .SectionPhotosGrid__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.33333%;
+            flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+  .SectionPhotosGrid .SectionPhotosGrid__item:nth-child(n+4) {
+    padding-top: 45px;
+  }
+}
+
+@media (min-width: 790px) and (max-width: 1699px) {
+  .SectionPhotosGrid .SectionPhotosGrid__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .SectionPhotosGrid .SectionPhotosGrid__item:nth-child(n+5) {
+    padding-top: 45px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .SectionPhotosGrid .SectionPhotosGrid__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+            flex: 0 0 20%;
+    max-width: 20%;
+  }
+  .SectionPhotosGrid .SectionPhotosGrid__item:nth-child(n+6) {
+    padding-top: 90px;
+  }
+}
+
+.SectionPhotosGrid .SectionPhotosGrid__itemInner {
+  position: relative;
+}
+
+.SectionPhotosGrid .SectionPhotosGrid__touchTitle {
+  color: white;
+  font-size: calc(0.00729 * 100vw + 9.60417px);
+  line-height: 1.2;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 739px) {
+  .SectionPhotosGrid .SectionPhotosGrid__touchTitle {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .SectionPhotosGrid .SectionPhotosGrid__touchTitle {
+    font-size: 22px;
+  }
+}
+
+html.no-touch .SectionPhotosGrid .SectionPhotosGrid__touchTitle {
+  display: none;
+}

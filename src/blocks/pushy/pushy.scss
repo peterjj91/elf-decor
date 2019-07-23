@@ -1,0 +1,66 @@
+/*  ==========================================================================
+    Pushy 
+    ========================================================================== */
+/*
+    Block
+    ========================================================================== */
+[data-pushy] {
+  position: fixed;
+  width: calc( 100vw - 90px);
+  height: 100%;
+  top: 0;
+  z-index: 9999;
+  background: #fff;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transition: none;
+  transition: none;
+  -webkit-box-shadow: -6px 0 12px rgba(0, 0, 0, 0.3);
+          box-shadow: -6px 0 12px rgba(0, 0, 0, 0.3);
+  -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.42, 0, 0.34, 1.01);
+  transition: -webkit-transform 0.8s cubic-bezier(0.42, 0, 0.34, 1.01);
+  transition: transform 0.8s cubic-bezier(0.42, 0, 0.34, 1.01);
+  transition: transform 0.8s cubic-bezier(0.42, 0, 0.34, 1.01), -webkit-transform 0.8s cubic-bezier(0.42, 0, 0.34, 1.01);
+}
+
+/*
+    States
+    ========================================================================== */
+.pushy-active {
+  overflow: hidden;
+}
+
+.pushy-right {
+  right: 0;
+  -webkit-transform: translate3d(calc( 100vw - 78px), 0, 0);
+          transform: translate3d(calc( 100vw - 78px), 0, 0);
+}
+
+.pushy-right--half {
+  width: 50vw;
+  right: 0;
+  -webkit-transform: translate3d(calc( 50vw + 20px), 0, 0);
+          transform: translate3d(calc( 50vw + 20px), 0, 0);
+}
+
+.pushy-right-active .pushy-right {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+/*
+    Elements
+    ========================================================================== */
+.site-overlay {
+  display: none;
+}
+
+.pushy-active .site-overlay {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9998;
+}

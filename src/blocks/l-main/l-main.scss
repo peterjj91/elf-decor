@@ -1,0 +1,23 @@
+/*  ==========================================================================
+    Main layout styles go here
+    ========================================================================== */
+/*
+    Block
+    ========================================================================== */
+.l-main {
+  position: relative;
+  z-index: 15;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+  .l-main {
+    margin-bottom: 0 !important;
+  }
+}
+
+.l-main.is-reloading {
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
+  opacity: .8;
+}

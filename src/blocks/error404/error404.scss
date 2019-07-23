@@ -1,0 +1,17 @@
+/*  ==========================================================================
+    error404
+    ========================================================================== */
+
+.error404 .l-header {
+  border-bottom: 0;
+}
+
+.error404 .translate-header {
+  cursor: default;
+}
+
+@media screen and (min-width: 789px) {
+  .page-template-tpl-studios .l-header {
+    border-bottom: 0;
+  }
+}

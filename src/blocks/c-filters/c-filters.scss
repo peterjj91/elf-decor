@@ -1,0 +1,57 @@
+/*  ==========================================================================
+    c-filters
+    ========================================================================== */
+    
+.c-filters {
+
+  font-size: calc(0.00417 * 100vw + 14.91667px);
+  line-height: 1.2;
+}
+
+@media (max-width: 739px) {
+  .c-filters {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .c-filters {
+    font-size: 22px;
+  }
+}
+
+.c-filters ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c-filters li {
+  color: #bab8b8;
+}
+
+.c-filters li:not(:last-child):after {
+  content: '/';
+  margin: 0 0.25em;
+}
+
+.c-filters li.active button {
+  color: #000;
+}
+
+.c-filters button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+}
+
+.c-filters button:focus {
+  outline: none;
+}

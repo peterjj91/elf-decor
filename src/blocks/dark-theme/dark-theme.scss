@@ -1,0 +1,174 @@
+/*  ==========================================================================
+    dark theme
+    ========================================================================== */
+
+@media screen and (max-width: 1024px) {
+  .dark-theme .l-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.11);
+  }
+}
+
+.dark-theme .l-header,
+.dark-theme .l-main {
+  background-color: #000;
+}
+
+.grey-theme .l-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.11);
+}
+
+.grey-theme .l-header,
+.grey-theme .l-main {
+  background-color: #8d8d8d;
+}
+
+.grey-theme .lazy-container {
+  background-color: #a7a7a7;
+}
+
+.grey-theme .slider-boxes.slider-boxes--inverted {
+  border-top: 1px solid rgba(255, 255, 255, 0.11);
+}
+
+.dark-theme .l-header__logo svg,
+.dark-theme .l-header__nav-icon svg,
+.dark-theme .l-header__search svg,
+.grey-theme .l-header__logo svg,
+.grey-theme .l-header__nav-icon svg,
+.grey-theme .l-header__search svg {
+  fill: #fff;
+}
+
+.dark-theme .l-header__nav-icon.active svg,
+.grey-theme .l-header__nav-icon.active svg {
+  fill: #000;
+}
+
+.dark-theme .c-language-switcher,
+.dark-theme .l-nav--main a,
+.grey-theme .c-language-switcher,
+.grey-theme .l-nav--main a {
+  color: #fff;
+}
+
+.dark-theme .l-header--invert .l-nav--main a,
+.dark-theme .l-header--invert .c-language-switcher,
+.dark-theme .l-header--invert .lang-item a,
+.grey-theme .l-header--invert .l-nav--main a,
+.grey-theme .l-header--invert .c-language-switcher,
+.grey-theme .l-header--invert .lang-item a {
+  color: #000;
+}
+
+.dark-theme .l-header--invert .l-header__search svg,
+.grey-theme .l-header--invert .l-header__search svg {
+  fill: #000;
+}
+
+@media screen and (min-width: 1374px) {
+  .dark-theme .search-form,
+  .grey-theme .search-form {
+    background-color: #fff;
+  }
+}
+
+@media screen and (min-width: 1374px) {
+  .dark-theme .search-field,
+  .grey-theme .search-field {
+    color: #000;
+  }
+}
+
+.dark-theme .search-form__close svg circle,
+.grey-theme .search-form__close svg circle {
+  fill: #000;
+}
+
+@media screen and (min-width: 1374px) {
+  .page-template-tpl-media-videos .search-form {
+    background-color: #fff;
+  }
+}
+
+/* single projects - tablet down + 404 */
+@media screen and (max-width: 1024px) {
+  .error404 .l-header,
+  .single-cpt_projects.no-full-bleed .l-header {
+    background-color: transparent;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .error404 .l-header.header--not-top,
+  .single-cpt_projects.no-full-bleed .l-header.header--not-top {
+    background-color: #fff;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .error404 .l-header__logo svg,
+  .single-cpt_projects.no-full-bleed .l-header__logo svg {
+    fill: #fff;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .error404 .l-header.header--not-top .l-header__logo svg,
+  .single-cpt_projects.no-full-bleed .l-header.header--not-top .l-header__logo svg {
+    fill: #ed1c24;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .error404 .header--top,
+  .error404 .header--not-top.down,
+  .single-cpt_projects.no-full-bleed .header--top,
+  .single-cpt_projects.no-full-bleed .header--not-top.down {
+    background-color: transparent;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .error404 .header--top .l-header__logo svg,
+  .error404 .header--top .l-header__search svg,
+  .error404 .header--not-top.down .l-header__logo svg,
+  .error404 .header--not-top.down .l-header__search svg,
+  .single-cpt_projects.no-full-bleed .header--top .l-header__logo svg,
+  .single-cpt_projects.no-full-bleed .header--top .l-header__search svg,
+  .single-cpt_projects.no-full-bleed .header--not-top.down .l-header__logo svg,
+  .single-cpt_projects.no-full-bleed .header--not-top.down .l-header__search svg {
+    fill: #fff;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .error404 .header--top .l-nav--main > ul > li > a,
+  .error404 .header--not-top.down .l-nav--main > ul > li > a,
+  .single-cpt_projects.no-full-bleed .header--top .l-nav--main > ul > li > a,
+  .single-cpt_projects.no-full-bleed .header--not-top.down .l-nav--main > ul > li > a {
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .error404 .l-header__nav-icon svg,
+  .single-cpt_projects.no-full-bleed .l-header__nav-icon svg {
+    fill: #fff;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .error404 .nav-open .l-header__logo svg,
+  .single-cpt_projects.no-full-bleed .nav-open .l-header__logo svg {
+    fill: #ed1c24;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .error404 .header--not-top .l-header__nav-icon svg,
+  .error404 .nav-open .l-header__nav-icon svg,
+  .single-cpt_projects.no-full-bleed .header--not-top .l-header__nav-icon svg,
+  .single-cpt_projects.no-full-bleed .nav-open .l-header__nav-icon svg {
+    fill: #000;
+  }
+}

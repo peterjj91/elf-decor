@@ -1,0 +1,65 @@
+
+/*  ==========================================================================
+    Play Button
+    ========================================================================== */
+/*
+    Block
+    ========================================================================== */
+.c-play-button {
+  width: calc(0.05833 * 100vw + 0.83333px);
+  height: calc(0.05833 * 100vw + 0.83333px);
+  cursor: pointer;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+}
+
+@media (max-width: 739px) {
+  .c-play-button {
+    width: 44px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .c-play-button {
+    width: 100px;
+  }
+}
+
+@media (max-width: 739px) {
+  .c-play-button {
+    height: 44px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .c-play-button {
+    height: 100px;
+  }
+}
+
+.c-play-button:hover svg {
+  -webkit-transform: scale(0.95) translateY(-50%);
+          transform: scale(0.95) translateY(-50%);
+}
+
+.c-play-button svg {
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  top: 50%;
+  position: relative;
+  -webkit-transform: scale(1) translateY(-50%);
+          transform: scale(1) translateY(-50%);
+}
+
+/*
+    Modifiers
+    ========================================================================== */
+.c-play-button--vc {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate3d(0, -50%, 0);
+          transform: translate3d(0, -50%, 0);
+}

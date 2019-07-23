@@ -1,0 +1,152 @@
+
+/*  ==========================================================================
+    Btn
+    ========================================================================== */
+/*
+    Block
+    ========================================================================== */
+.btn {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  height: 52px;
+  -webkit-transition: all 150ms;
+  transition: all 150ms;
+  max-width: 200px;
+  width: 100%;
+  color: #000;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 1px solid transparent;
+}
+
+.btn > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.btn svg {
+  fill: #000;
+  margin-left: 16px;
+  margin-right: -8px;
+  width: 10px;
+  height: 10px;
+  -webkit-transition: all 150ms;
+  transition: all 150ms;
+}
+
+.btn span {
+  white-space: nowrap;
+
+  font-size: calc(0 * 100vw + 18px);
+  line-height: 1.2;
+}
+
+@media (max-width: 739px) {
+  .btn span {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .btn span {
+    font-size: 18px;
+  }
+}
+
+.btn + .btn {
+  margin-left: 20px;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+}
+
+/*
+    Button modifiers
+    ========================================================================== */
+.btn--outline {
+  color: #000;
+  background-color: white;
+  border-color: #000;
+}
+
+.btn--outline:hover {
+  background-color: #000;
+  color: white;
+  border-color: white;
+}
+
+.btn--outline:hover svg {
+  fill: white;
+}
+
+.btn--filled {
+  background-color: #000;
+  color: white;
+  border-color: white;
+}
+
+.btn--filled:hover {
+  color: #000;
+  background-color: white;
+  border-color: #000;
+}
+
+/*
+    Button themes
+    ========================================================================== */
+.btn.t-white.btn--outline {
+  background: transparent;
+  color: #fff;
+  border-color: #fff;
+}
+
+.btn.t-white.btn--outline svg {
+  fill: #fff;
+}
+
+.btn.t-white.btn--outline:hover {
+  background-color: white;
+  color: #8d8d8d;
+}
+
+.btn.t-white.btn--outline:hover svg {
+  fill: #8d8d8d;
+}
+
+.btn.t-white.btn--filled {
+  color: #8d8d8d;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.btn.t-white.btn--filled:hover {
+  background-color: transparent;
+  color: white;
+}
+
+.btn.t-white.btn--filled:hover svg {
+  fill: white;
+}
+
+

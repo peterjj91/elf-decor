@@ -1,0 +1,31 @@
+/*  ==========================================================================
+    c-drag
+    ========================================================================== */
+
+.c-drag-cursor {
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.c-drag-cursor.visible {
+  opacity: 1;
+}
+
+.c-sibling-pages-slider {
+  padding-bottom: calc(0.04167 * 100vw + 29.16667px);
+}
+
+@media (max-width: 739px) {
+  .c-sibling-pages-slider {
+    padding-bottom: 60px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .c-sibling-pages-slider {
+    padding-bottom: 100px;
+  }
+}

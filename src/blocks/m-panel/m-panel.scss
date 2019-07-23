@@ -1,0 +1,74 @@
+/*  ==========================================================================
+    Panel
+    ========================================================================== */
+/*
+    Block
+    ========================================================================== */
+/*
+    Elements
+    ========================================================================== */
+.m-panel__heading,
+.m-panel__subheading {
+  position: absolute;
+  color: #ed1c24;
+  left: 80px;
+  right: 80px;
+}
+
+.m-panel__heading {
+  top: 50%;
+  -webkit-transform: translateY(calc( -50% - 18px));
+          transform: translateY(calc( -50% - 18px));
+}
+
+.m-panel__subheading {
+  bottom: 50px;
+}
+
+/*
+    Modifiers
+    ========================================================================== */
+.m-panel--split {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  height: 100%;
+  overflow: hidden;
+}
+
+.m-panel--split > div {
+  float: left;
+  position: relative;
+  width: 50%;
+}
+
+.m-panel--split div:last-child {
+  background-color: #000;
+  color: #fff;
+  padding: 150px 55px 40px;
+  -webkit-transform: translate3d(50%, 0, 0);
+          transform: translate3d(50%, 0, 0);
+  -webkit-transition: -webkit-transform 0.9s ease-in-out;
+  transition: -webkit-transform 0.9s ease-in-out;
+  transition: transform 0.9s ease-in-out;
+  transition: transform 0.9s ease-in-out, -webkit-transform 0.9s ease-in-out;
+  overflow: auto;
+  font-size: 22px;
+  font-size: rem-calc(22);
+}
+
+.m-panel--split div:last-child a {
+  color: #fff;
+}
+
+.m-panel--split div:last-child a:hover {
+  color: #ed1c24;
+}
+
+.pushy-active .m-panel--split div:last-child {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}

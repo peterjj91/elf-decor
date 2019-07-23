@@ -1,0 +1,152 @@
+/*  ==========================================================================
+    Search Form
+    ========================================================================== */
+/*
+    Block
+    ========================================================================== */
+.search-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  height: 150px;
+  z-index: 102;
+  padding: 0 7%;
+  -webkit-transform: translateY(-150px);
+          transform: translateY(-150px);
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.42, 0, 0.34, 1.01);
+  transition: -webkit-transform 0.2s cubic-bezier(0.42, 0, 0.34, 1.01);
+  transition: transform 0.2s cubic-bezier(0.42, 0, 0.34, 1.01);
+  transition: transform 0.2s cubic-bezier(0.42, 0, 0.34, 1.01), -webkit-transform 0.2s cubic-bezier(0.42, 0, 0.34, 1.01);
+  will-change: transform;
+}
+
+@media screen and (max-width: 1374px) {
+  .search-form {
+    height: 84px;
+    -webkit-transform: translateY(-84px);
+            transform: translateY(-84px);
+    position: absolute;
+  }
+}
+
+/*
+    Elements
+    ========================================================================== */
+.search-form .container {
+  height: 100%;
+}
+
+.search-field {
+  color: #fff;
+}
+
+.search-form input[type="search"] {
+  background: transparent;
+  border: 0;
+  width: calc(100% - 60px);
+  line-height: 1.8;
+  font-size: 26px;
+  font-size: rem-calc(26);
+  position: absolute;
+  padding: 0;
+  top: 50%;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+  -webkit-transform: translate3d(0, -50%, 0);
+          transform: translate3d(0, -50%, 0);
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+@media screen and (max-width: 1374px) {
+  .search-form input[type="search"] {
+    line-height: normal;
+    font-size: 22px;
+    font-size: rem-calc(22);
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .search-form input[type="search"] {
+    line-height: normal;
+    font-size: 18px;
+    font-size: rem-calc(18);
+  }
+}
+
+.search-form input[type="search"]:focus {
+  outline: none;
+}
+
+.search-form input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+  /*width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: block;
+    background-color: map-get( $c-bg, quinary ); 
+    color: white;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-image: url('../img/close-2.svg');
+    background-size: 12px 12px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+    @include respond-max( map-get( $bp, desktop_s ) ) {
+          right: 7%;
+      }*/
+}
+
+.search-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 101;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.search-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.search-form__close {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate3d(0, -50%, 0);
+          transform: translate3d(0, -50%, 0);
+  right: 0;
+  width: 40px;
+  height: 40px;
+  display: block;
+  cursor: pointer;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+/*
+    States
+    ========================================================================== */
+body.search-form-active .search-form {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+body.search-form-active .search-field,
+body.search-form-active .search-form__close {
+  opacity: 1;
+}

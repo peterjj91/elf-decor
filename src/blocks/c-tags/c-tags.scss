@@ -1,0 +1,65 @@
+
+/*  ==========================================================================
+    Tags
+    ========================================================================== */
+/*
+    Block
+    ========================================================================== */
+.c-tags {
+  font-size: 13px;
+  font-size: rem-calc(13);
+}
+
+/*
+    Elements
+    ========================================================================== */
+.c-tags li {
+  margin-right: 6px;
+  margin-bottom: 8px;
+}
+
+.c-tags li:last-child {
+  margin-right: 0;
+}
+
+.c-tags a {
+  display: inline-block;
+  border: 1px solid;
+  border-radius: 4px;
+  padding: 3px 5px;
+  -webkit-transition: color 0.1s linear, background-color 0.1s linear;
+  transition: color 0.1s linear, background-color 0.1s linear;
+}
+
+/*
+    Modifiers
+    ========================================================================== */
+.c-tags--mid-grey a {
+  color: #bab8b8;
+  border-color: #bab8b8;
+}
+
+.c-tags--mid-grey a:hover {
+  background-color: #bab8b8;
+  color: #fff;
+}
+
+.c-tags--white a {
+  color: #fff;
+  border-color: #fff;
+}
+
+.c-tags--white a:hover {
+  background-color: #fff;
+  color: #8d8d8d;
+}
+
+.c-tags--red a:hover {
+  background-color: #fff;
+  color: #ed1c24;
+}
+
+.c-tags--trans a:hover {
+  background-color: #fff;
+  color: #000;
+}

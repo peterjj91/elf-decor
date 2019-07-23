@@ -1,0 +1,47 @@
+
+/*  ==========================================================================
+    Sidebar
+    ========================================================================== */
+/*
+    Block
+    ========================================================================== */
+.c-sidebar {
+  position: relative;
+  z-index: 1;
+}
+
+/*
+    Elements
+    ========================================================================== */
+.c-sidebar__wrapper {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.c-sidebar__wrapper .container {
+  height: 100%;
+}
+
+.c-sidebar a {
+  color: #8d8d8d;
+}
+
+.c-sidebar li.active a {
+  color: #000;
+}
+
+.c-sidebar .section-nav {
+  font-size: 22px;
+  font-size: rem-calc(22);
+  margin-bottom: 200px;
+}
+
+@media screen and (max-width: 1468px) {
+  .c-sidebar .section-nav {
+    font-size: 18px;
+    font-size: rem-calc(18);
+  }
+}
+

@@ -1,0 +1,73 @@
+/*  ==========================================================================
+    Language switcher
+    ========================================================================== */
+/*
+    Block
+    ========================================================================== */
+.c-language-switcher,
+.lang-item a {
+  border: 0;
+  background: transparent;
+  border-radius: 0;
+  position: absolute;
+  top: 30px;
+  right: 35px;
+  text-align: right;
+  font-size: calc(0.00417 * 100vw + 14.91667px);
+  line-height: 1.2;
+  line-height: 1.4;
+  -webkit-appearance: none;
+  direction: rtl;
+  color: #fff;
+  -webkit-transition: color 0.2s ease-in-out, opacity 0.1s linear;
+  transition: color 0.2s ease-in-out, opacity 0.1s linear;
+  outline: none;
+  z-index: 20;
+}
+
+@media (max-width: 739px) {
+  .c-language-switcher,
+  .lang-item a {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .c-language-switcher,
+  .lang-item a {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 1374px) {
+  .c-language-switcher,
+  .lang-item a {
+    top: 0;
+    right: 50px;
+    line-height: 82px;
+    height: 80px;
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .c-language-switcher,
+  .lang-item a {
+    top: 0;
+    line-height: 70px;
+    height: 70px;
+  }
+}
+
+.grey-theme .c-language-switcher,
+.dark-theme .c-language-switcher, .grey-theme
+.lang-item a,
+.dark-theme
+.lang-item a {
+  color: #fff;
+}
+
+.lang-item {
+  list-style: none;
+}
+

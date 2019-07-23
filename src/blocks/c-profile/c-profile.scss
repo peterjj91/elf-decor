@@ -1,0 +1,461 @@
+
+/*  ==========================================================================
+    Profile
+    ========================================================================== */
+/*
+    Block
+    ========================================================================== */
+.c-profile {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 21;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+  .c-profile {
+    display: block;
+    overflow-y: auto;
+  }
+}
+
+.c-profile__mobile-bg {
+  display: block;
+  background-color: #000;
+  position: absolute !important;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+@media screen and (min-width: 768px) {
+  .c-profile__mobile-bg {
+    display: none;
+  }
+}
+
+/*
+    Elements
+    ========================================================================== */
+.c-profile > div {
+  width: 50%;
+  float: left;
+  position: relative;
+  -webkit-transition: -webkit-transform 1.2s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: -webkit-transform 1.2s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: transform 1.2s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: transform 1.2s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 1.2s cubic-bezier(0.19, 1, 0.22, 1);
+  will-change: transform;
+}
+
+@media screen and (max-width: 768px) {
+  .c-profile > div {
+    width: 100%;
+  }
+}
+
+.c-profile__image {
+  background-color: #eaeaea;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  z-index: 1;
+  will-change: transform;
+}
+
+@media screen and (max-width: 768px) {
+  .c-profile__image {
+    background-color: #000;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    width: 100%;
+    padding-top: 84px;
+    padding-bottom: calc(0.04167 * 100vw + 9.16667px);
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) and (max-width: 739px) {
+  .c-profile__image {
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 1700px) {
+  .c-profile__image {
+    padding-bottom: 80px;
+  }
+}
+
+@media (max-width: 739px) {
+  .c-profile__image {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.c-profile__image .lazy-container {
+  width: auto;
+  max-width: 70%;
+  max-height: 80vh;
+  padding-bottom: 0 !important;
+}
+
+@media screen and (max-width: 768px) {
+  .c-profile__image .lazy-container {
+    max-height: none;
+    max-width: none;
+    width: 100%;
+    background-color: #1c1c1c;
+    padding-bottom: 100% !important;
+  }
+}
+
+.c-profile__image .lazy-container img {
+  position: relative;
+  width: auto;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .c-profile__image .lazy-container img {
+    width: 100%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.c-profile__detail {
+  background-color: #000;
+  color: #fff;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  will-change: transform;
+  overflow-y: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .c-profile__detail {
+    overflow-y: auto;
+  }
+}
+
+.c-profile__detail > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: calc(0.05208 * 100vw + 11.45833px);
+  padding-bottom: calc(0.02083 * 100vw + 14.58333px);
+  height: 100%;
+  overflow-y: auto;
+}
+
+@media (max-width: 739px) {
+  .c-profile__detail > div {
+    padding-top: 50px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .c-profile__detail > div {
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 739px) {
+  .c-profile__detail > div {
+    padding-bottom: 30px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .c-profile__detail > div {
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .c-profile__detail > div {
+    position: relative;
+    padding: 100px 60px 50px;
+    top: auto;
+    bottom: auto;
+    right: auto;
+    left: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .c-profile__detail > div {
+    padding: 0 5% 50px;
+    display: block;
+  }
+}
+
+.c-profile__detail-title {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.c-profile__detail-title h3 {
+  font-size: calc(0.01875 * 100vw + 8.125px);
+  line-height: 1.2;
+}
+
+@media (max-width: 739px) {
+  .c-profile__detail-title h3 {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .c-profile__detail-title h3 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-device-width: 740px) and (max-device-width: 790px) and (orientation: portrait) {
+  .c-profile__detail-title h3 {
+    font-size: calc(0.02062 * 100vw + 8.9375px);
+  }
+}
+
+@media screen and (min-device-width: 740px) and (max-device-width: 790px) and (orientation: portrait) and (max-width: 739px) {
+  .c-profile__detail-title h3 {
+    font-size: 24.2px;
+  }
+}
+
+@media screen and (min-device-width: 740px) and (max-device-width: 790px) and (orientation: portrait) and (min-width: 1700px) {
+  .c-profile__detail-title h3 {
+    font-size: 44px;
+  }
+}
+
+.c-profile__detail-title span {
+  font-weight: bold;
+  font-size: calc(0.01875 * 100vw + 8.125px);
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+@media (max-width: 739px) {
+  .c-profile__detail-title span {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .c-profile__detail-title span {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-device-width: 740px) and (max-device-width: 790px) and (orientation: portrait) {
+  .c-profile__detail-title span {
+    font-size: calc(0.02062 * 100vw + 8.9375px);
+  }
+}
+
+@media screen and (min-device-width: 740px) and (max-device-width: 790px) and (orientation: portrait) and (max-width: 739px) {
+  .c-profile__detail-title span {
+    font-size: 24.2px;
+  }
+}
+
+@media screen and (min-device-width: 740px) and (max-device-width: 790px) and (orientation: portrait) and (min-width: 1700px) {
+  .c-profile__detail-title span {
+    font-size: 44px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .c-profile__detail-title {
+    margin-bottom: 40px;
+  }
+}
+
+.c-profile__name {
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+.c-profile__detail-bio {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+
+  font-size: calc(0.00937 * 100vw + 11.0625px);
+  line-height: 1.2;
+}
+
+@media (max-width: 739px) {
+  .c-profile__detail-bio {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .c-profile__detail-bio {
+    font-size: 27px;
+  }
+}
+
+.c-profile__detail-bio .c-social__network a:hover svg {
+  fill: #fff;
+}
+
+.c-profile__detail-bio p {
+  margin-bottom: 0;
+}
+
+.c-profile__detail-bio p:not(:first-child) {
+  padding-top: calc(0.01042 * 100vw + 12.29167px);
+}
+
+@media (max-width: 739px) {
+  .c-profile__detail-bio p:not(:first-child) {
+    padding-top: 20px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .c-profile__detail-bio p:not(:first-child) {
+    padding-top: 30px;
+  }
+}
+
+.c-profile__detail-bio .c-social__network--dark {
+  padding-top: calc(0.02083 * 100vw + 14.58333px);
+}
+
+@media (max-width: 739px) {
+  .c-profile__detail-bio .c-social__network--dark {
+    padding-top: 30px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .c-profile__detail-bio .c-social__network--dark {
+    padding-top: 50px;
+  }
+}
+
+.c-profile__nav {
+  position: absolute;
+  right: 40px;
+  bottom: 50px;
+}
+
+.c-profile__preview {
+  width: 300px;
+  height: 300px;
+  display: block;
+  pointer-events: none;
+  position: absolute;
+  bottom: 120px;
+  background-color: #fff;
+  right: 0;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out, -webkit-transform 0.2s cubic-bezier(0.42, 0, 0.34, 1.01);
+  transition: opacity 0.2s ease-in-out, -webkit-transform 0.2s cubic-bezier(0.42, 0, 0.34, 1.01);
+  transition: transform 0.2s cubic-bezier(0.42, 0, 0.34, 1.01), opacity 0.2s ease-in-out;
+  transition: transform 0.2s cubic-bezier(0.42, 0, 0.34, 1.01), opacity 0.2s ease-in-out, -webkit-transform 0.2s cubic-bezier(0.42, 0, 0.34, 1.01);
+  will-change: transform, opacity;
+}
+
+.c-profile__preview img {
+  opacity: 0.5;
+}
+
+.c-profile__preview > span {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  padding: 0 5%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-align: center;
+  color: #000;
+  z-index: 1;
+}
+
+.c-profile__nav-btn:hover + .c-profile__preview {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.c-profile__close {
+  width: 40px;
+  height: 40px;
+  display: block;
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  z-index: 1;
+  -webkit-transform: translate3d(80px, 0, 0);
+          transform: translate3d(80px, 0, 0);
+  -webkit-transition: -webkit-transform 1.2s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: -webkit-transform 1.2s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: transform 1.2s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: transform 1.2s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 1.2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+@media screen and (max-width: 1024px) {
+  .c-profile__close {
+    top: 22px;
+    right: 7%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .c-profile__close {
+    right: 5%;
+  }
+}
+
+/*
+    Modifiers
+    ========================================================================== */
+.c-profile--active > div {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.c-profile--active .c-profile__close {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+

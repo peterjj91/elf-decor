@@ -1,0 +1,313 @@
+/*  ==========================================================================
+    media-awards
+    ========================================================================== */
+.media-awards {
+  padding-bottom: calc(0.04167 * 100vw + 9.16667px);
+}
+
+@media (max-width: 739px) {
+  .media-awards {
+    padding-bottom: 40px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .media-awards {
+    padding-bottom: 80px;
+  }
+}
+
+.media-awards .row-year {
+  padding-bottom: calc(0.01042 * 100vw + 12.29167px);
+}
+
+@media (max-width: 739px) {
+  .media-awards .row-year {
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .media-awards .row-year {
+    padding-bottom: 30px;
+  }
+}
+
+.media-awards .col-year {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-weight: 700;
+  font-weight: bold;
+  font-size: calc(0.01875 * 100vw + 8.125px);
+  line-height: 1.2;
+  padding-bottom: calc(0 * 100vw + 20px);
+}
+
+@media (min-width: 740px) {
+  .media-awards .col-year {
+    padding-right: 12.5px;
+    padding-left: 12.5px;
+  }
+}
+
+@media (min-width: 1374px) {
+  .media-awards .col-year {
+    padding-right: 17.5px;
+    padding-left: 17.5px;
+  }
+}
+
+@media (max-width: 739px) {
+  .media-awards .col-year {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .media-awards .col-year {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-device-width: 740px) and (max-device-width: 790px) and (orientation: portrait) {
+  .media-awards .col-year {
+    font-size: calc(0.02062 * 100vw + 8.9375px);
+  }
+}
+
+@media screen and (min-device-width: 740px) and (max-device-width: 790px) and (orientation: portrait) and (max-width: 739px) {
+  .media-awards .col-year {
+    font-size: 24.2px;
+  }
+}
+
+@media screen and (min-device-width: 740px) and (max-device-width: 790px) and (orientation: portrait) and (min-width: 1700px) {
+  .media-awards .col-year {
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 739px) {
+  .media-awards .col-year {
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .media-awards .col-year {
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 739px) {
+  .media-awards .col-year {
+
+    font-size: calc(0.00937 * 100vw + 11.0625px);
+    line-height: 1.2;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 3;
+    padding-top: calc(0.01042 * 100vw + 2.29167px);
+    top: 70px;
+  }
+}
+
+@media (max-width: 739px) and (max-width: 739px) {
+  .media-awards .col-year {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 739px) and (min-width: 1700px) {
+  .media-awards .col-year {
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 739px) and (max-width: 739px) {
+  .media-awards .col-year {
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 739px) and (min-width: 1700px) {
+  .media-awards .col-year {
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 739px) {
+  .media-awards .col-year:before {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    width: 100%;
+    background: white;
+    height: 25px;
+  }
+}
+
+@media (min-width: 740px) {
+  .media-awards .col-year {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.33333%;
+            flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+  .media-awards .col-year .value {
+    line-height: 1;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 120px;
+  }
+}
+
+@media (min-width: 790px) {
+  .media-awards .col-year {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+.media-awards .col-awards {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+@media (min-width: 740px) {
+  .media-awards .col-awards {
+    padding-right: 12.5px;
+    padding-left: 12.5px;
+  }
+}
+
+@media (min-width: 1374px) {
+  .media-awards .col-awards {
+    padding-right: 17.5px;
+    padding-left: 17.5px;
+  }
+}
+
+@media (min-width: 740px) {
+  .media-awards .col-awards {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 66.66667%;
+            flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+  }
+}
+
+@media (min-width: 1700px) {
+  .media-awards .col-awards {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 75%;
+            flex: 0 0 75%;
+    max-width: 75%;
+  }
+}
+
+.media-awards .award {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: calc(0.00417 * 100vw + 14.91667px);
+  line-height: 1.2;
+  font-family: "aktiv-grotesk", "aktiv-grotesk-reg", sans-serif;
+  margin-bottom: 1em;
+}
+
+@media (min-width: 740px) {
+  .media-awards .award {
+    padding-right: 12.5px;
+    padding-left: 12.5px;
+  }
+}
+
+@media (min-width: 1374px) {
+  .media-awards .award {
+    padding-right: 17.5px;
+    padding-left: 17.5px;
+  }
+}
+
+@media (min-width: 740px) {
+  .media-awards .award {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 1700px) {
+  .media-awards .award {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.33333%;
+            flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+}
+
+@media (max-width: 739px) {
+  .media-awards .award {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .media-awards .award {
+    font-size: 22px;
+  }
+}
+
+.media-awards .award .name {
+  font-weight: 700;
+}
+
+.media-awards .award .project a {
+  color: #ed1c24;
+  -webkit-transition: .15s;
+  transition: .15s;
+}
+
+.media-awards .award .project p {
+  margin-bottom: 0;
+}
+
+.media-awards .award .project-image {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 20;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.media-awards .award .project-image .image {
+  width: 200px;
+}
+
+.media-awards .award .project-image img {
+  width: auto;
+  height: auto;
+}
+
+.media-awards .award .project-image.visible {
+  visibility: visible;
+}
+
+.touch .media-awards .award .project-image {
+  display: none;
+}

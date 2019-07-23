@@ -1,0 +1,87 @@
+/*  ==========================================================================
+    c-quote-2
+    ========================================================================== */
+
+.c-quote-2 blockquote {
+  font-weight: bold;
+  font-size: calc(0.01875 * 100vw + 8.125px);
+  line-height: 1.2;
+  margin: 0;
+}
+
+@media (max-width: 739px) {
+  .c-quote-2 blockquote {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .c-quote-2 blockquote {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-device-width: 740px) and (max-device-width: 790px) and (orientation: portrait) {
+  .c-quote-2 blockquote {
+    font-size: calc(0.02062 * 100vw + 8.9375px);
+  }
+}
+
+@media screen and (min-device-width: 740px) and (max-device-width: 790px) and (orientation: portrait) and (max-width: 739px) {
+  .c-quote-2 blockquote {
+    font-size: 24.2px;
+  }
+}
+
+@media screen and (min-device-width: 740px) and (max-device-width: 790px) and (orientation: portrait) and (min-width: 1700px) {
+  .c-quote-2 blockquote {
+    font-size: 44px;
+  }
+}
+
+.c-quote-2 blockquote:before {
+  content: '\201C';
+}
+
+@media (min-width: 790px) {
+  .c-quote-2 blockquote:before {
+    margin-left: -0.5em;
+    position: absolute;
+  }
+}
+
+.c-quote-2 blockquote:after {
+  content: '\201D';
+  margin-left: 0.1em;
+}
+
+.c-quote-2 .c-quote-2__cite {
+  margin-top: calc(0.02083 * 100vw + 14.58333px);
+  font-size: calc(0 * 100vw + 18px);
+  line-height: 1.2;
+}
+
+@media (max-width: 739px) {
+  .c-quote-2 .c-quote-2__cite {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .c-quote-2 .c-quote-2__cite {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 739px) {
+  .c-quote-2 .c-quote-2__cite {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .c-quote-2 .c-quote-2__cite {
+    font-size: 18px;
+  }
+}
+

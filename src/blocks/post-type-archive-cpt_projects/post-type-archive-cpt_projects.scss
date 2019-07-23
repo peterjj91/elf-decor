@@ -1,0 +1,36 @@
+/*  ==========================================================================
+    post-type-archive-cpt_projects
+    ========================================================================== */
+    
+body.post-type-archive-cpt_projects main .irregular-grid, body.post-type-archive-cpt_projects main .SectionPhotosGrid {
+  padding-top: calc(0.02083 * 100vw + 164.58333px);
+  padding-bottom: calc(0.10417 * 100vw + 22.91667px);
+}
+
+@media (max-width: 739px) {
+  body.post-type-archive-cpt_projects main .irregular-grid, body.post-type-archive-cpt_projects main .SectionPhotosGrid {
+    padding-top: 180px;
+  }
+}
+
+@media (min-width: 1700px) {
+  body.post-type-archive-cpt_projects main .irregular-grid, body.post-type-archive-cpt_projects main .SectionPhotosGrid {
+    padding-top: 200px;
+  }
+}
+
+@media (max-width: 739px) {
+  body.post-type-archive-cpt_projects main .irregular-grid, body.post-type-archive-cpt_projects main .SectionPhotosGrid {
+    padding-bottom: 100px;
+  }
+}
+
+@media (min-width: 1700px) {
+  body.post-type-archive-cpt_projects main .irregular-grid, body.post-type-archive-cpt_projects main .SectionPhotosGrid {
+    padding-bottom: 200px;
+  }
+}
+
+body.post-type-archive-cpt_projects main .irregular-grid .lazy-container, body.post-type-archive-cpt_projects main .SectionPhotosGrid .lazy-container {
+  background-color: #1c1c1c;
+}

@@ -1,0 +1,327 @@
+/*  ==========================================================================
+    c-fieldset
+    ========================================================================== */
+    
+.c-fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: -10px;
+  margin-left: -10px;
+  position: relative;
+}
+
+@media (min-width: 740px) {
+  .c-fieldset {
+    margin-right: -12.5px;
+    margin-left: -12.5px;
+  }
+}
+
+@media (min-width: 1374px) {
+  .c-fieldset {
+    margin-right: -17.5px;
+    margin-left: -17.5px;
+  }
+}
+
+.c-fieldset label {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  pointer-events: none;
+}
+
+.c-fieldset label span {
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.c-fieldset label span {
+
+  font-size: calc(0.00417 * 100vw + 14.91667px);
+  line-height: 1.2;
+  color: #000;
+}
+
+@media (max-width: 739px) {
+  .c-fieldset label span {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .c-fieldset label span {
+    font-size: 22px;
+  }
+}
+
+.c-fieldset .field-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (min-width: 740px) {
+  .c-fieldset .field-wrapper {
+    padding-right: 12.5px;
+    padding-left: 12.5px;
+  }
+}
+
+@media (min-width: 1374px) {
+  .c-fieldset .field-wrapper {
+    padding-right: 17.5px;
+    padding-left: 17.5px;
+  }
+}
+
+@media (max-width: 739px) {
+  .c-fieldset .field-wrapper {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+
+.c-fieldset .field-wrapper label {
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+}
+
+.c-fieldset .field-wrapper input,
+.c-fieldset .field-wrapper textarea {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.c-fieldset .field-wrapper.error label span {
+  color: #ed1c24;
+}
+
+.c-fieldset .field-wrapper.error input {
+  border-color: #ed1c24;
+  color: #ed1c24;
+}
+
+.c-fieldset .field-wrapper.error .validation-message {
+  color: #ed1c24;
+  opacity: 1;
+}
+
+.c-fieldset .field-text label {
+  height: 40px;
+}
+
+.c-fieldset .field-text input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  border-bottom: 1px solid #000;
+  height: 40px;
+  width: 100%;
+  padding: 0;
+
+  font-size: calc(0.00417 * 100vw + 14.91667px);
+  line-height: 1.2;
+  border-radius: 0;
+}
+
+@media (max-width: 739px) {
+  .c-fieldset .field-text input {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .c-fieldset .field-text input {
+    font-size: 22px;
+  }
+}
+
+.c-fieldset .field-text input:focus {
+  outline: none;
+  z-index: 1;
+}
+
+.c-fieldset .field-text .validation-message {
+  position: absolute;
+
+  font-size: calc(0 * 100vw + 18px);
+  line-height: 1.2;
+  font-size: calc(0 * 100vw + 13px);
+  bottom: -1.5em;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+  opacity: 0;
+}
+
+@media (max-width: 739px) {
+  .c-fieldset .field-text .validation-message {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .c-fieldset .field-text .validation-message {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 739px) {
+  .c-fieldset .field-text .validation-message {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .c-fieldset .field-text .validation-message {
+    font-size: 13px;
+  }
+}
+
+.c-fieldset .field-textarea {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 10px;
+  position: relative;
+}
+
+.c-fieldset .field-textarea textarea {
+  position: absolute;
+  resize: none;
+  white-space: normal;
+  height: 100%;
+}
+
+.c-fieldset .field-textarea .border {
+  border: 1px solid #000;
+  width: 100%;
+}
+
+.c-fieldset .field-textarea textarea,
+.c-fieldset .field-textarea .textarea-size {
+  min-height: 22px;
+  width: 100%;
+  border: none;
+  display: block;
+  border-bottom: 1px solid #000;
+  background: white;
+  overflow: hidden;
+
+  font-size: calc(0.00417 * 100vw + 14.91667px);
+  line-height: 1.2;
+  -webkit-transition: .2s;
+  transition: .2s;
+  min-width: 100%;
+  max-width: 100%;
+  border-radius: 0;
+  padding: 4px 0;
+  right: 10px;
+  left: 10px;
+  width: calc(100% - 20px);
+  min-width: auto;
+}
+
+@media (max-width: 739px) {
+  .c-fieldset .field-textarea textarea,
+  .c-fieldset .field-textarea .textarea-size {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .c-fieldset .field-textarea textarea,
+  .c-fieldset .field-textarea .textarea-size {
+    font-size: 22px;
+  }
+}
+
+.c-fieldset .field-textarea textarea:focus,
+.c-fieldset .field-textarea .textarea-size:focus {
+  outline: none;
+}
+
+@media (min-width: 740px) {
+  .c-fieldset .field-textarea textarea,
+  .c-fieldset .field-textarea .textarea-size {
+    right: 12.5px;
+    left: 12.5px;
+    width: calc(100% - 25px);
+  }
+}
+
+@media (min-width: 1374px) {
+  .c-fieldset .field-textarea textarea,
+  .c-fieldset .field-textarea .textarea-size {
+    right: 17.5px;
+    left: 17.5px;
+    width: calc(100% - 35px);
+  }
+}
+
+.c-fieldset .field-textarea .textarea-size {
+  visibility: hidden;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.c-fieldset .field-textarea textarea:focus label,
+.c-fieldset .field-textarea.filled label {
+  -webkit-transform: translateY(-22px) !important;
+          transform: translateY(-22px) !important;
+}
+
+.c-fieldset input:focus + label,
+.c-fieldset textarea:focus + label,
+.c-fieldset .field-wrapper.filled label {
+  -webkit-transform: translateY(-22px);
+          transform: translateY(-22px);
+}
+
+.c-fieldset input:focus + label span,
+.c-fieldset textarea:focus + label span,
+.c-fieldset .field-wrapper.filled label span {
+  -webkit-transform: scale(0.68, 0.68);
+          transform: scale(0.68, 0.68);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+@media (max-width: 789px) {
+  .c-fieldset input:focus + label span,
+  .c-fieldset textarea:focus + label span,
+  .c-fieldset .field-wrapper.filled label span {
+    -webkit-transform: scale(0.83, 0.83);
+            transform: scale(0.83, 0.83);
+  }
+}

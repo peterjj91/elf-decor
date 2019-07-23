@@ -1,0 +1,120 @@
+/*  ==========================================================================
+    Search Tab
+    ========================================================================== */
+/*
+    Block
+    ========================================================================== */
+.search-tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+/*
+    Elements
+    ========================================================================== */
+.search-tab a {
+  color: #fff;
+  display: block;
+}
+
+.search-tab__label {
+  display: block;
+}
+
+.search-tab__content {
+  display: block;
+  overflow: hidden;
+}
+
+.search-tab__item {
+  margin-bottom: 80px;
+  position: relative;
+  color: #fff;
+}
+
+@media screen and (max-width: 580px) {
+  .search-tab__item {
+    margin-bottom: 30px;
+  }
+}
+
+.search-tab__item .lazy-container {
+  margin-bottom: 30px;
+  background-color: #111;
+}
+
+.search-tabs {
+  padding-bottom: calc(0.04167 * 100vw + 29.16667px);
+  padding-top: calc(0 * 100vw + 30px);
+  font-size: calc(0.00417 * 100vw + 14.91667px);
+  line-height: 1.2;
+}
+
+@media (max-width: 739px) {
+  .search-tabs {
+    padding-bottom: 60px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .search-tabs {
+    padding-bottom: 100px;
+  }
+}
+
+@media (max-width: 739px) {
+  .search-tabs {
+    padding-top: 30px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .search-tabs {
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 739px) {
+  .search-tabs {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .search-tabs {
+    font-size: 22px;
+  }
+}
+
+.search-tabs li {
+  color: #bab8b8;
+  position: relative;
+  margin-right: 1em;
+}
+
+.search-tabs li span {
+  cursor: pointer;
+}
+
+.search-tabs li.current span {
+  color: #fff;
+  cursor: default;
+}
+
+.search-tabs li:not(:last-child):after {
+  content: '/';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -0.65em;
+}
+
+.search-tabs li:last-child {
+  margin-right: 0;
+}

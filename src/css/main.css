@@ -138,6 +138,24 @@ https://flickity.metafizzy.co
   opacity: 1;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* video */
 .video-js .vjs-big-play-button .vjs-icon-placeholder:before, .video-js .vjs-modal-dialog, .vjs-button > .vjs-icon-placeholder:before, .vjs-modal-dialog .vjs-modal-dialog-content {
   position: absolute;
   top: 0;
@@ -1697,6 +1715,24 @@ video::-webkit-media-text-track-display {
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .bowser-msie .reveal-slider__slide {
   position: relative !important;
 }
@@ -1814,6 +1850,23 @@ video::-webkit-media-text-track-display {
   background-size: cover;
   display: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*! PhotoSwipe main CSS by Dmitry Semenov | photoswipe.com | MIT license */
 /*
@@ -2602,10 +2655,41 @@ a.pswp__share--download:hover {
   background: none;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  ==========================================================================
     Fonts
     ========================================================================== */
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=cyrillic');
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*! normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ==========================================================================
@@ -3040,6 +3124,28 @@ img, video, audio, iframe, object {
 /*
     Typography
     ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  ==========================================================================
     Animations
     ========================================================================== */
@@ -3112,6 +3218,27 @@ img, video, audio, iframe, object {
           transform: translate3d(-84px, 0, 0);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  ==========================================================================
     Type
     ========================================================================== */
@@ -3168,6 +3295,24 @@ strong {
   font-weight: bold;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
     Base
     ========================================================================== */
@@ -3180,6 +3325,21 @@ strong {
 .page-content h4 {
   font-weight: bold;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
     Title
@@ -3350,6 +3510,20 @@ strong {
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
     Text
     ========================================================================== */
@@ -3484,6 +3658,22 @@ strong {
   font-weight: 700;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  ==========================================================================
     Print
     ========================================================================== */
@@ -3497,10 +3687,32 @@ strong {
     max-width: 500px;
   }
   body {
-    font: 12pt Georgia, "Times New Roman", Times, serif;
+    font: 12pt G: ;eorgia, "Times New Roman", Times, serif;
     line-height: 1.3;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /**
  *
@@ -3638,6 +3850,23 @@ strong {
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  ==========================================================================
     Main layout styles go here
     ========================================================================== */
@@ -3661,6 +3890,23 @@ strong {
   transition: opacity 300ms ease-in-out;
   opacity: .8;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*  ==========================================================================
     Row
@@ -4059,6 +4305,25 @@ strong {
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  ==========================================================================
     Container
     ========================================================================== */
@@ -4142,6 +4407,23 @@ strong {
     display: block;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*  ==========================================================================
     Col
@@ -5434,6 +5716,23 @@ strong {
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  ==========================================================================
     Header
     ========================================================================== */
@@ -5600,6 +5899,29 @@ strong {
 .l-header--invert .l-nav--main a {
   color: green;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*  ==========================================================================
     Footer
@@ -5912,6 +6234,22 @@ strong {
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  ==========================================================================
     Site Global Parts - prefix site-
     ========================================================================== */
@@ -5972,6 +6310,29 @@ body.home {
 body.home.preloaded {
   overflow-y: auto;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* full bleed headers */
 .full-bleed-header .header--top,
@@ -6062,6 +6423,20 @@ body.home.preloaded {
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* non full bleed headers */
 .no-full-bleed .l-header {
   background-color: #fff;
@@ -6098,6 +6473,24 @@ body.home.preloaded {
     fill: #fff;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* dark theme */
 @media screen and (max-width: 1024px) {
@@ -6271,9 +6664,44 @@ body.home.preloaded {
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .no-full-bleed.single-cpt_projects .header--top {
   border-bottom: 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .error404 .l-header {
   border-bottom: 0;
@@ -6288,6 +6716,26 @@ body.home.preloaded {
     border-bottom: 0;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #map {
   height: 100%;
@@ -6351,6 +6799,27 @@ body.home.preloaded {
 .is-drag .carousel__item {
   pointer-events: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*  ==========================================================================
     Navigation
@@ -6869,6 +7338,32 @@ body.home.preloaded {
   visibility: visible;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  ==========================================================================
     Staggered Grid
     ========================================================================== */
@@ -6906,6 +7401,34 @@ body.home.preloaded {
   display: block;
   margin-bottom: 15px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
     Modifiers
@@ -7008,6 +7531,33 @@ body.home.preloaded {
   float: right;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .c-accordion {
   width: 100%;
   height: 100%;
@@ -7089,6 +7639,34 @@ body.home.preloaded {
   padding: 22px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .c-project-filter-mobile {
   padding-bottom: 15px;
 }
@@ -7134,6 +7712,34 @@ body.home.preloaded {
   border-radius: 50%;
   border: 1px solid #000;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*  ==========================================================================
     Btn
@@ -7285,6 +7891,35 @@ body.home.preloaded {
   fill: white;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  ==========================================================================
     Logo
     ========================================================================== */
@@ -7314,6 +7949,29 @@ body.home.preloaded {
 .c-logo--red {
   fill: #ed1c24;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*  ==========================================================================
     Featured post
@@ -7424,6 +8082,30 @@ body.home.preloaded {
   margin-bottom: 12px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  ==========================================================================
     Studio
     ========================================================================== */
@@ -7521,6 +8203,32 @@ body.home.preloaded {
   z-index: 1;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  ==========================================================================
     Pin
     ========================================================================== */
@@ -7595,6 +8303,33 @@ body.home.preloaded {
   fill: white;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  ==========================================================================
     Tags
     ========================================================================== */
@@ -7660,6 +8395,32 @@ body.home.preloaded {
   color: #000;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  ==========================================================================
     Location
     ========================================================================== */
@@ -7684,6 +8445,28 @@ body.home.preloaded {
 .c-location svg {
   margin-left: 3px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*  ==========================================================================
     Module
@@ -8040,6 +8823,28 @@ body.home.preloaded {
   height: 90vh !important;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  ==========================================================================
     Sidebar
     ========================================================================== */
@@ -8085,6 +8890,31 @@ body.home.preloaded {
     font-size: rem-calc(18);
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*  ==========================================================================
     Social
@@ -8134,6 +8964,30 @@ body.home.preloaded {
 .c-social__network--on-dark-background svg:hover {
   fill: white;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*  ==========================================================================
     Video Player
@@ -8394,6 +9248,33 @@ body.home.preloaded {
     border-top-color: #8d8d8d;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*  ==========================================================================
     Maker
@@ -8736,6 +9617,36 @@ body.home.preloaded {
   opacity: .7;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  ==========================================================================
     Play Button
     ========================================================================== */
@@ -8800,6 +9711,37 @@ body.home.preloaded {
   -webkit-transform: translate3d(0, -50%, 0);
           transform: translate3d(0, -50%, 0);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .c-drawer {
   position: fixed;
@@ -8917,6 +9859,38 @@ html.bowser-msie .c-drawer .c-drawer {
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .c-photoswipe-back {
   height: 40px;
   width: 40px;
@@ -8945,6 +9919,27 @@ html.bowser-msie .c-drawer .c-drawer {
   height: 15px;
   fill: #fff;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .c-photoswipe-top-navigation {
   -webkit-box-pack: justify;
@@ -9070,6 +10065,29 @@ html.bowser-msie .c-drawer .c-drawer {
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .c-photoswipe-grid-gallery {
   background-color: #fff;
   -webkit-box-shadow: -4px 0px 20px -5px rgba(0, 0, 0, 0.6);
@@ -9102,6 +10120,29 @@ html.bowser-msie .c-drawer .c-drawer {
 .c-photoswipe-grid-gallery .pspw__trigger:before {
   display: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .c-photoswipe-cursor {
   height: 100%;
@@ -9137,6 +10178,28 @@ html.bowser-msie .c-drawer .c-drawer {
     display: none;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .c-photoswipe-grid-gallery__category-grid,
 .c-photoswipe-grid-gallery__category-tags-wrapper {
@@ -9457,6 +10520,28 @@ html.bowser-msie .c-drawer .c-drawer {
 .c-photoswipe-grid-gallery__category-grid [data-photoswipe-category] .pspw__trigger:before {
   display: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*  ==========================================================================
     Profile
@@ -9917,6 +11002,34 @@ html.bowser-msie .c-drawer .c-drawer {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .c-projects-filters-option {
   -webkit-box-align: center;
@@ -10392,6 +11505,31 @@ html.bowser-msie .c-drawer .c-drawer {
   color: rgba(255, 255, 255, 0.5);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .c-categories__menu__item {
   color: #8d8d8d;
 }
@@ -10426,6 +11564,28 @@ html.bowser-msie .c-drawer .c-drawer {
     color: #8d8d8d;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*  ==========================================================================
     Content Filters - component
@@ -10513,6 +11673,27 @@ html.bowser-msie .c-drawer .c-drawer {
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  ==========================================================================
     Quote
     ========================================================================== */
@@ -10567,6 +11748,26 @@ blockquote p:after {
     font-size: rem-calc(16);
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*  ==========================================================================
     Tooltip
@@ -10643,6 +11844,29 @@ blockquote p:after {
   width: calc( 100% + 150px);
   text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .c-box {
   display: -webkit-box;
@@ -11090,6 +12314,27 @@ section.irregular-grid .desktop-container .item.featured.right .item-inner .c-bo
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  ==========================================================================
     Read More
     ========================================================================== */
@@ -11118,6 +12363,26 @@ section.irregular-grid .desktop-container .item.featured.right .item-inner .c-bo
   transition: transform 0.8s cubic-bezier(0.42, 0, 0.34, 1.01), max-height 0.8s cubic-bezier(0.42, 0, 0.34, 1.01), opacity 0.6s linear;
   transition: transform 0.8s cubic-bezier(0.42, 0, 0.34, 1.01), max-height 0.8s cubic-bezier(0.42, 0, 0.34, 1.01), opacity 0.6s linear, -webkit-transform 0.8s cubic-bezier(0.42, 0, 0.34, 1.01);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .c-fieldset {
   display: -webkit-box;
@@ -11443,6 +12708,30 @@ section.irregular-grid .desktop-container .item.featured.right .item-inner .c-bo
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .ajax-response {
   display: none;
   opacity: 1;
@@ -11455,6 +12744,28 @@ section.irregular-grid .desktop-container .item.featured.right .item-inner .c-bo
   display: inline;
   opacity: 1;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .c-filters {
 
@@ -11510,6 +12821,29 @@ section.irregular-grid .desktop-container .item.featured.right .item-inner .c-bo
   outline: none;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  ==========================================================================
     Post
     ========================================================================== */
@@ -11523,6 +12857,29 @@ section.irregular-grid .desktop-container .item.featured.right .item-inner .c-bo
   display: block;
   margin-bottom: 8px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .c-projects-list-side-panel {
   display: -webkit-box;
@@ -12164,6 +13521,28 @@ section.irregular-grid .desktop-container .item.featured.right .item-inner .c-bo
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .c-map {
   width: 100%;
   height: 100%;
@@ -12210,6 +13589,30 @@ section.irregular-grid .desktop-container .item.featured.right .item-inner .c-bo
     fill: rgba(0, 0, 0, 0.4);
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*  ==========================================================================
     Page Item
@@ -12307,6 +13710,30 @@ section.irregular-grid .desktop-container .item.featured.right .item-inner .c-bo
   z-index: 1;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .c-content-modules {
   position: relative;
 }
@@ -12387,6 +13814,28 @@ section.irregular-grid .desktop-container .item.featured.right .item-inner .c-bo
     padding-top: 100px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .m-adjacent-image-caption .c-text {
   padding-top: calc(0.01042 * 100vw + 12.29167px);
@@ -12773,6 +14222,26 @@ section.irregular-grid .desktop-container .item.featured.right .item-inner .c-bo
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .c-drag-cursor {
   opacity: 0;
   position: fixed;
@@ -12800,6 +14269,25 @@ section.irregular-grid .desktop-container .item.featured.right .item-inner .c-bo
     padding-bottom: 100px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .c-text {
   position: relative;
@@ -13092,10 +14580,53 @@ section.irregular-grid .desktop-container .item.featured.right .item-inner .c-bo
   margin-top: 0;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .c-image {
   position: relative;
   overflow: hidden;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .c-quote-2 blockquote {
   font-weight: bold;
@@ -13179,6 +14710,28 @@ section.irregular-grid .desktop-container .item.featured.right .item-inner .c-bo
     font-size: 18px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .c-meet-lede {
   padding-top: calc(0.09375 * 100vw + -9.375px);
@@ -13483,6 +15036,33 @@ section.irregular-grid .desktop-container .item.featured.right .item-inner .c-bo
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .c-grid-boxes {
   width: 100%;
   position: relative;
@@ -13712,6 +15292,30 @@ section.irregular-grid .desktop-container .item.featured.right .item-inner .c-bo
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  ==========================================================================
     Language switcher
     ========================================================================== */
@@ -13784,6 +15388,30 @@ section.irregular-grid .desktop-container .item.featured.right .item-inner .c-bo
 .lang-item {
   list-style: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*  ==========================================================================
     Crisis homepage
@@ -13880,6 +15508,26 @@ section.irregular-grid .desktop-container .item.featured.right .item-inner .c-bo
 .c-crisis-homepage .ui-btn--close:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*  ==========================================================================
     Load next
@@ -14026,6 +15674,30 @@ section.irregular-grid .desktop-container .item.featured.right .item-inner .c-bo
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .LoadMore {
   color: #8d8d8d;
   -webkit-animation: pulse 3s infinite ease-in-out;
@@ -14086,6 +15758,29 @@ section.irregular-grid .desktop-container .item.featured.right .item-inner .c-bo
 .LoadMore--dark {
   color: white;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .c-expanding-button {
   position: fixed;
@@ -14191,6 +15886,31 @@ html.no-touch .c-expanding-button:hover .c-expanding-button__label {
 html.no-touch .c-expanding-button:hover .c-expanding-button__icon {
   background-color: rgba(141, 141, 141, 0.8);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .c-cookie-message {
   position: fixed;
@@ -14340,6 +16060,33 @@ html.no-touch .c-expanding-button:hover .c-expanding-button__icon {
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .gm-style .gm-style-iw-t:after {
   background-color: #000;
   -webkit-animation-duration: 0.5s;
@@ -14370,6 +16117,28 @@ html.no-touch .c-expanding-button:hover .c-expanding-button__icon {
   overflow: hidden !important;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .c-infowindow__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14396,6 +16165,28 @@ html.no-touch .c-expanding-button:hover .c-expanding-button__icon {
   width: 300px;
   max-width: 300px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*  ==========================================================================
     UI Button
@@ -14528,6 +16319,29 @@ html.no-touch .c-expanding-button:hover .c-expanding-button__icon {
   z-index: 100;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  ==========================================================================
     Tables
     ========================================================================== */
@@ -14548,6 +16362,26 @@ table th {
   border-bottom: 1px solid #ccc;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  ==========================================================================
     Links
     ========================================================================== */
@@ -14564,6 +16398,26 @@ a:hover {
   color: inherit;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  ==========================================================================
     List
     ========================================================================== */
@@ -14574,6 +16428,24 @@ ul,
 ol {
   padding-left: 24px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*  ==========================================================================
     Form Defaults
@@ -14609,12 +16481,51 @@ form input[type="submit"] {
   border-radius: 0;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  ==========================================================================
     Spacing
     ========================================================================== */
 html .ml20 {
   margin-left: 20px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*  ==========================================================================
     Helper
@@ -15152,6 +17063,31 @@ html .ml20 {
      object-fit: cover;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  ==========================================================================
     Carousel
     ========================================================================== */
@@ -15387,6 +17323,25 @@ html .ml20 {
           transform: scale(1.05);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  ==========================================================================
     Featured Project
     ========================================================================== */
@@ -15509,6 +17464,26 @@ html .ml20 {
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  ==========================================================================
     Slider
     ========================================================================== */
@@ -15568,6 +17543,26 @@ html .ml20 {
     width: 80%;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
     Elements
@@ -15832,6 +17827,26 @@ html .ml20 {
   will-change: transform;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  ==========================================================================
     Article
     ========================================================================== */
@@ -15953,9 +17968,31 @@ html .ml20 {
   margin-bottom: 40px;
 }
 
-/*
-    Modifiers
-    ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  ==========================================================================
     Panel
     ========================================================================== */
@@ -16031,6 +18068,33 @@ html .ml20 {
           transform: translate3d(0, 0, 0);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  ==========================================================================
     Tabs
     ========================================================================== */
@@ -16098,6 +18162,31 @@ html .ml20 {
 .tabs__container--vh {
   min-height: 100vh;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*  ==========================================================================
     Translate Header
@@ -16273,6 +18362,29 @@ html .ml20 {
     position: absolute;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*  ==========================================================================
     Reveal Slider
@@ -16542,6 +18654,28 @@ html .ml20 {
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  ==========================================================================
     Page Content
     ========================================================================== */
@@ -16588,6 +18722,25 @@ html .ml20 {
   color: #ed1c24;
   opacity: .7;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*  ==========================================================================
     Preloader
@@ -16713,6 +18866,29 @@ body.preloaded .preloader svg {
     opacity: 1;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*  ==========================================================================
     Search Form
@@ -16867,6 +19043,30 @@ body.search-form-active .search-form__close {
   opacity: 1;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  ==========================================================================
     Search Tab
     ========================================================================== */
@@ -16988,6 +19188,29 @@ body.search-form-active .search-form__close {
   margin-right: 0;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  ==========================================================================
     Video
     ========================================================================== */
@@ -17004,6 +19227,28 @@ body.search-form-active .search-form__close {
   width: 100%;
   height: 100%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 section.big-slider {
   padding-bottom: calc(0.05208 * 100vw + 11.45833px);
@@ -17079,6 +19324,29 @@ section.big-slider.media-bottom-slider--inverted {
   color: white;
   border-top: 1px solid #bab8b8;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .two-cols-first-sticky .translate-header__text {
   color: #000;
@@ -17727,6 +19995,31 @@ section.big-slider.media-bottom-slider--inverted {
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .c-viewport-minus-header-wrapper {
   padding-top: 70px;
 }
@@ -17798,7 +20091,6 @@ section.big-slider.media-bottom-slider--inverted {
 }
 
 @media (max-width: 739px) {
-  display: none;
   .two-cols-first-sticky__mobile-buttons {
     position: -webkit-sticky;
     position: sticky;
@@ -17815,6 +20107,26 @@ section.big-slider.media-bottom-slider--inverted {
     margin-right: 0;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .filters-desktop {
   position: fixed;
@@ -17883,6 +20195,30 @@ section.big-slider.media-bottom-slider--inverted {
             transform: translate3d(0, 0, 0);
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .page-title {
   padding-top: 70px;
@@ -18108,6 +20444,27 @@ section.big-slider.media-bottom-slider--inverted {
     opacity: 1;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .slider-boxes {
   border-top: 1px solid #eaeaea;
@@ -18371,6 +20728,33 @@ section.big-slider.media-bottom-slider--inverted {
   border-top: 1px solid #bab8b8;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 section.contact-form .contact-form__head {
   font-weight: bold;
   font-size: calc(0.01875 * 100vw + 8.125px);
@@ -18523,6 +20907,33 @@ section.contact-form .contact-form__body .btn {
     max-width: none;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .media-awards {
   padding-bottom: calc(0.04167 * 100vw + 9.16667px);
@@ -18835,6 +21246,35 @@ section.contact-form .contact-form__body .btn {
   display: none;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .media-news {
   padding-bottom: calc(0.13542 * 100vw + -30.20833px);
 }
@@ -18997,6 +21437,38 @@ section.contact-form .contact-form__body .btn {
     padding-top: 100px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 section.media-report__header {
   padding-top: 70px;
@@ -19451,6 +21923,34 @@ section.media-report__grid .flushed-to-left .image {
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .media-publications {
   padding-bottom: calc(0.13542 * 100vw + -30.20833px);
 }
@@ -19795,6 +22295,31 @@ section.media-report__grid .flushed-to-left .image {
     max-width: 33.33333%;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 section.irregular-grid {
   position: relative;
@@ -20198,6 +22723,38 @@ section.irregular-grid .desktop-container .item.featured.first {
   margin-top: 0;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .SectionPhotosGrid {
   position: relative;
   width: 100%;
@@ -20393,6 +22950,35 @@ html.no-touch .SectionPhotosGrid .SectionPhotosGrid__touchTitle {
   display: none;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .HugeProjectTitle {
   position: fixed;
   z-index: 100000;
@@ -20478,6 +23064,33 @@ html.no-touch .SectionPhotosGrid .SectionPhotosGrid__touchTitle {
     font-size: 180px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .mediapublicationsannual .report-number__wrapper,
 .cpt_publications-template-default.single-cpt_publications .report-number__wrapper {
@@ -20572,6 +23185,34 @@ html.no-touch .SectionPhotosGrid .SectionPhotosGrid__touchTitle {
   margin-left: -0.05em;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .c-content-modules--report {
   position: relative;
   color: white;
@@ -20594,6 +23235,29 @@ html.no-touch .SectionPhotosGrid .SectionPhotosGrid__touchTitle {
     padding-bottom: 320px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .page-template-tpl-media-videos * {
   -webkit-user-select: none;
@@ -20863,6 +23527,32 @@ html.no-touch .SectionPhotosGrid .SectionPhotosGrid__touchTitle {
   opacity: 0;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 body.single-cpt_news_events main .irregular-grid {
   padding-top: calc(0.05208 * 100vw + 11.45833px);
   padding-bottom: calc(0.05208 * 100vw + 11.45833px);
@@ -20891,6 +23581,31 @@ body.single-cpt_news_events main .irregular-grid {
     padding-bottom: 100px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 body.blog main .filters-desktop, body.archive.tag main .filters-desktop {
   pointer-events: auto;
@@ -21186,6 +23901,31 @@ body.blog main .page-thinking__filter-categories .page-thinking__filter-categori
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 body.post-type-archive-cpt_projects main .irregular-grid, body.post-type-archive-cpt_projects main .SectionPhotosGrid {
   padding-top: calc(0.02083 * 100vw + 164.58333px);
   padding-bottom: calc(0.10417 * 100vw + 22.91667px);
@@ -21218,6 +23958,27 @@ body.post-type-archive-cpt_projects main .irregular-grid, body.post-type-archive
 body.post-type-archive-cpt_projects main .irregular-grid .lazy-container, body.post-type-archive-cpt_projects main .SectionPhotosGrid .lazy-container {
   background-color: #1c1c1c;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*  ==========================================================================
     Front Page
@@ -22275,6 +25036,33 @@ body.single-cpt_makers .c-language-switcher {
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  ==========================================================================
     Instafeed
     ========================================================================== */
@@ -22297,6 +25085,27 @@ body.single-cpt_makers .c-language-switcher {
 .instafeed__image > div {
   width: 101%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*  ==========================================================================
     Menu Image 
@@ -22332,6 +25141,27 @@ body.single-cpt_makers .c-language-switcher {
 .menu-item a.menu-image-hovered.menu-image-title-before .menu-image-hover-wrapper {
   padding: 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*  ==========================================================================
     Lazysizes
@@ -22481,6 +25311,33 @@ body.single-cpt_makers .c-language-switcher {
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  ==========================================================================
     Pushy 
     ========================================================================== */
@@ -22548,6 +25405,33 @@ body.single-cpt_makers .c-language-switcher {
   z-index: 9998;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  ==========================================================================
     Headroom
     ========================================================================== */
@@ -22590,6 +25474,34 @@ body.single-cpt_makers .c-language-switcher {
 .header--bottom {
   background-color: #fff;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /**
 VIDOE JS CUSTOM STYLES
@@ -23031,6 +25943,28 @@ VIDOE JS CUSTOM STYLES
 .vjs-share-toggle:focus {
   outline: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*! PhotoSwipe Default UI CSS by Dmitry Semenov | photoswipe.com | MIT license */
 /*
@@ -23570,6 +26504,37 @@ VIDOE JS CUSTOM STYLES
 .pswp__element--disabled {
   display: none !important;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .bowser-msie .reveal-slider__slide {
   position: relative !important;

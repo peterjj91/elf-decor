@@ -1,0 +1,128 @@
+/*  ==========================================================================
+    bowser-msie
+    ========================================================================== */
+
+.bowser-msie {
+
+  $block-name: &; // #{$block-name}__element {}
+
+}
+
+
+.bowser-msie .reveal-slider__slide {
+  position: relative !important;
+}
+
+.bowser-msie .reveal-slider__slide-text {
+  display: block !important;
+  position: absolute !important;
+}
+
+.bowser-msie .reveal-slider__slide > div {
+  background-attachment: initial !important;
+}
+
+.bowser-msie .reveal-slider__dots-wrap,
+.bowser-msie .reveal-slider__skip {
+  display: none !important;
+}
+
+.bowser-msie .reveal-slider__slide-heading,
+.bowser-msie .reveal-slider__slide-link {
+  width: 100vw !important;
+}
+
+.bowser-msie .home.preloaded .preloader__logo {
+  opacity: 0 !important;
+}
+
+.bowser-msie .l-header__logo--home {
+  display: block !important;
+}
+
+.bowser-msie #slide-1 {
+  display: none !important;
+}
+
+.bowser-msie .reveal-slider {
+  display: none !important;
+}
+
+.bowser-msie .top-section {
+  display: block !important;
+}
+
+.bowser-msie .translate-header__img img {
+  max-width: none;
+}
+
+.bowser-msie .home {
+  padding-top: 0 !important;
+}
+
+.bowser-msie .l-main {
+  margin-bottom: 0 !important;
+}
+
+.bowser-msie .l-footer {
+  position: relative !important;
+  height: auto !important;
+  z-index: 20 !important;
+}
+
+.bowser-msie .l-footer__inner {
+  -webkit-transform: none !important;
+          transform: none !important;
+  opacity: 1 !important;
+}
+
+.bowser-msie .featured-project-title {
+  display: none !important;
+}
+
+.bowser-msie .featured-title-single {
+  display: block;
+}
+
+.bowser-msie .top-section .lazy-container img {
+  min-width: 100% !important;
+}
+
+.bowser-msie #ie-video {
+  display: block;
+}
+
+.bowser-msie .two-cols-first-sticky .two-cols-first-sticky__head {
+  width: 50%;
+}
+
+.bowser-msie .c-viewport-minus-header-wrapper {
+  width: 100%;
+  float: left;
+}
+
+.featured-title-single {
+  display: none;
+  width: 100%;
+  text-align: center;
+  color: white;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+}
+
+#ie-video {
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  background-size: cover;
+  display: none;
+}

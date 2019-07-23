@@ -1,0 +1,37 @@
+/*  ==========================================================================
+    Staggered Grid
+    ========================================================================== */
+/*
+    Block
+    ========================================================================== */
+.sgrid {
+  overflow: hidden;
+}
+
+/*
+    Elements
+    ========================================================================== */
+.sgrid__item {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.sgrid__item .lazy-container {
+  margin-bottom: 35px;
+}
+
+.sgrid__item a,
+.sgrid__item img {
+  display: block;
+  width: 100%;
+}
+
+.sgrid__item-title {
+  line-height: 1.2;
+}
+
+.sgrid__item-date {
+  display: block;
+  margin-bottom: 15px;
+}

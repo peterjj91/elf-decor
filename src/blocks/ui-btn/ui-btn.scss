@@ -1,0 +1,130 @@
+/*  ==========================================================================
+    UI Button
+    ========================================================================== */
+/*
+    Block
+    ========================================================================== */
+.ui-btn {
+  width: 40px;
+  height: 40px;
+  display: block;
+  border-radius: 50%;
+  cursor: pointer;
+  line-height: 38px;
+  text-align: center;
+  -webkit-transition: background-color 0.1s linear;
+  transition: background-color 0.1s linear;
+}
+
+/*
+    Modifiers
+    ========================================================================== */
+.ui-btn__elem {
+  position: relative;
+}
+
+.ui-btn__elem:hover:before {
+  opacity: 1;
+  padding-right: 50px;
+}
+
+.ui-btn__elem:before {
+  display: block;
+  opacity: 0;
+  -webkit-transition: opacity 0.1s linear, padding 0.2s cubic-bezier(0.42, 0, 0.34, 1.01);
+  transition: opacity 0.1s linear, padding 0.2s cubic-bezier(0.42, 0, 0.34, 1.01);
+  content: attr(aria-label);
+  font-size: 16px;
+  font-size: rem-calc(16);
+  color: #fff;
+  position: absolute;
+  pointer-events: none;
+  right: 0;
+  padding-right: 40px;
+  padding-left: 25px;
+  text-align: center;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+  border-radius: 30px;
+  line-height: 40px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 1024px) {
+  .ui-btn__elem:before {
+    display: none;
+  }
+}
+
+.ui-btn__elem--bottom-right {
+  position: fixed;
+  right: 40px;
+  bottom: 50px;
+  z-index: 12;
+}
+
+@media screen and (max-width: 580px) {
+  .ui-btn__elem--bottom-right {
+    bottom: 30px;
+  }
+}
+
+.ui-btn--dark, .ui-btn--dark-on-light {
+  background-color: #8d8d8d;
+}
+
+.ui-btn--dark:hover, .ui-btn--dark-on-light:hover {
+  background-color: #000;
+}
+
+.ui-btn--dark-on-light:hover {
+  background-color: #fff;
+}
+
+.ui-btn--black {
+  background-color: #000;
+}
+
+.ui-btn--black:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.ui-btn--mid-grey {
+  background-color: #bab8b8;
+}
+
+.ui-btn--mid-grey:hover {
+  background-color: #000;
+}
+
+.ui-btn--semi {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.ui-btn--semi:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.ui-btn--close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  line-height: 42px;
+}
+
+@media screen and (max-width: 768px) {
+  .ui-btn--close {
+    top: 22px;
+    right: 7%;
+  }
+}
+
+.ui-btn--list {
+  position: fixed;
+  bottom: 50px;
+  right: 40px;
+  z-index: 100;
+}

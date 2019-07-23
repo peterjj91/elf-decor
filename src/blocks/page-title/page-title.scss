@@ -1,0 +1,228 @@
+/*  ==========================================================================
+    PhotoSwipe pswp
+    ========================================================================== */
+    
+.page-title {
+  padding-top: 70px;
+}
+
+@media (min-width: 740px) {
+  .page-title {
+    padding-top: 80px;
+  }
+}
+
+@media (min-width: 1374px) {
+  .page-title {
+    padding-top: 56px;
+  }
+}
+
+@media (min-width: 790px) {
+  .page-title.page-title--visible-on-mobile-only {
+    display: none;
+  }
+}
+
+@media (max-width: 739px) {
+  .page-title.page-title--double-bar-over-section {
+    padding-top: 126px;
+  }
+}
+
+@media (min-width: 740px) and (max-width: 789px) {
+  .page-title.page-title--double-bar-over-section {
+    padding-top: 136px;
+  }
+}
+
+.page-title .page-title__title {
+  font-weight: bold;
+  font-size: calc(0.03646 * 100vw + 3.02083px);
+  line-height: 1.14;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: calc(0.10417 * 100vw + 22.91667px);
+  padding-bottom: calc(0.10417 * 100vw + 22.91667px);
+}
+
+@media (max-width: 739px) {
+  .page-title .page-title__title {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .page-title .page-title__title {
+    font-size: 65px;
+  }
+}
+
+@media screen and (min-device-width: 740px) and (max-device-width: 790px) and (orientation: portrait) {
+  .page-title .page-title__title {
+    font-size: calc(0.0474 * 100vw + 3.92708px);
+  }
+}
+
+@media screen and (min-device-width: 740px) and (max-device-width: 790px) and (orientation: portrait) and (max-width: 739px) {
+  .page-title .page-title__title {
+    font-size: 39px;
+  }
+}
+
+@media screen and (min-device-width: 740px) and (max-device-width: 790px) and (orientation: portrait) and (min-width: 1700px) {
+  .page-title .page-title__title {
+    font-size: 84.5px;
+  }
+}
+
+@media (min-width: 740px) {
+  .page-title .page-title__title {
+    padding-right: 12.5px;
+    padding-left: 12.5px;
+  }
+}
+
+@media (min-width: 1374px) {
+  .page-title .page-title__title {
+    padding-right: 17.5px;
+    padding-left: 17.5px;
+  }
+}
+
+@media (max-width: 739px) {
+  .page-title .page-title__title {
+    padding-top: 100px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .page-title .page-title__title {
+    padding-top: 200px;
+  }
+}
+
+@media (max-width: 739px) {
+  .page-title .page-title__title {
+    padding-bottom: 100px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .page-title .page-title__title {
+    padding-bottom: 200px;
+  }
+}
+
+.page-title h1 {
+  margin: 0;
+}
+
+.page-title--is-inverted {
+  color: white;
+}
+
+.page-title--is-small {
+  border-bottom: 1px solid #262626;
+}
+
+.page-title--is-small .page-title__title {
+  font-weight: bold;
+  font-size: calc(0.02083 * 100vw + 9.58333px);
+  line-height: 1.2;
+  padding-top: calc(0.10417 * 100vw + -27.08333px);
+  padding-bottom: calc(0.10417 * 100vw + -27.08333px);
+}
+
+@media (max-width: 739px) {
+  .page-title--is-small .page-title__title {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .page-title--is-small .page-title__title {
+    font-size: 45px;
+  }
+}
+
+@media screen and (min-device-width: 740px) and (max-device-width: 790px) and (orientation: portrait) {
+  .page-title--is-small .page-title__title {
+    font-size: calc(0.02708 * 100vw + 12.45833px);
+  }
+}
+
+@media screen and (min-device-width: 740px) and (max-device-width: 790px) and (orientation: portrait) and (max-width: 739px) {
+  .page-title--is-small .page-title__title {
+    font-size: 32.5px;
+  }
+}
+
+@media screen and (min-device-width: 740px) and (max-device-width: 790px) and (orientation: portrait) and (min-width: 1700px) {
+  .page-title--is-small .page-title__title {
+    font-size: 58.5px;
+  }
+}
+
+@media (max-width: 739px) {
+  .page-title--is-small .page-title__title {
+    padding-top: 50px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .page-title--is-small .page-title__title {
+    padding-top: 150px;
+  }
+}
+
+@media (max-width: 739px) {
+  .page-title--is-small .page-title__title {
+    padding-bottom: 50px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .page-title--is-small .page-title__title {
+    padding-bottom: 150px;
+  }
+}
+
+@-webkit-keyframes hideSlider {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes hideSlider {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes showSlider {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes showSlider {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

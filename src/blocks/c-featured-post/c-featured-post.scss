@@ -1,0 +1,110 @@
+
+/*  ==========================================================================
+    Featured post
+    ========================================================================== */
+/*
+    Block
+    ========================================================================== */
+.c-featured-post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  color: #fff;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 767px) {
+  .c-featured-post {
+    display: none;
+  }
+}
+
+/*
+    Elements
+    ========================================================================== */
+.c-featured-post > div {
+  background-color: #ed1c24;
+  padding: calc(0.0625 * 100vw + -26.25px);
+  position: relative;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 739px) {
+  .c-featured-post > div {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .c-featured-post > div {
+    padding: 80px;
+  }
+}
+
+.c-featured-post a {
+  color: #fff;
+}
+
+@media screen and (max-width: 1374px) {
+  .c-featured-post__excerpt {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    right: auto;
+  }
+}
+
+.c-featured-post__image {
+  overflow: hidden;
+}
+
+.c-featured-post__image img {
+  -webkit-transition: opacity 0.8s cubic-bezier(0.42, 0, 0.34, 1.01), -webkit-transform 1s cubic-bezier(0.42, 0, 0.34, 1.01);
+  transition: opacity 0.8s cubic-bezier(0.42, 0, 0.34, 1.01), -webkit-transform 1s cubic-bezier(0.42, 0, 0.34, 1.01);
+  transition: transform 1s cubic-bezier(0.42, 0, 0.34, 1.01), opacity 0.8s cubic-bezier(0.42, 0, 0.34, 1.01);
+  transition: transform 1s cubic-bezier(0.42, 0, 0.34, 1.01), opacity 0.8s cubic-bezier(0.42, 0, 0.34, 1.01), -webkit-transform 1s cubic-bezier(0.42, 0, 0.34, 1.01);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  will-change: transform, opacity;
+}
+
+.c-featured-post__image:hover img {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+}
+
+.c-featured-post__excerpt > span {
+  display: block;
+  margin-bottom: 30px;
+  line-height: 1.2;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1024px) {
+  .c-featured-post__excerpt > span {
+    display: none;
+  }
+}
+
+.c-featured-post__author {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.c-featured-post__title {
+  line-height: 1.15;
+  margin-bottom: 12px;
+}
+

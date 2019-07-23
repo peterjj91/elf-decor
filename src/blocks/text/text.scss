@@ -1,0 +1,134 @@
+/*  ==========================================================================
+    Text
+    ========================================================================== */
+
+.text--large {
+  font-size: 27px;
+  font-size: rem-calc(27);
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 768px) {
+  .text--large {
+    font-size: 22px;
+    font-size: rem-calc(22);
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .text--large {
+    font-size: 18px;
+    font-size: rem-calc(18);
+  }
+}
+
+.text--medium {
+  font-size: 22px;
+  font-size: rem-calc(22);
+}
+
+@media screen and (max-width: 768px) {
+  .text--medium {
+    font-size: 18px;
+    font-size: rem-calc(18);
+  }
+}
+
+.text--small {
+  font-size: 18px;
+  font-size: rem-calc(18);
+}
+
+@media screen and (max-width: 768px) {
+  .text--small {
+    font-size: 16px;
+    font-size: rem-calc(16);
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .text--small {
+    font-size: 15px;
+    font-size: rem-calc(15);
+  }
+}
+
+.text--xsmall {
+  font-size: 14px;
+  font-size: rem-calc(14);
+}
+
+.text--lede {
+  line-height: 1.1;
+  margin-bottom: 0;
+}
+
+.text--flush {
+  margin-bottom: 0;
+}
+
+.text--right-center {
+  top: 50%;
+  left: 0;
+  right: 0;
+  padding: 0 5%;
+  margin: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.text--right-center span {
+  width: calc( ( 99.9% * 1/2 ) - 15px);
+  float: right;
+}
+
+.text--border-right:after {
+  content: '|';
+  display: inline-block;
+  padding: 0 12px;
+}
+
+.col--grid-charities h2 {
+  font-weight: bold;
+}
+
+.bowser-windows body.pll-en-gb {
+  /*font-family: "aktiv-grotesk", sans-serif !important;*/
+}
+
+.bowser-windows body.pll-en-gb h1,
+.bowser-windows body.pll-en-gb h2,
+.bowser-windows body.pll-en-gb h3,
+.bowser-windows body.pll-en-gb h4,
+.bowser-windows body.pll-en-gb h5,
+.bowser-windows body.pll-en-gb ul,
+.bowser-windows body.pll-en-gb ol,
+.bowser-windows body.pll-en-gb li,
+.bowser-windows body.pll-en-gb span,
+.bowser-windows body.pll-en-gb b,
+.bowser-windows body.pll-en-gb strong,
+.bowser-windows body.pll-en-gb div {
+  /*font-family: "aktiv-grotesk", sans-serif !important;*/
+}
+
+.bowser-windows body.pll-en-gb h1,
+.bowser-windows body.pll-en-gb h2,
+.bowser-windows body.pll-en-gb h3,
+.bowser-windows body.pll-en-gb h4,
+.bowser-windows body.pll-en-gb h5,
+.bowser-windows body.pll-en-gb b,
+.bowser-windows body.pll-en-gb strong,
+.bowser-windows body.pll-en-gb .c-box-big__title,
+.bowser-windows body.pll-en-gb .c-box__description__title,
+.bowser-windows body.pll-en-gb .slider-boxes__title,
+.bowser-windows body.pll-en-gb .c-projects-list-side-panel__centered .c-projects-list-side-panel__centered__letter--project,
+.bowser-windows body.pll-en-gb .two-cols-first-sticky .two-cols-first-sticky__head .meta .label,
+.bowser-windows body.pll-en-gb .two-cols-first-sticky .two-cols-first-sticky__body .office-name,
+.bowser-windows body.pll-en-gb .l-nav--main .sub-menu li,
+.bowser-windows body.pll-en-gb .c-load-next__title,
+.bowser-windows body.pll-en-gb .c-projects-list-side-panel__centered__letter,
+.bowser-windows body.pll-en-gb .c-studio__location,
+.bowser-windows body.pll-en-gb section.contact-form .contact-form__head,
+.bowser-windows body.pll-en-gb .page-home__featured-projects__project-title {
+  font-weight: 700;
+}
