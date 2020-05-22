@@ -1,457 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Контакты</title>
-  @@include('_include/page_head.html')
-</head>
-<body class="no-full-bleed pll-en-gb">
-  <div id="app" class="site">
-    @@include('blocks/c-cookie-message/c-cookie-message.html')
+  <head>
+    <meta charset="utf-8" />
+    <title>Контакты</title>
+    @@include('_include/page_head.html')
+  </head>
+  <body class="no-full-bleed pll-en-gb">
+    <div id="app" class="site">
+      @@include('blocks/c-cookie-message/c-cookie-message.html')
 
-    <div class="main-body no-full-bleed pll-en-gb">
-      <main class="l-main">
-        <header class="[ l-header l-header--int ] headroom">
-          @@include('blocks/page-header/page-header.html')
-        </header>
+      <div class="main-body no-full-bleed pll-en-gb">
+        <main class="l-main">
+          <header class="[ l-header l-header--int ] headroom">
+            @@include('blocks/page-header/page-header.html')
+          </header>
 
-        <section class="[ two-cols-first-sticky ] [ translate-header ]">
-          <div class="grid__container">
-            <div class="grid__row">
-              <div class="two-cols-first-sticky__head is-not-sticky">
-                <div class="c-viewport-minus-header-wrapper" data-target="#studio-body" data-scroll-to >
-                  <div class="row">
-                    <div class="image-wrapper">
-                      <div class="relative-wrapper">
-                        <div class="lazy-container lazy-container--crop [ studio-image js-object-fit ]" style="padding-bottom: 0;">
-                          <img
-                            data-srcset="img/HKStudio-Make-9.jpg"
-                            data-src-ie="img/HKStudio-Make-9.jpg"
-                            alt="#"
-                            class="lazyload"
-                            sizes="40vw">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="two-cols-first-sticky__body">
-                <div class="c-viewport-minus-header-wrapper animate-onload">
-                  <div class="spacer"></div>
-                  <div class="spacer middle">
-                    <div class="office-name"  data-target="#studio-body" data-scroll-to>
-                      <span class="translate-header__text">
-                        Лягина&nbsp;21, Николаев
-                      </span>
-                    </div>
-                  </div>
-                  <div class="spacer bottom">
-                    <div class="grid__row office-details">
-                      <div class="col-half translate-header__text">
-                        <span class="c-location">
-                          Телефон Life:&nbsp;<a href="tel:+380634723726">063 4723726</a>
-                          <br>
-                          Телефон Kievstar:&nbsp;<a href="tel:+380681757532">068 1757532</a>
-                          <br>
-                          Стационарный:&nbsp;<a href="tel:0512766684">0512 766684</a>
-                          <br>
-                          Почта:&nbsp;<a href="mailto:elf-decor@i.ua">elf-decor@i.ua</a>
-                        </span>
-                      </div>
-                      <div class="col-half translate-header__text">
-                        <div>
-                          <button class="js-google-map-marker-trigger" 
-                                  data-open-drawer="#google-map"
-                                  data-latitude="46.9692106" 
-                                  data-longitude="31.9882945" 
-                                  data-google-maps-link="https://www.google.com/maps/?q=46.96925,31.988083">
-                            <div>
-                              <span>На карте</span>
-                              <svg xmlns="http://www.w3.org/2000/svg" width="32.12" height="42" viewBox="0 0 32.12 42">
-                                <title>pin</title>
-                                <g data-name="Layer 2">
-                                  <path d="M16.06 0A16.11 16.11 0 0 0 0 16.13C0 25.05 16.06 42 16.06 42s16.06-16.95 16.06-25.87A16.11 16.11 0 0 0 16.06 0zm0 24a9.14 9.14 0 1 1 9.12-9.17A9.17 9.17 0 0 1 16.06 24z" fill="red" data-name="Layer 1"/>
-                                </g>
-                              </svg>
-                            </div>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="lazy-container  [ mobile-image ]" style="padding-bottom: 66.6684026874%;">
-                  <img
-                    data-srcset="img/HKStudio-Make-9.jpg"
-                    data-src-ie="img/HKStudio-Make-9.jpg"
-                    alt="#"
-                    class="lazyload"
-                    sizes="90vw">
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <article class="c-content-modules c-content-modules--studio" id="studio-body">
-          <section class="[ grid__container ] m-heading-content">
-            <div class="container">
-              <div class="[ col col--1-2 ] [ hide--ds ]">&nbsp;</div>
-              <div class="[ col col--1-2 col--1-1-bp-tl ]">
-                <div class="c-text c-text--regular">
-                  <h2>30 Hollywood Road Central</h2>
-                  <p>Established in 2008, this studio works on projects in Hong Kong, mainland China and the surrounding Asia region. You can find the team enjoying the view on the 10th floor of our building in central Hong Kong on Hollywood Road.</p>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section class="contact-form">
+          <section class="[ two-cols-first-sticky ] [ translate-header ]">
             <div class="grid__container">
               <div class="grid__row">
-                <div class="contact-form__head">
-                  Напишите нам
+                <div class="two-cols-first-sticky__head is-not-sticky">
+                  <div
+                    class="c-viewport-minus-header-wrapper"
+                    data-target="#studio-body"
+                    data-scroll-to
+                  >
+                    <div class="row">
+                      <div class="image-wrapper">
+                        <div class="relative-wrapper">
+                          <div
+                            class="lazy-container lazy-container--crop [ studio-image js-object-fit ]"
+                            style="padding-bottom: 0;"
+                          >
+                            <img
+                              data-srcset="img/salon.jpg"
+                              data-src-ie="img/salon.jpg"
+                              alt="#"
+                              class="lazyload"
+                              sizes="40vw"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <form action="https://www.makearchitects.com/wp-content/themes/make/inc/submit-mail.php" class="contact-form__body contactform" method="post">
-                  <div class="c-fieldset ">
-                    <div class="field-wrapper field-text required">
-                      <input data-type="text" id="field-id-name" name="field-id-name"  />
-                      <label for="field-id-name"><span>Ваше имя</span></label>
-                      <div class="validation-message" data-msg="Заполните поле.">Заполните поле</div>
+                <div class="two-cols-first-sticky__body">
+                  <div class="c-viewport-minus-header-wrapper animate-onload">
+                    <div class="spacer"></div>
+                    <div class="spacer middle">
+                      <div
+                        class="office-name"
+                        data-target="#studio-body"
+                        data-scroll-to
+                      >
+                        <span class="translate-header__text">
+                          Лягина&nbsp;21, Николаев
+                        </span>
+                      </div>
                     </div>
-                    <div class="field-wrapper field-text required">
-                      <input data-type="email" id="field-id-email" name="field-id-email"  />
-                      <label for="field-id-email"><span>Email</span></label>
-                      <div class="validation-message" data-msg="Заполните поле.">Заполните поле</div>
+                    <div class="spacer bottom">
+                      <div class="grid__row office-details">
+                        <div class="col-half translate-header__text">
+                          <span class="c-location">
+                            Телефон Life:&nbsp;<a href="tel:+380634723726"
+                              >063 4723726</a
+                            >
+                            <br />
+                            Телефон Kievstar:&nbsp;<a href="tel:+380681757532"
+                              >068 1757532</a
+                            >
+                            <br />
+                            Стационарный:&nbsp;<a href="tel:0512766684"
+                              >0512 766684</a
+                            >
+                            <br />
+                            Почта:&nbsp;<a href="mailto:elf-decor@i.ua"
+                              >elf-decor@i.ua</a
+                            >
+                          </span>
+                        </div>
+                        <div class="col-half translate-header__text">
+                          <div>
+                            <button
+                              class="js-google-map-marker-trigger"
+                              data-open-drawer="#google-map"
+                              data-latitude="46.9692106"
+                              data-longitude="31.9882945"
+                              data-google-maps-link="https://www.google.com/maps/?q=46.96925,31.988083"
+                            >
+                              <div>
+                                <span>На карте</span>
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="32.12"
+                                  height="42"
+                                  viewBox="0 0 32.12 42"
+                                >
+                                  <title>pin</title>
+                                  <g data-name="Layer 2">
+                                    <path
+                                      d="M16.06 0A16.11 16.11 0 0 0 0 16.13C0 25.05 16.06 42 16.06 42s16.06-16.95 16.06-25.87A16.11 16.11 0 0 0 16.06 0zm0 24a9.14 9.14 0 1 1 9.12-9.17A9.17 9.17 0 0 1 16.06 24z"
+                                      fill="red"
+                                      data-name="Layer 1"
+                                    />
+                                  </g>
+                                </svg>
+                              </div>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="c-fieldset ">
-                    <div class="field-wrapper field-text">
-                      <input data-type="text" id="field-id-phone" name="field-id-phone"  />
-                      <label for="field-id-phone"><span>Телефон</span></label>
-                      <div class="validation-message" data-msg="Заполните поле"></div>
-                    </div>
-                  </div>
-                  <div class="c-fieldset ">
-                    <script>
-                      var textContainer, textareaSize, input;
-                      var autoSize = function () {
-                        textareaSize.innerHTML = input.value + '\n';
-                      };
-                      
-                      document.addEventListener('DOMContentLoaded', function() {
-                        textContainer = document.querySelector('.field-textarea');
-                        textareaSize = textContainer.querySelector('.textarea-size');
-                        input = textContainer.querySelector('textarea');
-                        
-                        autoSize();
-                        input.addEventListener('input', autoSize);
-                      });
-                    </script>
-                    <div class="field-wrapper field-textarea">
-                      <textarea name="field-id-Message" id="field-id-Message" ></textarea>
-                      <label for="field-id-Message"><span>Сообщение</span></label>
-                      <div class="textarea-size"></div>
-                    </div>
-                  </div>
-                  <button class="btn btn--filled">
-                    <div>
-                      <span>Отправить</span>
-                    </div>
-                  </button>
-                  <div class="ajax-response">Тест</div>
-                </form>
-              </div>
-            </div>
-          </section>
-          <section class="[ l-row l-row--flush l-row--no-flush-bp-ml ] m-image">
-            <div>
-              <div class="col col--grid-10-bp-tp col--1-1-bp-ml col--grid-10">
-                <div class="">
-                  <div class="lazy-container  [ img-block--full pswp__trigger js-close-drawer-hook ]" style="padding-bottom: 66.6684026874%;"
-                    data-padding="66.6684026874%"
-                    data-id="#photoswipe-gallery"
-                    data-photoswipe-category="All"
-                    data-photoswipe-sizes='{"sizes":[{"src":"img/HKStudio-Make-3.jpg","w":1920,"h":1280}]}'
-                    data-open-drawer="#photoswipe-panel">
+                  <div
+                    class="lazy-container [ mobile-image ]"
+                    style="padding-bottom: 66.6684026874%;"
+                  >
                     <img
-                      data-srcset="img/HKStudio-Make-3.jpg"
-                      data-src-ie="img/HKStudio-Make-3.jpg"
+                      data-srcset="img/salon.jpg"
+                      data-src-ie="img/salon.jpg"
                       alt="#"
                       class="lazyload"
-                      sizes="(min-width: 1374px) 75vw, 90vw">
+                      sizes="90vw"
+                    />
                   </div>
                 </div>
               </div>
             </div>
           </section>
-          <section class="[ l-row ] m-adjacent-images">
-            <div class="container">
-              <div data-adjacent-images>
-                <div class="[ col col--5-12 col--1-1-bp-tl ]">
-                  <div class="image-left">
-                    <div class="lazy-container  [ pswp__trigger js-close-drawer-hook ]" style="padding-bottom: 66.6684026874%;"
+
+          <!-- <article
+            class="c-content-modules c-content-modules--studio"
+            id="studio-body"
+          >
+            <section class="contact-form">
+              <div class="grid__container">
+                <div class="grid__row">
+                  <div class="contact-form__head">
+                    Напишите нам
+                  </div>
+                  <form
+                    action="https://www.makearchitects.com/wp-content/themes/make/inc/submit-mail.php"
+                    class="contact-form__body contactform"
+                    method="post"
+                  >
+                    <div class="c-fieldset">
+                      <div class="field-wrapper field-text required">
+                        <input
+                          data-type="text"
+                          id="field-id-name"
+                          name="field-id-name"
+                        />
+                        <label for="field-id-name"><span>Ваше имя</span></label>
+                        <div
+                          class="validation-message"
+                          data-msg="Заполните поле."
+                        >
+                          Заполните поле
+                        </div>
+                      </div>
+                      <div class="field-wrapper field-text required">
+                        <input
+                          data-type="email"
+                          id="field-id-email"
+                          name="field-id-email"
+                        />
+                        <label for="field-id-email"><span>Email</span></label>
+                        <div
+                          class="validation-message"
+                          data-msg="Заполните поле."
+                        >
+                          Заполните поле
+                        </div>
+                      </div>
+                    </div>
+                    <div class="c-fieldset">
+                      <div class="field-wrapper field-text">
+                        <input
+                          data-type="text"
+                          id="field-id-phone"
+                          name="field-id-phone"
+                        />
+                        <label for="field-id-phone"><span>Телефон</span></label>
+                        <div
+                          class="validation-message"
+                          data-msg="Заполните поле"
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="c-fieldset">
+                      <script>
+                        var textContainer, textareaSize, input;
+                        var autoSize = function () {
+                          textareaSize.innerHTML = input.value + "\n";
+                        };
+
+                        document.addEventListener(
+                          "DOMContentLoaded",
+                          function () {
+                            textContainer = document.querySelector(
+                              ".field-textarea"
+                            );
+                            textareaSize = textContainer.querySelector(
+                              ".textarea-size"
+                            );
+                            input = textContainer.querySelector("textarea");
+
+                            autoSize();
+                            input.addEventListener("input", autoSize);
+                          }
+                        );
+                      </script>
+                      <div class="field-wrapper field-textarea">
+                        <textarea
+                          name="field-id-Message"
+                          id="field-id-Message"
+                        ></textarea>
+                        <label for="field-id-Message"
+                          ><span>Сообщение</span></label
+                        >
+                        <div class="textarea-size"></div>
+                      </div>
+                    </div>
+                    <button class="btn btn--filled">
+                      <div>
+                        <span>Отправить</span>
+                      </div>
+                    </button>
+                    <div class="ajax-response">Тест</div>
+                  </form>
+                </div>
+              </div>
+            </section>
+            <section
+              class="[ l-row l-row--flush l-row--no-flush-bp-ml ] m-image"
+            >
+              <div>
+                <div class="col col--grid-10-bp-tp col--1-1-bp-ml col--grid-10">
+                  <div class="">
+                    <div
+                      class="lazy-container [ img-block--full pswp__trigger js-close-drawer-hook ]"
+                      style="padding-bottom: 66.6684026874%;"
                       data-padding="66.6684026874%"
                       data-id="#photoswipe-gallery"
                       data-photoswipe-category="All"
-                      data-photoswipe-sizes='{"sizes":[{"src":"img/HKStudio-Make-8.jpg","w":1920,"h":1280}]}'
-                      data-open-drawer="#photoswipe-panel">
+                      data-photoswipe-sizes='{"sizes":[{"src":"img/HKStudio-Make-3.jpg","w":1920,"h":1280}]}'
+                      data-open-drawer="#photoswipe-panel"
+                    >
                       <img
-                        data-srcset="img/HKStudio-Make-8.jpg"
-                        data-src-ie="img/HKStudio-Make-8.jpg"
+                        data-srcset="img/HKStudio-Make-3.jpg"
+                        data-src-ie="img/HKStudio-Make-3.jpg"
                         alt="#"
                         class="lazyload"
-                        sizes="(min-width: 1520px) 35vw, (min-width: 1374px) 420px, 90vw">
-                    </div>
-                  </div>
-                </div>
-                <div class="[ col col--5-12 col--1-1-bp-tl col--right ]">
-                  <div class="image-right">
-                    <div class="lazy-container  [ pswp__trigger js-close-drawer-hook ]" style="padding-bottom: 66.6684026874%;"
-                      data-padding="66.6684026874%"
-                      data-id="#photoswipe-gallery"
-                      data-photoswipe-category="All"
-                      data-photoswipe-sizes='{"sizes":[{"src":"img/HKStudio-Make-6.jpg","w":1920,"h":1280}]}'
-                      data-open-drawer="#photoswipe-panel">
-                      <img
-                        data-srcset="img/HKStudio-Make-6.jpg"
-                        data-src-ie="img/HKStudio-Make-6.jpg"
-                        alt="#"
-                        class="lazyload"
-                        sizes="(min-width: 1520px) 35vw, (min-width: 1374px) 420px, 90vw">
-                    </div>
-                  </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section class="[ l-row l-row--flush ] m-slider">
-            <div class="[ carousel carousel--mixed ]">
-              <div class="carousel__item  m-slider__slide" style="max-width: 1032px">
-                <div class="carousel__item-inner">
-                  <div class="image-wrap">
-                    <div class="lazy-container  [ pswp__trigger image image--visible-on-mobile ]" style="padding-bottom: 66.6684026874%;">
-                      <img
-                        data-srcset="img/DunbarPlace_Make-10.jpg"
-                        data-src-ie="img/DunbarPlace_Make-10.jpg"
-                        alt="#"
-                        class="lazyload"
-                        sizes="90vw">
-                    </div>
-                    <div class="lazy-container  [ pswp__trigger image image--visible-on-desktop ]" style="padding-bottom: 66.6684026874%;"
-                      data-padding="66.6684026874%"
-                      data-id="#photoswipe-gallery"
-                      data-photoswipe-category="All"
-                      data-photoswipe-sizes='{"sizes":[{"src":"img/DunbarPlace_Make-10.jpg","w":1920,"h":1280}]}'
-                      data-open-drawer="#photoswipe-panel">
-                      <img
-                        data-srcset="img/DunbarPlace_Make-10.jpg"
-                        data-src-ie="img/DunbarPlace_Make-10.jpg"
-                        alt="#"
-                        class="lazyload"
-                        sizes="62vw">
+                        sizes="(min-width: 1374px) 75vw, 90vw"
+                      />
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="carousel__item  m-slider__slide" style="max-width: 992px">
-                <div class="carousel__item-inner">
-                  <div class="image-wrap">
-                    <div class="lazy-container  [ pswp__trigger image image--visible-on-mobile ]" style="padding-bottom: 69.376594969%;">
-                      <img
-                        data-srcset="img/WeihaiPavilion_Make-19.jpg"
-                        data-src-ie="img/WeihaiPavilion_Make-19.jpg"
-                        alt="#"
-                        class="lazyload"
-                        sizes="90vw">
-                    </div>
-                    <div 
-                      class="lazy-container  [ pswp__trigger image image--visible-on-desktop ]" style="padding-bottom: 69.376594969%;"
-                      data-padding="69.376594969%"
-                      data-id="#photoswipe-gallery"
-                      data-photoswipe-category="All"
-                      data-photoswipe-sizes='{"sizes":[{"src":"img/WeihaiPavilion_Make-19.jpg","w":1920,"h":1332}]}'
-                      data-open-drawer="#photoswipe-panel">
-                      <img
-                        data-srcset="img/WeihaiPavilion_Make-19.jpg"
-                        data-src-ie="img/WeihaiPavilion_Make-19.jpg"
-                        alt="#"
-                        class="lazyload"
-                        sizes="62vw">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel__item  m-slider__slide" style="max-width: 711px">
-                <div class="carousel__item-inner">
-                  <div class="image-wrap">
-                    <div class="lazy-container  [ pswp__trigger image image--visible-on-mobile ]" style="padding-bottom: 96.7710015103%;">
-                      <img
-                        data-srcset="img/PinnacleOne_Make-7.jpg"
-                        data-src-ie="img/PinnacleOne_Make-7.jpg"
-                        alt="#"
-                        class="lazyload"
-                        sizes="90vw">
-                    </div>
-                    <div 
-                      class="lazy-container  [ pswp__trigger image image--visible-on-desktop ]" style="padding-bottom: 96.7710015103%;"
-                      data-padding="96.7710015103%"
-                      data-id="#photoswipe-gallery"
-                      data-photoswipe-category="All"
-                      data-photoswipe-sizes='{"sizes":[{"src":"img/PinnacleOne_Make-7.jpg","w":1920,"h":1858}]}'
-                      data-open-drawer="#photoswipe-panel">
-                      <img
-                        data-srcset="img/PinnacleOne_Make-7.jpg"
-                        data-src-ie="img/PinnacleOne_Make-7.jpg"
-                        alt="#"
-                        class="lazyload"
-                        sizes="62vw">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel__item  m-slider__slide" style="max-width: 762px">
-                <div class="carousel__item-inner">
-                  <div class="image-wrap">
-                    <div class="lazy-container  [ pswp__trigger image image--visible-on-mobile ]" style="padding-bottom: 90.313004531%;">
-                      <img
-                        data-srcset="img/TempleHouse-Make-10.jpg"
-                        data-src-ie="img/TempleHouse-Make-10.jpg"
-                        alt="#"
-                        class="lazyload"
-                        sizes="90vw">
-                    </div>
-                    <div 
-                      class="lazy-container  [ pswp__trigger image image--visible-on-desktop ]" style="padding-bottom: 90.313004531%;"
-                      data-padding="90.313004531%"
-                      data-id="#photoswipe-gallery"
-                      data-photoswipe-category="All"
-                      data-photoswipe-sizes='{"sizes":[{"src":"img/TempleHouse-Make-10.jpg","w":1920,"h":1734}]}'
-                      data-open-drawer="#photoswipe-panel">
-                      <img
-                        data-srcset="img/TempleHouse-Make-10.jpg"
-                        data-src-ie="img/TempleHouse-Make-10.jpg"
-                        alt="#"
-                        class="lazyload"
-                        sizes="62vw">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel__item  m-slider__slide" style="max-width: 1122px">
-                <div class="carousel__item-inner">
-                  <div class="image-wrap">
-                    <div class="lazy-container  [ pswp__trigger image image--visible-on-mobile ]" style="padding-bottom: 61.3561793657%;">
-                      <img
-                        data-srcset="img/TempleHouse-Make-31.jpg"
-                        data-src-ie="img/TempleHouse-Make-31.jpg"
-                        alt="#"
-                        class="lazyload"
-                        sizes="90vw">
-                    </div>
-                    <div 
-                      class="lazy-container  [ pswp__trigger image image--visible-on-desktop ]" style="padding-bottom: 61.3561793657%;"
-                      data-padding="61.3561793657%"
-                      data-id="#photoswipe-gallery"
-                      data-photoswipe-category="All"
-                      data-photoswipe-sizes='{"sizes":[{"src":"img/TempleHouse-Make-31.jpg","w":1920,"h":1178}]}'
-                      data-open-drawer="#photoswipe-panel">
-                      <img
-                        data-srcset="img/TempleHouse-Make-31.jpg"
-                        data-src-ie="img/TempleHouse-Make-31.jpg"
-                        alt="#"
-                        class="lazyload"
-                        sizes="62vw">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel__item  m-slider__slide" style="max-width: 1034px">
-                <div class="carousel__item-inner">
-                  <div class="image-wrap">
-                    <div class="lazy-container  [ pswp__trigger image image--visible-on-mobile ]" style="padding-bottom: 66.5642414458%;">
-                      <img
-                        data-srcset="img/ChaiWanGallery_Make-17.jpg"
-                        data-src-ie="img/ChaiWanGallery_Make-17.jpg"
-                        alt="#"
-                        class="lazyload"
-                        sizes="90vw">
-                    </div>
-                    <div 
-                      class="lazy-container  [ pswp__trigger image image--visible-on-desktop ]" style="padding-bottom: 66.5642414458%;"
-                      data-padding="66.5642414458%"
-                      data-id="#photoswipe-gallery"
-                      data-photoswipe-category="All"
-                      data-photoswipe-sizes='{"sizes":[{"src":"img/ChaiWanGallery_Make-17.jpg","w":1920,"h":1278}]}'
-                      data-open-drawer="#photoswipe-panel">
-                      <img
-                        data-srcset="img/ChaiWanGallery_Make-17.jpg"
-                        data-src-ie="img/ChaiWanGallery_Make-17.jpg"
-                        alt="#"
-                        class="lazyload"
-                        sizes="62vw">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel__item  m-slider__slide" style="max-width: 1575px">
-                <div class="carousel__item-inner">
-                  <div class="image-wrap">
-                    <div class="lazy-container  [ pswp__trigger image image--visible-on-mobile ]" style="padding-bottom: 43.7008489141%;"
-                      >
-                      <img
-                        data-srcset="img/LunFatStreet_Make-8.jpg"
-                        data-src-ie="img/LunFatStreet_Make-8.jpg"
-                        alt="#"
-                        class="lazyload"
-                        sizes="90vw">
-                    </div>
-                    <div 
-                      class="lazy-container  [ pswp__trigger image image--visible-on-desktop ]" style="padding-bottom: 43.7008489141%;"
-                      data-padding="43.7008489141%"
-                      data-id="#photoswipe-gallery"
-                      data-photoswipe-category="All"
-                      data-photoswipe-sizes='{"sizes":[{"src":"img/LunFatStreet_Make-8.jpg","w":1920,"h":839}]}'
-                      data-open-drawer="#photoswipe-panel">
-                      <img
-                        data-srcset="img/LunFatStreet_Make-8.jpg"
-                        data-src-ie="img/LunFatStreet_Make-8.jpg"
-                        alt="#"
-                        class="lazyload"
-                        sizes="62vw">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="c-drag-cursor">
-              Перетащите
-            </div>
-          </section>
-        </article>
+            </section>
+          </article> -->
 
-        <section class="slider-boxes slider-boxes--slides-aligned-to-top slider-boxes--three-columns">
-          <div class="grid__container">
-            @@include('blocks/slider-interesting/slider-interesting.html')
-          </div>
-        </section>
-      </main>
+          <!-- <section
+            class="slider-boxes slider-boxes--slides-aligned-to-top slider-boxes--three-columns"
+          >
+            <div class="grid__container">
+              @@include('blocks/slider-interesting/slider-interesting.html')
+            </div>
+          </section> -->
+          <br /><br /><br /><br /><br /><br />
+        </main>
 
-      @@include('blocks/page-footer/page-footer.html')
+        @@include('blocks/page-footer/page-footer.html')
 
-      <!-- @@include('blocks/modal-profile/modal-profile.html') -->
+        <!-- @@include('blocks/modal-profile/modal-profile.html') -->
+      </div>
     </div>
-  </div>
 
-  <!-- @@include('blocks/video-player/video-player.html') -->
+    <!-- @@include('blocks/video-player/video-player.html') -->
 
-  @@include('blocks/modal-search/modal-search.html')
-
-  @@include('blocks/modal-map/modal-map.html')
-
-  @@include('blocks/photoswipe/photoswipe.html')
-
-  @@include('_include/page_bottom.html')
-</body>
+    @@include('blocks/modal-search/modal-search.html')
+    @@include('blocks/modal-map/modal-map.html')
+    @@include('blocks/photoswipe/photoswipe.html')
+    @@include('_include/page_bottom.html')
+  </body>
 </html>

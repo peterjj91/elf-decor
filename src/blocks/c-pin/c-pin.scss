@@ -1,4 +1,3 @@
-
 /*  ==========================================================================
     Pin
     ========================================================================== */
@@ -59,12 +58,13 @@
 
 .c-icon--mid-grey,
 .c-icon--mid-grey svg {
-  fill: #bab8b8;
+  fill: #bab8b8 !important;
+  color: #bab8b8;
 }
 
 .c-icon--mid-grey:hover,
 .c-icon--mid-grey svg:hover {
-  fill: #000;
+  fill: #000 !important;
 }
 
 .c-icon--search {

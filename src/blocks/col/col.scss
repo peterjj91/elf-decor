@@ -1181,7 +1181,7 @@
 
 @media screen and (max-width: 768px) {
   .col--6-12-bp-tp {
-    width: calc(99.9% * 6/12 - (10% - 10% * 6/12));
+    width: calc(99.9% * 6/12 - (10% - 10% * 6/12)) !important;
   }
   .col--6-12-bp-tp:nth-child(1n) {
     float: left;
